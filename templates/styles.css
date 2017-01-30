@@ -9,6 +9,10 @@
 			background-repeat: no-repeat;
 			background-size:cover;
 		}
+		#page-wrap {
+  	background: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg") no-repeat fixed;
+  	width: 500px; margin: 40px auto;
+	}
 		p {
     margin: 200px
 }
