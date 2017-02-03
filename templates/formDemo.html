@@ -1,10 +1,24 @@
 <!doctype html>
-<html>
+<html ng-app="testApp">
 <head>
 	<title>
 		Page Demoooo
 	</title>
+
+	<link rel="stylesheet" href= "../static/formdemocss.css">
+	 <script src="../static/node_modules/angular/angular.min.js"></script>
+
+	<script src= "../static/formdemocontrollers.js"></script>
 </head>
+
+<body>
+
+		<div ng-controller='HelloController'>
+
+    	<p>Group is {{group}}</p>
+
+		</div>
+
 
 
 
@@ -16,7 +30,7 @@
 
 	<select name="sauce">
 		<option value="tomato">Tomato</option>
-		<option value="rosemary">Rosemary</option>	
+		<option value="rosemary">Rosemary</option>
 	</select>
 </form>
 
@@ -33,8 +47,5 @@
 
 </p>
 
+</body>
 </html>
-
-
-
-

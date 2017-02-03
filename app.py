@@ -27,7 +27,12 @@ def signup():
     return redirect('/')
 
 
+@app.route('/flaskAngular')
+def flaskAngular():
+ 	return redirect("http://127.0.0.1:3000", code=302)
+
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
-
-

@@ -1,0 +1,63 @@
+CTYPE html>
+<html>
+<head>
+   <title> Angular Python</title>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+   <script src="index.js"></script>
+   <link href="styles.css" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" href="node_modules/bootstrap-vertical-tabs/bootstrap.vertical-tabs.css">
+
+</head>
+
+
+<body ng-app="AppForHTML">
+  <!--HEADER-->
+  <div class = "header-site">
+    <img src="http://www.piwowary.com/wp-content/uploads/2017/01/Engineered-Wood-Flooring-Pine-5386fe93fff7742dc12b0bffa34caa6e.jpg" >
+    <p style="text-align:right">Scavenger's Repo</p>
+  </div>
+
+
+
+  <!--MENU-->
+    <div class="col-md-2" ng-controller="TabController">
+      <ul class="nav nav-tabs tabs-left">
+        <li ng-class=" {active: isSet(1)}">
+          <a href ng-click="setTab(1)">Home</a>
+        </li>
+        <li ng-class=" {active: isSet(2)}">
+          <a href ng-click="setTab(1)">Home</a>
+        </li>
+        <li ng-class=" {active: isSet(3)}">
+          <a href ng-click="setTab(1)">Home</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+
+  <div ng-controller="ctrl1">
+
+
+    <p>within ctrl1</p>
+    {{profile}}
+
+  </div>
+
+
+
+
+
+  <!--CONTENT-->
+
+  <h1>Content</h1>
+
+
+</body>
+
+
+
+</html>
+
+
