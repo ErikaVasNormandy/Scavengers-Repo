@@ -7,5 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ErikaVasNormandy",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.1",
+    "install": "^0.8.4",
+    "npm": "^4.1.2"
+  },
+  "devDependencies": {}
 }

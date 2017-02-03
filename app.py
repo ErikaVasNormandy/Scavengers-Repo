@@ -29,8 +29,7 @@ def signup():
 
 @app.route('/flaskAngular')
 def flaskAngular():
- 	return redirect("http://127.0.0.1:3000", code=302)
-
+ 	return redirect("http://ec2-54-153-124-128.us-west-1.compute.amazonaws.com:3000", code=302)
 
 
 
