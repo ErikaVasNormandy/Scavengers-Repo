@@ -1,4 +1,4 @@
-CTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
    <title> Angular Python</title>
@@ -12,16 +12,24 @@ CTYPE html>
 
 <body ng-app="AppForHTML">
   <!--HEADER-->
-  <div class = "header-site">
+  <div class = "header-site" ng-controller="ctrl1">
     <img src="http://www.piwowary.com/wp-content/uploads/2017/01/Engineered-Wood-Flooring-Pine-5386fe93fff7742dc12b0bffa34caa6e.jpg" >
     <p style="text-align:right">Scavenger's Repo</p>
+    <p>{{profile}}</p>
+    <input ng-model="profile">
+
   </div>
+
+
+
+
 
 
 
   <!--MENU-->
     <div class="col-md-2" ng-controller="TabController">
       <ul class="nav nav-tabs tabs-left">
+
         <li ng-class=" {active: isSet(1)}">
           <a href ng-click="setTab(1)">Home</a>
         </li>
@@ -59,5 +67,3 @@ CTYPE html>
 
 
 </html>
-
-

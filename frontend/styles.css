@@ -1,0 +1,38 @@
+body
+		{
+			background-color:#000000;
+			background-image:url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg");
+
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+
+  }
+p{
+  color: white;
+		font-size:24pt;
+}
+ul{
+  color: white;
+	font-size:24pt;
+}
+li{
+	list-style: none;
+}
+.header-site {
+  text-align:right;
+	margin: 5% 5% 0% 0%;
+}
+.menuitem{
+  	 background-color: #BA6600;
+     border: none;
+     color: white;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     align: left;
+     font-size: 16px;
+		 opacity: .7
+
+}
