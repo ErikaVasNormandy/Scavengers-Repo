@@ -1,6 +1,8 @@
 var appName = angular.module("AppForHTML", []);
+
+
 appName.controller("ctrl1", function($scope) {
-  $scope.profile="VenetianGlass"
+  $scope.profile="In ctrl1"
 })
 
 appName.controller("TabController", function($scope) {
@@ -13,5 +15,20 @@ appName.controller("TabController", function($scope) {
   $scope.isSet=function(tabNum) {
     return $scope.tab == tabNum;
   };
-})
 
+
+
+});
+appName.controller("TabController2", function($scope) {
+
+});
+
+
+appName.controller("Content", function($scope) {
+  $scope.homeContent="Hello, my name is ...., welcome to my repository!";
+  $scope.projects ="projects over here";
+  $scope.contact="contact info";
+
+
+
+});

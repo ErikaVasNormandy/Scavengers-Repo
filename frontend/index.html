@@ -5,8 +5,16 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
    <script src="index.js"></script>
    <link href="styles.css" rel="stylesheet" type="text/css">
-   <link rel="stylesheet" href="node_modules/bootstrap-vertical-tabs/bootstrap.vertical-tabs.css">
+  <!--
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+-->
 
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
 </head>
 
 
@@ -27,39 +35,52 @@
 
 
   <!--MENU-->
-    <div class="col-md-2" ng-controller="TabController">
-      <ul class="nav nav-tabs tabs-left">
+  <div ng-controller="TabController">
+    <ul class="menu">
+      <!--adopts that particular "active" css characteristc if isSet(1) is true-->
+      <li class = ng-class="{active: isSet(1)}">
+        <button ng-click="setTab(1)">Home</button>
+      </li>
 
-        <li ng-class=" {active: isSet(1)}">
-          <a href ng-click="setTab(1)">Home</a>
-        </li>
-        <li ng-class=" {active: isSet(2)}">
-          <a href ng-click="setTab(1)">Home</a>
-        </li>
-        <li ng-class=" {active: isSet(3)}">
-          <a href ng-click="setTab(1)">Home</a>
-        </li>
-      </ul>
-    </div>
+      <li ng-class="{active: isSet(2)}" >
+        <button ng-click="setTab(2)">Home</button>
+      </li>
 
+      <li ng-class="{active: isSet(3)}" >
+        <button ng-click="setTab(3)">Home</button>
+      </li>
 
+    </ul>
 
-
-  <div ng-controller="ctrl1">
-
-
-    <p>within ctrl1</p>
-    {{profile}}
 
   </div>
 
+<div ng-controller="Content">
+</div>
 
+<!--
+<div ng-controller="Content">
+ TABS
 
+    <div class="row">
+      <div class="col s12">
+        <ul class="tabs">
+          <li class="tab col s3"><a href="#home" class="active">Home</a></li>
+          <li class="tab col s3"><a href="#projects">Projects</a></li>
+          <li class="tab col s3"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
 
-
-  <!--CONTENT-->
+---------------------
 
   <h1>Content</h1>
+  <div id="home" class="col s12">Home <p>{{ homeContent }} </p></div>
+  <div id="projects" class="col s12"><p>Projects {{ projects }}</p></div>
+  <div id="contact" class="col s12"><p>Content {{ contact }}</p></div>
+
+
+</div> -->
 
 
 </body>
