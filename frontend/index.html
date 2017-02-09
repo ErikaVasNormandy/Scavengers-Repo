@@ -37,7 +37,7 @@
   <!--MENU-->
 <div ng-controller="TabController">
   <div class="row"> <!--One big gigantic row for both side menu and content-->
-    <div class="col s2">
+    <div class="col s2 m2 l2">
       <div class="sideMenu">
           <ul>  <!--adopts that particular "active" css characteristc if isSet(1) is true-->
               <li ng-class="{active: isSet(1)}">
@@ -57,8 +57,8 @@
 
 <!--====================ACTUAL CONTENT BEGINS ---------->
 
-      <div class="col s12 m6">
-        <div class="card">
+      <div class="col s10 m10 l10" id="contentContainer">
+        <div class="container" >
             <p>
               <div id="Home" ng-if= "isSet(1)">
 
