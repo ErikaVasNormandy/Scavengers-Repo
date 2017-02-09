@@ -35,19 +35,19 @@
 
 
   <!--MENU-->
-  <div ng-controller="TabController">
+  <div class="sideMenu" ng-controller="TabController">
     <ul >
       <!--adopts that particular "active" css characteristc if isSet(1) is true-->
       <li ng-class="{active: isSet(1)}">
-        <button class="waves-effect waves-red btn-flat" ng-click="setTab(1)">Home</button>
+        <button class="waves-effect waves-light btn-flat" ng-click="setTab(1)">Home</button>
       </li>
 
       <li ng-class="{active: isSet(2)}" >
-        <button class="waves-effect waves-red btn-flat" ng-click="setTab(2)">Projects</button>
+        <button class="waves-effect waves-light btn-flat" ng-click="setTab(2)">Projects</button>
       </li>
 
       <li ng-class="{active: isSet(3)}" >
-        <button class="waves-effect waves-red btn-flat" ng-click="setTab(3)">Contact</button>
+        <button class="waves-effect waves-light btn-flat" ng-click="setTab(3)">Contact</button>
       </li>
 
     </ul>

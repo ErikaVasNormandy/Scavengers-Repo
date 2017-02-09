@@ -1,29 +1,48 @@
 body
 		{
 			background-color:#000000;
-			background-image:url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg");
-
+			background-image: radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg);
 			background-attachment: fixed;
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
 			color: white;
+			font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
   }
-p{
+
+
+p {
     color: white;
 		font-size:24pt;
 }
 ul{
   color: white;
-	font-size:24pt;
-}
-li{
-	list-style: none;
-}
+text-shadow: black;
 
-
-.active {
+}
+li {
 	color: white;
+	list-style: none;
+	overflow-x: auto;
+
+ opacity: 1;
+
+
+}
+.sideMenu{
+
+	width: 20%;
+  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255, 0.1));
+	text-align: center;
+	padding-right: 0px;
+	padding-left: 0px;
+
+}
+.active {
+
+		text-align:right;
+		font-size: 150%;
+		text-decoration: blink;
 }
 
 .header-site {
