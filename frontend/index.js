@@ -16,6 +16,9 @@ appName.controller("TabController", function($scope) {
     return $scope.tab == tabNum;
   };
 
+  $scope.homeContent="Hello, my name is ...., welcome to my repository!";
+  $scope.projects ="projects over here";
+  $scope.contact="contact info";
 
 
 });

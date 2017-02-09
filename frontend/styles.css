@@ -6,7 +6,6 @@ body
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
-			color: white;
 			font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
   }
 
@@ -31,7 +30,7 @@ li {
 }
 .sideMenu{
 
-	width: 20%;
+
   background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255, 0.1));
 	text-align: center;
 	padding-right: 0px;

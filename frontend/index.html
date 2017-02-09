@@ -24,7 +24,7 @@
     <img src="http://www.piwowary.com/wp-content/uploads/2017/01/Engineered-Wood-Flooring-Pine-5386fe93fff7742dc12b0bffa34caa6e.jpg" >
     <p style="text-align:right">Scavenger's Repo</p>
     <p>{{profile}}</p>
-    <input ng-model="profile">
+<!--  <input ng-model="profile"> -->
 
   </div>
 
@@ -35,28 +35,50 @@
 
 
   <!--MENU-->
-  <div class="sideMenu" ng-controller="TabController">
-    <ul >
-      <!--adopts that particular "active" css characteristc if isSet(1) is true-->
-      <li ng-class="{active: isSet(1)}">
-        <button class="waves-effect waves-light btn-flat" ng-click="setTab(1)">Home</button>
-      </li>
+<div ng-controller="TabController">
+  <div class="row"> <!--One big gigantic row for both side menu and content-->
+    <div class="col s2">
+      <div class="sideMenu">
+          <ul>  <!--adopts that particular "active" css characteristc if isSet(1) is true-->
+              <li ng-class="{active: isSet(1)}">
+                <button class="waves-effect waves-light btn-flat" ng-click="setTab(1)">Home</button>
+              </li>
 
-      <li ng-class="{active: isSet(2)}" >
-        <button class="waves-effect waves-light btn-flat" ng-click="setTab(2)">Projects</button>
-      </li>
+              <li ng-class="{active: isSet(2)}" >
+                <button class="waves-effect waves-light btn-flat" ng-click="setTab(2)">Projects</button>
+              </li>
 
-      <li ng-class="{active: isSet(3)}" >
-        <button class="waves-effect waves-light btn-flat" ng-click="setTab(3)">Contact</button>
-      </li>
+              <li ng-class="{active: isSet(3)}" >
+                <button class="waves-effect waves-light btn-flat" ng-click="setTab(3)">Contact</button>
+              </li>
+          </ul>
+      </div> <!--====================SIDE MENU DIV ENDS HERE ---------->
+    </div> <!--====================COLUMN s12 m6 ends for the first ---------->
 
-    </ul>
+<!--====================ACTUAL CONTENT BEGINS ---------->
+
+      <div class="col s12 m6">
+        <div class="card">
+            <p>
+              <div id="Home" ng-if= "isSet(1)">
+
+                {{homeContent}}
+              </div>
+
+              <div id="Projects" ng-if= "isSet(2)">
+                {{projects}}
+              </div>
+
+              <div id="Contact" ng-if= "isSet(3)">
+                {{contact}}
+              </div>
+            </p>
+        </div> <!--====================CONTENT ENDS HERE ---------->
+      </div><!--====================COLUMN s12 m6 ends for the first ---------->
+    </div> <!--Div class is row-->
 
 
-  </div>
-
-<div ng-controller="Content">
-</div>
+</div>  <!--ng-controller="TabController"-->
 
 <!--
 <div ng-controller="Content">
@@ -72,7 +94,7 @@
       </div>
     </div>
 
----------------------
+
 
   <h1>Content</h1>
   <div id="home" class="col s12">Home <p>{{ homeContent }} </p></div>
