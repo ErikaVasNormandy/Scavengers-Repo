@@ -16,7 +16,7 @@ appName.controller("TabController", function($scope) {
     return $scope.tab == tabNum;
   };
 
-  $scope.homeContent="Hello, my name is ...., welcome to my repository!";
+  $scope.homeContent="Hello, my name is _________ , welcome to my repository!";
   $scope.projects ="projects over here";
   $scope.contact="contact info";
 
@@ -28,7 +28,7 @@ appName.controller("TabController2", function($scope) {
 
 
 appName.controller("Content", function($scope) {
-  $scope.homeContent="Hello, my name is ...., welcome to my repository!";
+  $scope.homeContent="Hello, my name is Erika. I am a web+mobile develoepr with an interest in cybersecurity. I built this website in order to try out Amazon's AWS EC2 tool";
   $scope.projects ="projects over here";
   $scope.contact="contact info";
 

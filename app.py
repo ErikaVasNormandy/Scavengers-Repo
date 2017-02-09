@@ -33,7 +33,7 @@ def flaskAngular():
 
 @app.route('/flaskAngularlocal')
 def flaskAngularLocal():
-    return redirect("localhost:3000", code=302)
+    return redirect("http://localhost:3000", code=302)
 
 
 
