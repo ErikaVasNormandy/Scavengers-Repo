@@ -18,16 +18,16 @@
 </head>
 
 
-<body ng-app="AppForHTML" >
+
+
+<body ng-app="AppForHTML" ng-controller="backgroundController" >
+  <h1 ng-style="bgImg">Hello World</h1>
   <img style="position: absolute; width: 100%; height: 20px;" src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/dark-wood-flooring-samples-keramogranit-dark-wood-floors-dark-plank-wood-image.jpg">
   <!--=================================================HEADER===================-->
   <div style="text-align: right;" ng-controller="ctrl1">
     <img id="banner" src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/Banner.png">
-
-    <p style="text-align:right">{{profile}}</p>
-
-<!--  <input ng-model="profile"> -->
-
+    <p style="padding-right: 100px;font-size: 120%;">{{profile}}</p>
+    <!--  <input ng-model="profile"> -->
   </div>
 
 
@@ -59,7 +59,7 @@
 
 <!--====================ACTUAL CONTENT BEGINS ---------->
 
-      <div class="col s9 m9 l9" id="contentContainer">
+      <div class="col s9 m9 l9" id="contentContainer" >
 
             <p>
               <div id="Home" ng-if= "isSet(1)">
