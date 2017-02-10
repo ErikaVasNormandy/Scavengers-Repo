@@ -12,16 +12,21 @@ body
 #contentContainer {
 	background-color: rgba(255, 255, 255, 0.2);
 	padding-left: 5%;
-		padding-right: 5%;
+	padding-right: 5%;
 }
-
+#banner{
+	right: 0px;
+	top: 10px;
+	text-align: right;
+	position:static;
+}
 p {
     color: white;
 		font-size:24pt;
 }
 ul{
   color: white;
-text-shadow: black;
+	text-shadow: black;
 
 }
 li {
@@ -31,7 +36,7 @@ li {
 	padding-top: 2%;
 	padding-bottom: 2%;
 	padding-left: 10%;
- opacity: 1;
+ 	opacity: 1;
 
 
 }
@@ -49,7 +54,22 @@ li {
 
 }
 
-.header-site {
+#header-site {
+	border: 3px solid #b0b0b0;
   text-align:right;
-	margin: 5% 5% 0% 0%;
+	height: 400px;
+	width: 500px;
+
+	/*margin: 5% 5% 0% 0%;*/
+	background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/Banner.png");
+
+	background-repeat: no-repeat;
+
+	background-clip: content-box;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+
+
+
 }
