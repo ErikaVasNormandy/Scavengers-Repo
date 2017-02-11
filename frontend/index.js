@@ -34,7 +34,11 @@ appName.controller("TabController", function($scope) {
 
   $scope.homeContent="Hello, my name is Erika. I am a web+mobile develoepr with an interest in cybersecurity. I built this website in order to try out Amazon's AWS EC2 tool";
   $scope.projects ="projects over here";
-  $scope.contact="contact info";
+  $scope.worldBuilding="Arda Hyperion Sketchdump";
+  $scope.breadCrumbs="One long list of articles, + cards?l";
+  $scope.about ="About me";
+
+
 
 
 });

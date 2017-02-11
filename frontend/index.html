@@ -51,7 +51,13 @@
               </li>
 
               <li ng-class="{active: isSet(3)}" >
-                <button class="waves-effect waves-light btn-flat" ng-click="setTab(3)">Contact</button>
+                <button class="waves-effect waves-light btn-flat" ng-click="setTab(3)">World Building</button>
+              </li>
+              <li ng-class="{active: isSet(4)}" >
+                <button class="waves-effect waves-light btn-flat" ng-click="setTab(4)">Useful Links</button>
+              </li>
+              <li ng-class="{active: isSet(5)}" >
+                <button class="waves-effect waves-light btn-flat" ng-click="setTab(5)">About</button>
               </li>
           </ul>
       </div> <!--====================SIDE MENU DIV ENDS HERE ---------->
@@ -70,8 +76,15 @@
                 {{projects}}
               </div>
 
-              <div id="Contact" ng-if= "isSet(3)">
-                {{contact}}
+              <div id="World Building" ng-if= "isSet(3)">
+                {{worldBuilding}}
+              </div>
+              <div id="Useful Links" ng-if= "isSet(4)">
+                {{breadCrumbs}}
+              </div>
+
+              <div id="About" ng-if= "isSet(4)">
+                {{about}}
               </div>
             </p>
       <!--  </div> <!===================CONTENT ENDS HERE ---------->
