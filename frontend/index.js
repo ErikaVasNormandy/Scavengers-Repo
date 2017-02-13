@@ -2,12 +2,11 @@ var appName = angular.module("AppForHTML", []);
 
 
 appName.controller("backgroundController", function($scope){
-  $scope.bgImages = [" https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/Over-the-Garden-Wall-S01E02-720p-HDTVSeriesdl.com_00_02_54_00000.png", "https://images2.alphacoders.com/735/thumb-1920-735771.png", "https://images.alphacoders.com/650/thumb-350-650252.jpg", "https://images4.alphacoders.com/109/109064.jpg"];
-  $scope.getImage==function(num){
-    return bgImages[num];
-  }
+  $scope.bgImages = [" https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/87cbb3248a40f91479e8ab7da60cb09e.jpg", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/Over-the-Garden-Wall-S01E02-720p-HDTVSeriesdl.com_00_02_54_00000.png", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/thumb-1920-735771.png", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/dd2bfcfcc02cba84fef55e4c454f9c35.jpg", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/Snapdragon-Color-Meaning.jpg", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/tumblr_mvt4dfUVx71smn4pqo9_1280.jpg",
+"https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/maxresdefault.jpg", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/M2T6aUy.jpg", ];
 
-  var rand = Math.floor(Math.random() * 4) + 1;
+
+  var rand = Math.floor(Math.random() * 8 ) + 1;
 
   $scope.bgImg= {
     "background-image": 'radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url('+ $scope.bgImages[rand] +')'

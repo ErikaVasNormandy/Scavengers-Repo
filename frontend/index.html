@@ -41,31 +41,32 @@
   <div class="row"> <!--One big gigantic row for both side menu and content-->
     <div class="col s2 m2 l2">
       <div class="sideMenu">
-          <ul>  <!--adopts that particular "active" css characteristc if isSet(1) is true-->
+          <ul >  <!--adopts that particular "active" css characteristc if isSet(1) is true-->
               <li ng-class="{active: isSet(1)}">
-                <button class="waves-effect waves-light btn-flat" ng-click="setTab(1)">Home</button>
+                <button class="waves-effect waves-light btn transparent" ng-click="setTab(1)">Home</button>
               </li>
 
               <li ng-class="{active: isSet(2)}" >
-                <button class="waves-effect waves-light btn-flat" ng-click="setTab(2)">Projects</button>
+                <button class="waves-effect waves-light btn transparent" ng-click="setTab(2)">Projects</button>
               </li>
 
               <li ng-class="{active: isSet(3)}" >
-                <button class="waves-effect waves-light btn-flat" ng-click="setTab(3)">World Building</button>
+                <button class="waves-effect waves-light btn transparent" ng-click="setTab(3)">World Building</button>
               </li>
               <li ng-class="{active: isSet(4)}" >
-                <button class="waves-effect waves-light btn-flat" ng-click="setTab(4)">Useful Links</button>
+                <button class="waves-effect waves-light btn transparent" ng-click="setTab(4)">Useful Links</button>
               </li>
               <li ng-class="{active: isSet(5)}" >
-                <button class="waves-effect waves-light btn-flat" ng-click="setTab(5)">About</button>
+                <button class="waves-effect waves-light btn transparent" ng-click="setTab(5)">About</button>
               </li>
           </ul>
       </div> <!--====================SIDE MENU DIV ENDS HERE ---------->
     </div> <!--====================COLUMN s12 m6 ends for the first ---------->
 
 <!--====================ACTUAL CONTENT BEGINS ---------->
-
+ <p>   &nbsp</p>
       <div class="col s9 m9 l9" id="contentContainer" >
+
 
             <p>
               <div id="Home" ng-if= "isSet(1)">
