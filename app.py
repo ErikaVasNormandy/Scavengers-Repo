@@ -8,9 +8,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-	Myauthor = "Me"
-	Myname = "You"
-	return render_template("index.html", author=Myauthor, name=Myname )
+    return redirect("http://ec2-54-153-124-128.us-west-1.compute.amazonaws.com:3000", code=302)
+
+#	Myauthor = "Me"
+#	Myname = "You"
+#	return render_template("index.html", author=Myauthor, name=Myname )
 
 @app.route('/profile')
 def profilePage():
