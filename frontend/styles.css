@@ -6,8 +6,7 @@ body
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
-			font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
-
+			font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   }
 
 #contentContainer {
@@ -32,32 +31,54 @@ body
 
 p {
     color: white;
-
 }
 
+
+
 button{
-	color: white;
-	text-align: right;
+
+	max-width: 200;
+
 }
 
 li {
+	padding-top: 2%;
 	padding-bottom: 2%;
-	padding-bottom: 2%;
-	padding-left: 10%;
+	color: white;
+	text-align: right;
+	list-style-type: none;
+
 }
 
 .sideMenu{
   background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255, 0.3));
 	text-align: right;
+
+	max-width: 200%;
+
+
+}
+
+.sideMenuItem{
+	font-size: 150%;
+	max-width: 200%;
+	white-space:nowrap;
+	word-wrap: break-word;
+
 	font-weight: bold;
+	font-family:	"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255, 0.5));
+
+}
+
+.sideMenuItem:hover{
+	background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255, 0.8));
 
 }
 
 
-.active {
-		text-align: right;
+.sideMenuItem:active{
+
 		font-size: 150%;
-
-
 
 }

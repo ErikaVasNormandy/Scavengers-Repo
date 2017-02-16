@@ -13,8 +13,9 @@
 
    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+
 </head>
 
 
@@ -28,6 +29,9 @@
     <img id="banner" src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/Banner.png">
     <p style="padding-right: 100px;font-size: 120%;">{{profile}}</p>
     <!--  <input ng-model="profile"> -->
+<p style="text-align: left;">message:   {{message}}</p>
+
+
   </div>
 
 
@@ -42,21 +46,21 @@
     <div class="col s2 m2 l2">
       <div class="sideMenu">
           <ul >  <!--adopts that particular "active" css characteristc if isSet(1) is true-->
-              <li ng-class="{active: isSet(1)}">
+              <li ng-class="{sideMenuItem: isSet(1)}">
                 <button class="waves-effect waves-light btn transparent" ng-click="setTab(1)">Home</button>
               </li>
 
-              <li ng-class="{active: isSet(2)}" >
+              <li ng-class="{sideMenuItem: isSet(2)}" >
                 <button class="waves-effect waves-light btn transparent" ng-click="setTab(2)">Projects</button>
               </li>
 
-              <li ng-class="{active: isSet(3)}" >
-                <button class="waves-effect waves-light btn transparent" ng-click="setTab(3)">World Building</button>
+              <li ng-class="{sideMenuItem: isSet(3)}" >
+                <button class="waves-effect waves-light btn transparent" ng-click="setTab(3)">World </button>
               </li>
-              <li ng-class="{active: isSet(4)}" >
+              <li ng-class="{sideMenuItem: isSet(4)}" >
                 <button class="waves-effect waves-light btn transparent" ng-click="setTab(4)">Useful Links</button>
               </li>
-              <li ng-class="{active: isSet(5)}" >
+              <li ng-class="{sideMenuItem: isSet(5)}" >
                 <button class="waves-effect waves-light btn transparent" ng-click="setTab(5)">About</button>
               </li>
           </ul>
@@ -64,7 +68,7 @@
     </div> <!--====================COLUMN s12 m6 ends for the first ---------->
 
 <!--====================ACTUAL CONTENT BEGINS ---------->
- <p>   &nbsp</p>
+ <p> &nbsp</p>
       <div class="col s9 m9 l9" id="contentContainer" >
 
 
@@ -84,7 +88,7 @@
                 {{breadCrumbs}}
               </div>
 
-              <div id="About" ng-if= "isSet(4)">
+              <div id="About" ng-if= "isSet(5)">
                 {{about}}
               </div>
             </p>

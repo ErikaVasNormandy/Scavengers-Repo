@@ -1,17 +1,27 @@
 var appName = angular.module("AppForHTML", []);
 
 
-appName.controller("backgroundController", function($scope){
-  $scope.bgImages = [" https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/87cbb3248a40f91479e8ab7da60cb09e.jpg", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/Over-the-Garden-Wall-S01E02-720p-HDTVSeriesdl.com_00_02_54_00000.png", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/thumb-1920-735771.png", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/dd2bfcfcc02cba84fef55e4c454f9c35.jpg", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/Snapdragon-Color-Meaning.jpg", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/tumblr_mvt4dfUVx71smn4pqo9_1280.jpg",
-"https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/maxresdefault.jpg", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/M2T6aUy.jpg", ];
+appName.controller("backgroundController", function($scope, $timeout){
+  $scope.bgImages = ["https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/jwHdoTn.png", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/efcb4c0e828c1809e38b9cdc02aea227.png", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/87cbb3248a40f91479e8ab7da60cb09e.jpg", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/Over-the-Garden-Wall-S01E02-720p-HDTVSeriesdl.com_00_02_54_00000.png", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/thumb-1920-735771.png", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/dd2bfcfcc02cba84fef55e4c454f9c35.jpg", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/Snapdragon-Color-Meaning.jpg", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/tumblr_mvt4dfUVx71smn4pqo9_1280.jpg",
+  "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/maxresdefault.jpg", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/M2T6aUy.jpg", "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/2030_over_the_garden_wall.jpg"];
+  $scope.message= "Hello"
+
+  var rand = Math.floor(Math.random() * 12 ) + 0;
 
 
-  var rand = Math.floor(Math.random() * 8 ) + 1;
+
+  $timeout(function () { $scope.message= "world"; rand=0;}, 2000);
+
+
 
   $scope.bgImg= {
     "background-image": 'radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url('+ $scope.bgImages[rand] +')'
   }
+
 });
+
+
+
 
 appName.controller("ctrl1", function($scope) {
   $scope.profile="A namespace for wandering minds"
@@ -31,7 +41,7 @@ appName.controller("TabController", function($scope) {
     return $scope.tab == tabNum;
   };
 
-  $scope.homeContent="Hello, my name is Erika. I am a web+mobile develoepr with an interest in cybersecurity. I built this website in order to try out Amazon's AWS EC2 tool";
+  $scope.homeContent="Some people might be programmers, others might be engineers. I like to build worlds, compact repositories with various assets that I find on the shoreline.";
   $scope.projects ="projects over here";
   $scope.worldBuilding="Arda Hyperion Sketchdump";
   $scope.breadCrumbs="One long list of articles, + cards?l";
