@@ -10,7 +10,7 @@ appName.controller("backgroundController", function($scope, $timeout){
 
 
 
-  $timeout(function () { $scope.message= "world"; rand=0;}, 2000);
+  $timeout(function () { $scope.message= "world"; var rand = Math.floor(Math.random() * 12 ) + 0; }, 1000);
 
 
 
