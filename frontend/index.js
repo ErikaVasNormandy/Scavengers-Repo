@@ -15,7 +15,8 @@ appName.controller("backgroundController", function($scope, $timeout){
 
 
   $scope.bgImg= {
-    "background-image": 'radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url('+ $scope.bgImages[rand] +')'
+    "background-image": 'radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url('+ $scope.bgImages[rand] +')';
+    
   }
 
 });
@@ -25,9 +26,6 @@ appName.controller("backgroundController", function($scope, $timeout){
 
 appName.controller("ctrl1", function($scope) {
   $scope.profile="A namespace for wandering minds"
-
-
-
 })
 
 appName.controller("TabController", function($scope) {
