@@ -10,13 +10,32 @@ appName.controller("backgroundController", function($scope, $timeout){
 
 
 
-  $timeout(function () { $scope.message= "world"; var rand = Math.floor(Math.random() * 12 ) + 0; }, 1000);
+  // $timeout(function () { $scope.message= "world"; var rand = Math.floor(Math.random() * 12 ) + 0; }, 1000);
+  //
+  //
+  //
+  // $scope.bgImg= {
+  //   "background-image": 'radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url('+ $scope.bgImages[rand] +')'
+  // }
 
 
+  var secs=4;
 
-  $scope.bgImg= {
-    "background-image": 'radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url('+ $scope.bgImages[rand] +')'
+  function backgroundSequence(){
+    console.log("k")
+    window.clearTimeout();
+    var k=0;
+    for (i = 0; i < $scope.bgImages.length; i++) {
+		setTimeout(function(){
+			document.documentElement.style.background = 'radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url('+ $scope.bgImages[rand] +')'
+			document.documentElement.style.backgroundSize ="cover";
+		if ((k + 1) === $scope.bgImages.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }
+		}, (secs * 1000) * i)
+	}
+
   }
+
+backgroundSequence();
 
 });
 

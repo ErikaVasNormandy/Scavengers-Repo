@@ -5,7 +5,6 @@ from flask import render_template
 
 app = Flask(__name__)
 
-
 @app.route('/')
 def index():
     return redirect("http://ec2-54-153-124-128.us-west-1.compute.amazonaws.com:3000", code=302)
