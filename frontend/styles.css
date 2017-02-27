@@ -46,7 +46,7 @@ li {
 	list-style-type: none;
 	font-size: 1vw;
 
-	display: inline-flex;
+
 
 }
 
@@ -60,13 +60,11 @@ li:hover{
 .sideMenu{
   background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255, 0.3));
 	text-align: right;
-
 }
 
 .sideMenuItem{
 	white-space: nowrap;
 	font-size:150%;
-
 
 	border-style: none;
 	font-weight: bold;
