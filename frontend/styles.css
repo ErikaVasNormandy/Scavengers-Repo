@@ -45,8 +45,11 @@ li {
 	text-align: right;
 	list-style-type: none;
 	font-size: 1vw;
+<<<<<<< HEAD
 
 	display: inline-flex;
+=======
+>>>>>>> d57e5ff9202dc7ae66ea3ee543ad5ec151e82b5f
 
 }
 
@@ -60,10 +63,15 @@ li:hover{
 .sideMenu{
   background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255, 0.3));
 	text-align: right;
+<<<<<<< HEAD
+=======
+	max-width: 200%;
+>>>>>>> d57e5ff9202dc7ae66ea3ee543ad5ec151e82b5f
 
 }
 
 .sideMenuItem{
+<<<<<<< HEAD
 	white-space: nowrap;
 	font-size:150%;
 
@@ -72,6 +80,23 @@ li:hover{
 	font-weight: bold;
 	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 	background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255, 0.5));
+=======
+		white-space: nowrap;
+		font-size:150%;
+
+		border-style: none;
+		font-weight: bold;
+		font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+		background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255, 0.5));
+
+		text-overflow: ellipsis;
+}
+
+
+
+
+.sideMenuItem:active{
+>>>>>>> d57e5ff9202dc7ae66ea3ee543ad5ec151e82b5f
 
 	text-overflow: ellipsis;
 
