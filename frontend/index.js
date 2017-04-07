@@ -8,51 +8,41 @@ appName.controller("backgroundController", function($scope, $timeout){
 
   var rand = Math.floor(Math.random() * 12 ) + 0;
 
-
-
   // $timeout(function () { $scope.message= "world"; var rand = Math.floor(Math.random() * 12 ) + 0; }, 1000);
-  //
-  //
-  //
+ 
   // $scope.bgImg= {
   //   "background-image": 'radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url('+ $scope.bgImages[rand] +')'
   // }
 
-
   var secs=4;
 
-  function backgroundSequence(){
-    console.log("k")
-    window.clearTimeout();
-    var k=0;
-    for (i = 0; i < $scope.bgImages.length; i++) {
-		setTimeout(function(){
-			document.documentElement.style.background = 'radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url('+ $scope.bgImages[rand] +')'
-			document.documentElement.style.backgroundSize ="cover";
-		if ((k + 1) === $scope.bgImages.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }
-		}, (secs * 1000) * i)
-	}
+  function backgroundSequence()
+	{
+   		 console.log("k")
+    		window.clearTimeout();
+    		var k=0;
+    		for (i = 0; i < $scope.bgImages.length; i++) 
+		{
+			setTimeout(function(){
+				document.documentElement.style.background = 'radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url('+ $scope.bgImages[rand] +')'
+				document.documentElement.style.backgroundSize ="cover";
+				if ((k + 1) === $scope.bgImages.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }	}, (secs * 1000) * i)
+		}
 
-<<<<<<< HEAD
-=======
-
-
+ 	}	
   $scope.bgImg= {
-    "background-image": 'radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url('+ $scope.bgImages[rand] +')'
-
->>>>>>> d57e5ff9202dc7ae66ea3ee543ad5ec151e82b5f
+    	"background-image": 'radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url('+ $scope.bgImages[rand] +')'
   }
 
-backgroundSequence();
-
-});
+}
+);
 
 
 
 
 appName.controller("ctrl1", function($scope) {
   $scope.profile="A namespace for wandering minds"
-})
+});
 
 appName.controller("TabController", function($scope) {
   $scope.tab=1;
