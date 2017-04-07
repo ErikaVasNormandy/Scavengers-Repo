@@ -44,9 +44,9 @@ button{
 li {
 	padding-top: 2%;
 	padding-bottom: 2%;
-	color: white;
 	text-align: right;
 	list-style-type: none;
+	font-size: 1vw;
 
 }
 li:hover{
@@ -54,26 +54,24 @@ li:hover{
 }
 
 
+/*referring to div*/
 .sideMenu{
   background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255, 0.3));
 	text-align: right;
-
 	max-width: 200%;
-
 
 }
 
 .sideMenuItem{
-	font-size: 150%;
-	max-width: 200%;
-	white-space:normal;
-	word-wrap:normal;
-	border-style: none;
-	font-weight: bold;
+		white-space: nowrap;
+		font-size:150%;
 
-	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-	background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255, 0.5));
-	text-decoration: line-through;
+		border-style: none;
+		font-weight: bold;
+		font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+		background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255, 0.5));
+
+		text-overflow: ellipsis;
 }
 
 
