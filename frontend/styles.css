@@ -35,7 +35,7 @@ p {
 button{
 	border-style: none;
 	text-align: right;
-	
+
 	text-overflow: ellipsis;
 
 }
@@ -46,7 +46,8 @@ li {
 	text-align: right;
 	list-style-type: none;
 	font-size: 1vw;
-	display: inline-flex;
+	display: block;
+	
 
 }
 
