@@ -1,5 +1,5 @@
 {
-  "name": "scavengers-repo-frontend",
+  "name": "angular-frontend-portion",
   "version": "1.0.0",
   "description": "nodejs portion",
   "main": "index.js",
@@ -11,9 +11,13 @@
   "dependencies": {
     "angular": "^1.6.1",
     "bootstrap": "^3.3.7",
-    "express": "^4.14.1",
+    "express": "^4.15.3",
     "install": "^0.8.4",
     "npm": "^4.1.2"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "keywords": [
+    "angular",
+    "1.6"
+  ]
 }
