@@ -40,7 +40,8 @@ def flaskAngularLocal():
 
 @app.route('/gulls-shanty')
 def ReactiveFlask():
-    return render_template("reactIndex.html") 
+    return redirect("http://ec2-54-153-124-128.us-west-1.compute.amazonaws.com:8081", code=302) 
+
 
 
 if __name__ == '__main__':
