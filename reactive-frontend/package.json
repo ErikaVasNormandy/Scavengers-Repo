@@ -1,11 +1,10 @@
 {
   "name": "reactive-frontend",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-     "build": "./node_modules/.bin/webpack -d",
-    "dev": "./node_modules/.bin/webpack -d --watch"
+    "build": "webpack -d",
+    "dev": "webpack -d --watch"
   },
   "author": "",
   "license": "ISC",
@@ -21,5 +20,6 @@
     "react-dom": "^15.6.1",
     "webpack": "^3.0.0",
     "webpack-dev-server": "^2.5.0"
-  }
+  },
+  "description": ""
 }

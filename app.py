@@ -36,7 +36,9 @@ def flaskAngular():
 def flaskAngularLocal():
     return redirect("http://localhost:3000", code=302)
 
-
+@app.route('/gulls-shanty')
+def ReactiveFlask():
+    return redirect('  ' ) 
 
 
 if __name__ == '__main__':
