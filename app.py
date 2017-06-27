@@ -2,8 +2,14 @@
 from flask import Flask
 from flask import request, redirect
 from flask import render_template
+from flask_webpack import Webpack
+
+webpack = Webpack()
+
 
 app = Flask(__name__)
+
+webpack.init_app(app)
 
 @app.route('/')
 def index():
