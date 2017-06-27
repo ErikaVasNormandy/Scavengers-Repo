@@ -2,14 +2,10 @@
 from flask import Flask
 from flask import request, redirect
 from flask import render_template
-from flask_webpack import Webpack
-
-webpack = Webpack()
-
 
 app = Flask(__name__)
 
-webpack.init_app(app)
+
 
 @app.route('/')
 def index():
@@ -21,7 +17,7 @@ def index():
 
 @app.route('/profile')
 def profilePage():
-    return render_template("profile.html")
+    return render_template("reactIndex.html")
 
 @app.route('/formdemo')
 def formDemo():
@@ -44,7 +40,7 @@ def flaskAngularLocal():
 
 @app.route('/gulls-shanty')
 def ReactiveFlask():
-    return redirect('  ' ) 
+    return render_template("reactIndex.html") 
 
 
 if __name__ == '__main__':
