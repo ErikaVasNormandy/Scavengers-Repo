@@ -1,15 +1,15 @@
 body
-		{
-			background-color:#000000;
-			background-image: radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg);
-			background-attachment: fixed;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-			white-space:inherit;
-			font-size:1vw;
-				text-overflow: ellipsis;
+	{
+		background-color:#000000;
+		background-image: radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg);
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+		white-space:inherit;
+		font-size:1vw;
+		text-overflow: ellipsis;
   }
 
 #contentContainer {
@@ -25,7 +25,7 @@ body
 }
 @media screen and (min-width: 500px) {
 	body{
-		  font-decoration: underline;
+		  font: underline;
 	}
 }
 
@@ -43,9 +43,11 @@ p {
 button{
 	border-style: none;
 	text-align: right;
-
 	text-overflow: ellipsis;
+}
 
+.btn-flat {
+    color: white;
 }
 
 li {
@@ -56,10 +58,7 @@ li {
 	font-size: 1vw;
 	display: block;
 
-<<<<<<< HEAD
 
-=======
->>>>>>> SixthBranch
 
 }
 
@@ -73,19 +72,13 @@ li:hover{
 .sideMenu{
   background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255, 0.3));
 	text-align: right;
-<<<<<<< HEAD
-=======
-	max-width: 200%;
->>>>>>> SixthBranch
+
 }
 
 .sideMenuItem{
 	white-space: nowrap;
 	font-size:150%;
-<<<<<<< HEAD
 
-=======
->>>>>>> SixthBranch
 	border-style: none;
 	font-weight: bold;
 	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
@@ -96,4 +89,32 @@ li:hover{
 
 .sideMenuItem:active{
 	text-overflow: ellipsis;
+}
+
+
+
+
+.MainMenu{
+    list-style-type: none;
+    color: rgba(255,255,255, 0.8);
+    border-top-style:solid;
+    border-bottom-style: solid;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-width: 2px;
+
+}
+
+
+.MenuItem {
+   display: inline;
+   padding: 10vw;
+   color: white;
+   
+}
+
+.materials{
+    background-color: rgba(0,0,0, .5);
+    color: white;
+    padding: 1% 5% 1% 5%;
+   
 }
