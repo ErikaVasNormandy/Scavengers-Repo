@@ -19,7 +19,9 @@ class App extends React.Component{
             this.setState({
               tab0Active: true,
               tab1Active: false,
-              tab2Active: false
+              tab2Active: false,
+              tab3Active: false,
+              tab4Active: false
               })
         }
 
@@ -30,7 +32,9 @@ class App extends React.Component{
 
               tab0Active: false,
               tab1Active: true,
-              tab2Active: false
+              tab2Active: false,
+              tab3Active: false,
+              tab4Active: false
               })
         }
         if(this.state.currentTab==2)
@@ -39,13 +43,46 @@ class App extends React.Component{
             this.setState({
               tab0Active: false,
               tab1Active: false,
-              tab2Active: true
+              tab2Active: true,
+              tab3Active: false,
+              tab4Active: false
               })
         }
+        if(this.state.currentTab==3)
+        {
+          console.log("tab3")
+            this.setState({
+              tab0Active: false,
+              tab1Active: false,
+              tab2Active: false,
+              tab3Active: true,
+              tab4Active: false
+              })
+        }
+
+        if(this.state.currentTab==4)
+        {
+          console.log("tab4")
+            this.setState({
+              tab0Active: false,
+              tab1Active: false,
+              tab2Active: false,
+              tab3Active: false,
+              tab4Active: true
+              })
+        }
+
+
+
     }
 
 
     render() {
+      var imgURL = this.state.nextImg ? this.state.nextImgSrc: this.state.song.imgSrc;
+      var divStyle={
+        backgroundImage:'url(' + imgURL + ')'
+      }
+
         return(
         <div>
           <div className="row">
@@ -78,6 +115,10 @@ class App extends React.Component{
                 <div id="0" className = {this.state.tab0Active ? '': 'dormantTab'}><h1>0</h1></div>
                 <div id="1" className = {this.state.tab1Active ? '': 'dormantTab'}><h1>1</h1></div>
                 <div id="2" className = {this.state.tab2Active ? '': 'dormantTab'}><h1>2</h1></div>
+                <div id="3" className = {this.state.tab3Active ? '': 'dormantTab'}><h1>3</h1></div>
+                <div id="4" className = {this.state.tab4Active ? '': 'dormantTab'}><h1>4</h1></div>
+
+
                 </p>
               </div>
             </div>
