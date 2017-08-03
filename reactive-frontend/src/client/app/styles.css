@@ -1,0 +1,146 @@
+body
+	{
+		background-color:#000000;
+		background-image: radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg);
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+		white-space:inherit;
+		font-size:1vw;
+		text-overflow: ellipsis;
+  }
+@font-face {
+
+			font-family:"the_unseen";
+			src: url('../app/fonts/the-unseen/the unseen.ttf');
+
+}
+
+#contentContainer {
+	background-color: rgba(255, 255, 255, 0.5);
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+#bannerText{
+	text-shadow: 2px -1px 1px rgba(255,255,255, 0.9);
+	font-family:"the_unseen";
+	color: black;
+	right: 10px;
+  position: block;
+	z-index: -1;
+	font-weight: 600;
+	font-size: 4vw;
+
+
+
+	float: right;
+	height: 100px;
+	vertical-align: bottom;
+	background-image: url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/Banner2017_2.png);
+	background-size: cover;
+	background-position: center;
+	padding-left: 3em;
+	padding-right: 3em;
+	padding-bottom: 3em;
+	padding-top: 3em;
+
+}
+
+@media screen and (min-width: 500px) {
+	body{
+		  font: underline;
+	}
+}
+
+
+
+@media only screen and (max-width: 320px) {
+
+   body { font-size: 2em; }
+
+}
+p {
+    color: white;
+}
+
+button{
+	border-style: none;
+	text-align: right;
+	text-overflow: ellipsis;
+}
+
+.btn-flat {
+    color: white;
+}
+
+li {
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: right;
+	list-style-type: none;
+	font-size: 1vw;
+	display: block;
+
+
+
+}
+
+li:hover{
+	background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255, 0.8));
+
+}
+
+
+/*referring to div*/
+.sideMenu{
+  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255, 0.3));
+	text-align: right;
+
+}
+
+.sideMenuItem{
+	white-space: nowrap;
+	font-size:150%;
+
+	border-style: none;
+	font-weight: bold;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255, 0.5));
+	text-overflow: ellipsis;
+}
+
+
+.sideMenuItem:active{
+	text-overflow: ellipsis;
+}
+
+
+
+
+.MainMenu{
+    list-style-type: none;
+    color: rgba(255,255,255, 0.8);
+    border-top-style:solid;
+    border-bottom-style: solid;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-width: 2px;
+
+}
+
+
+.MenuItem {
+   display: inline;
+   padding: 10vw;
+   color: white;
+
+}
+
+.materials{
+    background-color: rgba(0,0,0, .5);
+    color: white;
+    padding: 1% 5% 1% 5%;
+
+}
