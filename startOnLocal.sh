@@ -1,3 +1,3 @@
 
-cd angular-frontend
+cd reactive-frontend
 node app.js
