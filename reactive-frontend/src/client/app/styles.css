@@ -14,7 +14,7 @@ body
 @font-face {
 
 			font-family:"the_unseen";
-			src: url('../app/fonts/the-unseen/the unseen.ttf');
+			src: url('../app/fonts/RINGM___.TTF');
 			/*font-family: "cardinal";
 			src: url('../app/fonts/Cardinal.ttf');*/
 }
@@ -42,7 +42,7 @@ body
 	float: right;
 	height: 100px;
 	vertical-align: bottom;
-	background-image: url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/Banner2017_2.png);
+	background-image: url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/Banner2017.png);
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
