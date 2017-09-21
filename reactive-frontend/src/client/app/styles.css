@@ -13,8 +13,8 @@ body
   }
 @font-face {
 
-			font-family:"the_unseen";
-			src: url('../app/fonts/RINGM___.TTF');
+			font-family:"AugustaShadow";
+			src: url('../app/fonts/Augusta-Shadow.ttf');
 			/*font-family: "cardinal";
 			src: url('../app/fonts/Cardinal.ttf');*/
 }
@@ -26,30 +26,26 @@ body
 }
 
 #bannerText{
-	text-shadow: 2px -2px 2px rgba(255,255,255, .9);
-	font-family:"the_unseen";
+	text-shadow: 2px -1px 1.5px rgba(51,22,1, .9);
+	font-family:"AugustaShadow";
 	color: black;
-	right: 10px;
-  position: block;
 	z-index: -1;
 	font-weight: 600;
 	font-size: 3vw;
-
-
-
-
-
 	float: right;
-	height: 100px;
 	vertical-align: bottom;
-	background-image: url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/Banner2017.png);
-	background-size: contain;
+	background-image: url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/Banner2017_1.png);
 	background-position: center;
 	background-repeat: no-repeat;
-	padding-left: 3em;
-	padding-right: 3em;
-	padding-bottom: 3em;
-	padding-top: 3.4em;
+	margin-top: .2em;
+
+	padding-top: 3vw;
+
+	padding-right: 1vw;
+	padding-left: 4.4em;
+
+  width: 50%;
+
 
 }
 

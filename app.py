@@ -9,7 +9,21 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    return redirect("http://ec2-54-153-124-128.us-west-1.compute.amazonaws.com:8081", code=302)
+
+@app.route('/flaskAngular')
+def flaskAngular():
     return redirect("http://ec2-54-153-124-128.us-west-1.compute.amazonaws.com:3000", code=302)
+
+@app.route('/flaskAngularlocal')
+def flaskAngularLocal():
+    return redirect("http://localhost:3000", code=302)
+
+@app.route('/reactive-local')
+def ReactiveFlask():
+    return redirect("http://localhost:8081", code=302)
+
+
 
 #	Myauthor = "Me"
 #	Myname = "You"
@@ -29,18 +43,6 @@ def signup():
     print("the email address is '" + email + "'")
     return redirect('/')
 
-
-@app.route('/flaskAngular')
-def flaskAngular():
- 	return redirect("http://ec2-54-153-124-128.us-west-1.compute.amazonaws.com:3000", code=302)
-
-@app.route('/flaskAngularlocal')
-def flaskAngularLocal():
-    return redirect("http://localhost:3000", code=302)
-
-@app.route('/gulls-shanty')
-def ReactiveFlask():
-    return redirect("http://ec2-54-153-124-128.us-west-1.compute.amazonaws.com:8081", code=302) 
 
 
 
