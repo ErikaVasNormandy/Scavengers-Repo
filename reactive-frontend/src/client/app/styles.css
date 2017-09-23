@@ -1,7 +1,7 @@
 body
 	{
 		background-color:#000000;
-		background-image: radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg);
+		/*background-image: radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg);*/
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -11,6 +11,9 @@ body
 		font-size:1vw;
 		text-overflow: ellipsis;
   }
+
+
+
 @font-face {
 
 			font-family:"AugustaShadow";
@@ -138,8 +141,8 @@ li:hover{
 
 }
 
-.materials{
-    background-color: rgba(0,0,0, .5);
+.materialsDiv{
+    background-color: rgba(255,255,255, .5);
     color: white;
     padding: 1% 5% 1% 5%;
 
