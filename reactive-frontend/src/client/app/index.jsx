@@ -12,7 +12,7 @@ var sectionStyle= {
 class App extends React.Component{
     constructor(props){
         super(props);
-        this.state = {currentTab: 0, tab0Active: true, tab1Active: false, tab2Active: false, tab3Active: false}
+        this.state = {currentTab: 0, tab0Active: true, tab1Active: false, tab2Active: false, tab3Active: false, tab4Active: false}
         this.setTab = this.setTab.bind(this);
     }
 
@@ -25,7 +25,9 @@ class App extends React.Component{
           this.setState({
             tab0Active: true,
             tab1Active: false,
-            tab2Active: false
+            tab2Active: false,
+            tab3Active: false,
+            tab4Active: false
           })
 
         }
@@ -36,7 +38,9 @@ class App extends React.Component{
           this.setState({
               tab0Active: false,
               tab1Active: true,
-              tab2Active: false
+              tab2Active: false,
+              tab3Active: false,
+              tab4Active: false
             })
         }
         if(this.state.currentTab == 2)
@@ -45,9 +49,37 @@ class App extends React.Component{
           this.setState({
               tab0Active: false,
               tab1Active: false,
-              tab2Active: true
+              tab2Active: true,
+              tab3Active: false,
+              tab4Active: false
             })
-          }
+        }
+        if(this.state.currentTab == 3)
+        {
+          console.log("Clicked on 3")
+          this.setState({
+              tab0Active: false,
+              tab1Active: false,
+              tab2Active: false,
+              tab3Active: true,
+              tab4Active: false
+
+            })
+        }
+
+        if(this.state.currentTab == 4)
+        {
+          console.log("Clicked on 4")
+          this.setState({
+              tab0Active: false,
+              tab1Active: false,
+              tab2Active: false,
+              tab3Active: false,
+              tab4Active: true
+
+            })
+        }
+
 
 
         this.state.currentContent = newTab;
@@ -63,37 +95,41 @@ class App extends React.Component{
                 <div className="sideMenu">
                   <ul>
                     <li>
-                      <button className="transparent btn-flat" onClick = {() => this.setTab(0)}>Comprehensive</button>
+                      <button className="transparent btn-flat" onClick = {() => this.setTab(0)}>Home</button>
                     </li>
 
                     <li >
-                      <button className=" transparent btn-flat" onClick = {() => this.setTab(1)} >Groceries</button>
+                      <button className=" transparent btn-flat" onClick = {() => this.setTab(1)} >Projects</button>
                     </li>
 
                     <li >
-                      <button className="transparent btn-flat" onClick = {() => this.setTab(2)}>Utilities</button>
+                      <button className="transparent btn-flat" onClick = {() => this.setTab(2)}>World Building</button>
+                    </li>
+                    <li >
+                      <button className="transparent btn-flat" onClick = {() => this.setTab(3)}>Useful</button>
+                    </li>
+                    <li >
+                      <button className="transparent btn-flat" onClick = {() => this.setTab(4)}>About</button>
                     </li>
                   </ul>
+                </div> //////sidemenu
+              </div> ////// col s2 m2 12
 
 
-                </div>
 
-              </div>
               <div className="col s9 m9 l9" id="contentContainer" >
-                <MaterialComponent id ="homeContent" className= {this.state.tab0Active ? '' : 'dormantTab'} > Home Content </MaterialComponent>
-                <MaterialComponent id ="Content1" className= {this.state.tab1Active ? '' : 'dormantTab'} > Tab 1 </MaterialComponent>
-                <MaterialComponent id ="Content2" className= {this.state.tab2Active ? '' : 'dormantTab'}>Tab 2</MaterialComponent>
-
-                  // <div id = "0" className = {this.state.tab0Active ? '' : 'dormantTab'}>
-                  //                Comprehensive
-                  // </div>
-                  // <div id = "1" className = {this.state.tab1Active ? '' : 'dormantTab'}>Groceries</div>
-                  // <div id = "2" className = {this.state.tab2Active ? '' : 'dormantTab'}>Utilities</div>
+                <div id ="Content0" className= {this.state.tab0Active ? '' : 'dormantTab'} > 0000000<MaterialComponent>Hello hello </MaterialComponent> </div>
+                <div id ="Content1" className= {this.state.tab1Active ? '' : 'dormantTab'}> Tab 1 <MaterialComponent>Hello hello </MaterialComponent></div>
+                <div id ="Content2" className= {this.state.tab2Active ? '' : 'dormantTab'}>Tab 2<MaterialComponent>Hello hello </MaterialComponent></div>
+                <div id ="Content3" className= {this.state.tab3Active ? '' : 'dormantTab'}> fdafdas<MaterialComponent>Hello hello </MaterialComponent></div>
+                <div id ="Content4" className= {this.state.tab4Active ? '' : 'dormantTab'}> Tab4<MaterialComponent>Hello hellTab4Tab4Tab4Tab4Tab4Tab4o </MaterialComponent></div>
 
               </div>
 
-            </div>
-          </div>)
+            </div> ////// class row
+          </div>
+
+        )
     }
 
 }
