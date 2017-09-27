@@ -29,7 +29,6 @@ class App extends React.Component{
             tab3Active: false,
             tab4Active: false
           })
-
         }
 
         if(this.state.currentTab == 1)

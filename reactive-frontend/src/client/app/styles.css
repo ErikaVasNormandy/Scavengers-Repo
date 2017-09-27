@@ -11,7 +11,9 @@ body
 		font-size:1vw;
 		text-overflow: ellipsis;
   }
-
+#overlay{
+	z-index: -1;
+	}
 
 
 @font-face {
@@ -47,7 +49,7 @@ body
 	padding-right: 1vw;
 	padding-left: 4.4em;
 
-  width: 50%;
+  width: 100%;
 
 
 }
