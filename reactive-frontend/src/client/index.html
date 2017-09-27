@@ -32,20 +32,20 @@
 
 
 $(function() {
+  $("#overlay").css({opacity: .8, "background": images[currentImage], "background-repeat": "no-repeat", "background-size": "cover"}).fadeTo(4000, 0.1);
 
 
 
-  $("#overlay").css({"background": images[currentImage], "background-repeat": "no-repeat", "background-size": "cover"});
   // $("$overlay").fadeTo('slow', 0.3, function() {  $(this).css('background-image', images[currentImage+1] ) } ).fadeTo('slow', 1);
   setInterval(function(){
     currentImage = Math.floor(Math.random() * images.length)
     if(currentImage >=images.length){
       currentImage-=1
     }
-
     console.log(currentImage)
+
 ///start out with this opacity and then go towards that other one
-    $('#overlay').css({ opacity:0.01, "background": images[currentImage], "background-repeat": "no-repeat", "background-size": "cover"}).fadeTo(4000, .8)
+    $('#overlay').css({ opacity:0.1, "background": images[currentImage], "background-repeat": "no-repeat", "background-size": "cover"}).fadeTo(4000, .8)
     currentImage+=1
   }, 7000);
 
