@@ -6,11 +6,11 @@ class materialComponent extends React.Component {
   constructor(props) {
     super(props);
   }
-
   render(){
     return(
-      <div >
-        <strong>Hello materials div!</strong>Hello Materials Div!
+      <div>
+        <h2>Default Content Title</h2>
+        https://stackoverflow.com/questions/46360567/error-npm-is-known-not-to-run-on-node-js-v4-2-6
       </div>
     )
   }

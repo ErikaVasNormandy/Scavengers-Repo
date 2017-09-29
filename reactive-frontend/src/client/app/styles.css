@@ -25,20 +25,14 @@ body
 			background-repeat: no-repeat;
 			background-size: cover;
 			z-index: -1;
-
-
-
 			background-image: radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg);
 		}
 
 
 
 @font-face {
-
 			font-family:"AugustaShadow";
 			src: url('../app/fonts/Augusta-Shadow.ttf');
-			/*font-family: "cardinal";
-			src: url('../app/fonts/Cardinal.ttf');*/
 }
 
 #contentContainer {
@@ -60,15 +54,10 @@ body
 	background-position: center;
 	background-repeat: no-repeat;
 	margin-top: .2em;
-
 	padding-top: 3vw;
-
 	padding-right: 1vw;
 	padding-left: 4.4em;
-
   width: 100%;
-
-
 }
 
 @media screen and (min-width: 500px) {
@@ -77,13 +66,10 @@ body
 	}
 }
 
-
-
 @media only screen and (max-width: 320px) {
-
    body { font-size: 2em; }
-
 }
+
 p {
     color: white;
 }
@@ -96,6 +82,7 @@ button{
 
 .btn-flat {
     color: white;
+		
 }
 
 li {

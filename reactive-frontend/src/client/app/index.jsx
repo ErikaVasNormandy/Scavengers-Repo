@@ -93,21 +93,21 @@ class App extends React.Component{
               <div className="col s2 m2 l2">
                 <div className="sideMenu">
                   <ul>
-                    <li>
+                    <li className="sideMenuItem">
                       <button className="transparent btn-flat" onClick = {() => this.setTab(0)}>Home</button>
                     </li>
 
-                    <li >
+                    <li className="sideMenuItem">
                       <button className=" transparent btn-flat" onClick = {() => this.setTab(1)} >Projects</button>
                     </li>
 
-                    <li >
+                    <li className="sideMenuItem">
                       <button className="transparent btn-flat" onClick = {() => this.setTab(2)}>World Building</button>
                     </li>
-                    <li >
+                    <li className="sideMenuItem">
                       <button className="transparent btn-flat" onClick = {() => this.setTab(3)}>Useful</button>
                     </li>
-                    <li >
+                    <li className="sideMenuItem">
                       <button className="transparent btn-flat" onClick = {() => this.setTab(4)}>About</button>
                     </li>
                   </ul>
@@ -117,11 +117,11 @@ class App extends React.Component{
 
 
               <div className="col s9 m9 l9" id="contentContainer" >
-                <div id ="Content0" className= {this.state.tab0Active ? '' : 'dormantTab'} > 0000000<MaterialComponent>Hello hello </MaterialComponent> </div>
-                <div id ="Content1" className= {this.state.tab1Active ? '' : 'dormantTab'}> Tab 1 <MaterialComponent>Hello hello </MaterialComponent></div>
-                <div id ="Content2" className= {this.state.tab2Active ? '' : 'dormantTab'}>Tab 2<MaterialComponent>Hello hello </MaterialComponent></div>
-                <div id ="Content3" className= {this.state.tab3Active ? '' : 'dormantTab'}> fdafdas<MaterialComponent>Hello hello </MaterialComponent></div>
-                <div id ="Content4" className= {this.state.tab4Active ? '' : 'dormantTab'}> Tab4<MaterialComponent>Hello hellTab4Tab4Tab4Tab4Tab4Tab4o </MaterialComponent></div>
+                <div id ="Content0" className= {this.state.tab0Active ? '' : 'dormantTab'}><h1>Home</h1><MaterialComponent>Hello hello </MaterialComponent> </div>
+                <div id ="Content1" className= {this.state.tab1Active ? '' : 'dormantTab'}><h1>Projects</h1><MaterialComponent>Hello hello </MaterialComponent></div>
+                <div id ="Content2" className= {this.state.tab2Active ? '' : 'dormantTab'}><h1>World Building</h1><MaterialComponent>Hello hello </MaterialComponent></div>
+                <div id ="Content3" className= {this.state.tab3Active ? '' : 'dormantTab'}><h1>Useful</h1><MaterialComponent>Hello hello </MaterialComponent></div>
+                <div id ="Content4" className= {this.state.tab4Active ? '' : 'dormantTab'}><h1>About</h1><MaterialComponent>Hello hellTab4Tab4Tab4Tab4Tab4Tab4o </MaterialComponent></div>
 
               </div>
 
