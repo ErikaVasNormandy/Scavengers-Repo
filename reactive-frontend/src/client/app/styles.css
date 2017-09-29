@@ -11,9 +11,26 @@ body
 		font-size:1vw;
 		text-overflow: ellipsis;
   }
-#overlay{
-	z-index: -1;
+#overlay0 {
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: -1;
+		background-image: radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg);
 	}
+#overlay1 {
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			z-index: -1;
+
+
+
+			background-image: radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg);
+		}
+
 
 
 @font-face {

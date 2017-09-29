@@ -9,51 +9,88 @@
     <script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
     <script type="text/javascript">
+      var images = new Array(
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/Snapdragon-Color-Meaning.jpg)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/maxresdefault.jpg)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/M2T6aUy.jpg)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/thumb-1920-735771.png)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/tumblr_mvt4dfUVx71smn4pqo9_1280.jpg)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/2030_over_the_garden_wall.jpg)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/87cbb3248a40f91479e8ab7da60cb09e.jpg)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/jwHdoTn.png)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/Over-the-Garden-Wall-S01E02-720p-HDTVSeriesdl.com_00_02_54_00000.png)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/efcb4c0e828c1809e38b9cdc02aea227.png)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/Dx5LJoH.jpg)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg)'
+      );
 
-    var images = new Array(
-      'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/Snapdragon-Color-Meaning.jpg)',
-      'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/maxresdefault.jpg)',
-      'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/M2T6aUy.jpg)',
-      'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/thumb-1920-735771.png)',
-      'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/tumblr_mvt4dfUVx71smn4pqo9_1280.jpg)',
-      'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/2030_over_the_garden_wall.jpg)',
-      'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/87cbb3248a40f91479e8ab7da60cb09e.jpg)',
-      'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/jwHdoTn.png)',
-      'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/Over-the-Garden-Wall-S01E02-720p-HDTVSeriesdl.com_00_02_54_00000.png)',
-      'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg)',
-      'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/efcb4c0e828c1809e38b9cdc02aea227.png)',
-      'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/Dx5LJoH.jpg)',
-      'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg)'
-    );
+      var images2 = new Array(
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/Snapdragon-Color-Meaning.jpg)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/maxresdefault.jpg)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/M2T6aUy.jpg)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/thumb-1920-735771.png)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/tumblr_mvt4dfUVx71smn4pqo9_1280.jpg)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/2030_over_the_garden_wall.jpg)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/87cbb3248a40f91479e8ab7da60cb09e.jpg)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/jwHdoTn.png)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/Over-the-Garden-Wall-S01E02-720p-HDTVSeriesdl.com_00_02_54_00000.png)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/efcb4c0e828c1809e38b9cdc02aea227.png)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/Dx5LJoH.jpg)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg)'
+      );
+      var currentImage = 0;
+      var currentImage2 = 0;
+      var counter = 0;
+      function changeBackgroundImages(){
+        img1Fade()
+        setTimeout(img2Fade, 5000);
 
-    var currentImage = 0;
-    $("#overlay").css({"background": images[currentImage], "background-repeat": "no-repeat", "background-size": "cover"});
+      }
 
+      function img1Fade(){
+        counter = counter + 1;
+        console.log("counter is ", counter)
 
-
-$(function() {
-  $("#overlay").css({opacity: .8, "background": images[currentImage], "background-repeat": "no-repeat", "background-size": "cover"}).fadeTo(4000, 0.1);
-
-
-
-  // $("$overlay").fadeTo('slow', 0.3, function() {  $(this).css('background-image', images[currentImage+1] ) } ).fadeTo('slow', 1);
-  setInterval(function(){
-    currentImage = Math.floor(Math.random() * images.length)
-    if(currentImage >=images.length){
-      currentImage-=1
-    }
-    console.log(currentImage)
-
-///start out with this opacity and then go towards that other one
-    $('#overlay').css({ opacity:0.1, "background": images[currentImage], "background-repeat": "no-repeat", "background-size": "cover"}).fadeTo(4000, .8)
-    currentImage+=1
-  }, 7000);
+        currentImage = Math.floor(Math.random() * images.length)
+        console.log(images[currentImage])
+        $('#overlay0').fadeOut(5000, function(){$('#overlay0').css({"opacity": 0.6, "background": images[currentImage], "background-repeat": "no-repeat", "background-size": "cover"})});
+        $('#overlay1').fadeIn(5000);
+        if (currentImage >= images.length - 1) {
+           currentImage -= images.length;
+       };
+      }
 
 
-  });
+      function img2Fade(){
+        currentImage2 = Math.floor(Math.random() * images2.length)
+              console.log(images2[currentImage2])
+        $('#overlay1').fadeOut(5000, function(){$('#overlay1').css({"opacity": 0.6, "background": images2[currentImage2], "background-repeat": "no-repeat", "background-size": "cover"})});
+        $('#overlay0').fadeIn(5000);
+        if (currentImage2 >= images2.length - 1) {
+            currentImage2 -= images2.length;
+        };
+}
+$(document).ready(function(){
 
-
-
+    setInterval(changeBackgroundImages, 60000);
+});
+////brought to you by:::
+//https://stackoverflow.com/questions/18346577/cross-fade-background-image-with-jquery
+//
+//
+//       $(function() {
+//   // $("$overlay").fadeTo('slow', 0.3, function() {  $(this).css('background-image', images[currentImage+1] ) } ).fadeTo('slow', 1);
+//         setInterval(function(){
+//           currentImage = Math.floor(Math.random() * images.length)
+//           if(currentImage >=images.length){
+//             currentImage-=1
+//           }
+// ///start out with this opacity and then go towards that other one
+//     // $('#overlay0').css({ opacity:0, "background": images[currentImage], "background-repeat": "no-repeat", "background-size": "cover"}).fadeTo(4000, .25)
+//         }, 10000);
+//       });
 
     </script>
 
@@ -73,16 +110,22 @@ $(function() {
 
           <div id="app" style="display:inline-block;" >
               <script src= "/src/client/public/bundle.js" type="text/javascript"></script>
-
-
-
                 Jquery backgrounds
                 https://css-tricks.com/forums/topic/change-body-background-every-10-sec/
-                 https://stackoverflow.com/questions/34226076/why-is-my-onclick-being-called-on-render-react-js
+                https://stackoverflow.com/questions/34226076/why-is-my-onclick-being-called-on-render-react-js
           </div>
-          <img id = "overlay" style="height: 100vh; width: 100vw; position: absolute;left:0px; top: 0px;">
-        </img>
 
+          <div id ="overlay0" style="height: 100vh; width: 100vw; position: absolute;left:0px; top: 0px;"></div>
+          <div id= "overlay1" style=" height: 100vh; width: 100vw; position: absolute;left:0px; top: 0px;"/></div>
+          <!-- <div id = "overlay2" style=" height: 100vh; width: 100vw; position: absolute;left:0px; top: 0px;"> -->
+
+
+          <!-- <div id="cf">
+            <img src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg" />
+            <img src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/87cbb3248a40f91479e8ab7da60cb09e.jpg" />
+            <img src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/87cbb3248a40f91479e8ab7da60cb09e.jpg" />
+
+          </div> -->
 
   </body>
 
