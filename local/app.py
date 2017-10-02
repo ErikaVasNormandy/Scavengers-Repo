@@ -1,1 +1,0 @@
-/home/apps/myapp/app.py
