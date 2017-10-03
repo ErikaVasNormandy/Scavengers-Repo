@@ -1,7 +1,12 @@
 import React from 'react';
 import {render} from 'react-dom';
 import MaterialComponent from './materials.jsx';
-//import styles from '../../../../angular-frontend/styles.css';
+import HomeComponent from './components/HomeComponent.jsx';
+import ProjectComponent from './components/ProjectComponent.jsx';
+import UsefulBitsComponent from './components/UsefulBitsComponent.jsx';
+import WorldBuildingComponent from './components/WorldBuildingComponent.jsx';
+
+
 
 import styles from '../app/styles.css';
 
@@ -117,10 +122,10 @@ class App extends React.Component{
 
 
               <div className="col s9 m9 l9" id="contentContainer" >
-                <div id ="Content0" className= {this.state.tab0Active ? '' : 'dormantTab'}><h1>Home</h1><MaterialComponent>Hello hello </MaterialComponent> </div>
-                <div id ="Content1" className= {this.state.tab1Active ? '' : 'dormantTab'}><h1>Projects</h1><MaterialComponent>Hello hello </MaterialComponent></div>
-                <div id ="Content2" className= {this.state.tab2Active ? '' : 'dormantTab'}><h1>World Building</h1><MaterialComponent>Hello hello </MaterialComponent></div>
-                <div id ="Content3" className= {this.state.tab3Active ? '' : 'dormantTab'}><h1>Useful</h1><MaterialComponent>Hello hello </MaterialComponent></div>
+                <div id ="Content0" className= {this.state.tab0Active ? '' : 'dormantTab'}><h1>Home</h1><HomeComponent>Hello hello </HomeComponent> </div>
+                <div id ="Content1" className= {this.state.tab1Active ? '' : 'dormantTab'}><h1>Projects</h1><ProjectComponent>Hello hello </ProjectComponent></div>
+                <div id ="Content2" className= {this.state.tab2Active ? '' : 'dormantTab'}><h1>World Building</h1><WorldBuildingComponent>Hello hello </WorldBuildingComponent></div>
+                <div id ="Content3" className= {this.state.tab3Active ? '' : 'dormantTab'}><h1>Useful</h1><UsefulBitsComponent>CONTENT HERE</UsefulBitsComponent></div>
                 <div id ="Content4" className= {this.state.tab4Active ? '' : 'dormantTab'}><h1>About</h1><MaterialComponent>Hello hellTab4Tab4Tab4Tab4Tab4Tab4o </MaterialComponent></div>
 
               </div>
