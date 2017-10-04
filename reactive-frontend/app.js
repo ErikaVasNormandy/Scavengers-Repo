@@ -8,6 +8,6 @@ app.get('/', function(req, res){
 	res.sendFile(__dirname + '/src/client/index.html');
 });
 
-app.listen(80, function(req, res) {
+app.listen(8081, function(req, res) {
 	console.log(__dirname + '/src/client/index.html');
 });
