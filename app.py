@@ -11,7 +11,7 @@ app = Flask(__name__)
 def index():
     return redirect("http://scavengers-repo.com:8081")
    #return redirect("http://ec2-54-153-124-128.us-west-1.compute.amazonaws.com:8081", code=302)
-    
+
 
 
 @app.route('/flaskAngular')
@@ -24,7 +24,7 @@ def flaskAngularLocal():
 
 @app.route('/reactive-local')
 def ReactiveFlask():
-    return redirect("http://localhost:8081", code=302)
+    return redirect("http://localhost:80", code=302)
 
 
 
