@@ -36,7 +36,8 @@ body
 }
 
 #contentContainer {
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(0, 0, 0, 0.7);
+	color: rgba(255,255,255,.8);
 	padding-left: 5%;
 	padding-right: 5%;
 }
@@ -44,7 +45,6 @@ body
 #bannerText{
 	text-shadow: 2px -1px 1.5px rgba(51,22,1, .9);
 	font-family:"AugustaShadow";
-	color: black;
 	z-index: -1;
 	font-weight: 600;
 	font-size: 3vw;
@@ -70,9 +70,7 @@ body
    body { font-size: 2em; }
 }
 
-p {
-    color: white;
-}
+
 
 button{
 	border-style: none;
@@ -81,8 +79,8 @@ button{
 }
 
 .btn-flat {
-    color: white;
-		
+    color: black;
+
 }
 
 li {
@@ -158,4 +156,15 @@ li:hover{
 }
 .activeTab{
     display: inline;
+}
+
+
+.displayWebsiteIframe{
+
+
+	-moz-transform-origin: 0 0;
+
+	-o-transform-origin: 0 0;
+
+	-webkit-transform-origin: 0 0;
 }
