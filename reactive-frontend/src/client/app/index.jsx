@@ -97,26 +97,26 @@ class App extends React.Component{
               <div className="col s2 m2 l2">
                 <div className="sideMenu">
                   <ul>
-                    <li className="sideMenuItem">
-                      <button className="transparent btn-flat" onClick = {() => this.setTab(0)}>Home</button>
+                    <li>
+                      <button className="sideMenuItem transparent " onClick = {() => this.setTab(0)}>Home</button>
                     </li>
 
-                    <li className="sideMenuItem">
-                      <button className=" transparent btn-flat" onClick = {() => this.setTab(1)} >Projects</button>
+                    <li>
+                      <button className="sideMenuItem transparent" onClick = {() => this.setTab(1)} >Projects</button>
                     </li>
 
-                    <li className="sideMenuItem">
-                      <button className="transparent btn-flat" onClick = {() => this.setTab(2)}>World Building</button>
+                    <li>
+                      <button className="sideMenuItem transparent " onClick = {() => this.setTab(2)}>World Building</button>
                     </li>
-                    <li className="sideMenuItem">
-                      <button className="transparent btn-flat" onClick = {() => this.setTab(3)}>Useful</button>
+                    <li>
+                      <button className="sideMenuItem transparent " onClick = {() => this.setTab(3)}>Useful</button>
                     </li>
-                    <li className="sideMenuItem">
-                      <button className="transparent btn-flat" onClick = {() => this.setTab(4)}>About</button>
+                    <li>
+                      <button className="sideMenuItem transparent " onClick = {() => this.setTab(4)}>About</button>
                     </li>
                   </ul>
-                </div> //////sidemenu
-              </div> ////// col s2 m2 12
+                </div>
+              </div>
 
 
 
@@ -129,7 +129,7 @@ class App extends React.Component{
 
               </div>
 
-            </div> ////// class row
+            </div>
           </div>
 
         )

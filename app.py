@@ -24,7 +24,7 @@ def flaskAngularLocal():
 
 @app.route('/reactive-local')
 def ReactiveFlask():
-    return redirect("http://localhost:80", code=302)
+    return redirect("http://localhost:8081", code=302)
 
 
 

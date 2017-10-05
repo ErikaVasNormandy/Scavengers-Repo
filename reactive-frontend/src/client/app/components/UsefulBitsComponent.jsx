@@ -52,4 +52,15 @@ export default UsefulBitsComponent;
          </li>
 
  </ul>
+
+ Jquery backgrounds
+ https://css-tricks.com/forums/topic/change-body-background-every-10-sec/
+ https://stackoverflow.com/questions/34226076/why-is-my-onclick-being-called-on-render-react-js
+ https://stackoverflow.com/questions/12701259/how-to-make-a-node-js-application-run-permanently
+ https://www.liquidweb.com/kb/how-to-install-node-js-via-nvm-node-version-manager-on-ubuntu-14-04-lts/
+ https://stackoverflow.com/questions/12701259/how-to-make-a-node-js-application-run-permanently
+ https://stackoverflow.com/questions/26245942/how-do-i-leave-node-js-server-on-ec2-running-forever
+ https://www.npmjs.com/package/pm2
+
+ 
  */

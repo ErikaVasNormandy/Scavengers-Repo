@@ -9,9 +9,13 @@ class ProjectComponent extends React.Component {
   render(){
     return(
       <div>
-        <h2>Home</h2>
-        https://stackoverflow.com/questions/46360567/error-npm-is-known-not-to-run-on-node-js-v4-2-6
-
+        <h2>Projects</h2>
+        <p>Mostly Github links for now, planning on categorizing them more </p>
+        https://github.com/ErikaVasNormandy
+        <ul>
+          <li>"https://github.com/ErikaVasNormandy/Scavengers-Repo"</li>
+            <li>"https://github.com/ErikaVasNormandy/DeAnza-Ethical-Hacking-Summer2016"</li>
+        </ul>
 
       </div>
     )
