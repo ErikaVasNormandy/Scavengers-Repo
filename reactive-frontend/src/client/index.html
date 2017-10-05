@@ -6,6 +6,7 @@
     <link href = '../../src/client/app/styles.css' rel='stylesheet' type='text/css'>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
     <script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
     <script type="text/javascript">
@@ -69,10 +70,12 @@
         $('#overlay1').fadeOut('slow', function(){$('#overlay1').css({"opacity": 0.8, "background": images2[currentImage2], "background-repeat": "no-repeat", "background-size": "cover"})});
         $('#overlay0').fadeIn('slow');
         if (currentImage2 >= images2.length - 1) {
-            currentImage2 -= Math.floor(Math.random() * images.length/2)
+            currentImage2 -= Math.floor(Math.random() * images2.length/2)
         };
 }
 $(document).ready(function(){
+    var randomVar=Math.floor(Math.random() * images.length);
+  $('#overlay1').css({"opacity": 0.8, "background": images[randomVar], "background-repeat": "no-repeat", "background-size": "cover"})
   $('.sideMenu').css(  { "margin-top": $('#contentContainer').css('height')}
   )
   // console.log($('#banner').css('height'))
