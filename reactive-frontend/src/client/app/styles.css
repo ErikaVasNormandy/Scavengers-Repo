@@ -104,7 +104,7 @@ button{
 	min-height: 4vw;
 	min-width: 15vw;
 
-	background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0, 0.8));
+	background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0, 1));
 	text-overflow: ellipsis;
 	text-align: right;
 
