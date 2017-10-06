@@ -17,21 +17,24 @@ class UsefulBitsComponent extends React.Component {
 
     const UsefulBitsArray= data.map(dataList => {
       // console.log(dataList.link);
+
       return(
-        <div className="card horizontal">
-          <div className="card-image"> <iframe className = "displayWebsiteIframe"src = {dataList.link}></iframe></div>
+
+        <div key={dataList.id} className="card horizontal">
+          <div  className="card-image"> <img src = {dataList.image}></img></div>
           <div className="card-stacked">
               <div className="card-content"> <p>{dataList.site}</p></div>
-              <div className="card-action">  <a href={dataList.link}>{dataList.site}</a></div>
+              <div className="card-action">  <a href={dataList.link}>{dataList.link}</a></div>
           </div>
         </div>
+
       );
 
     });
 
     return(
       <div>
-        <h2>Useful Bits</h2>
+        <h1>Useful Bits</h1>
 
 
          {UsefulBitsArray}
@@ -62,5 +65,5 @@ export default UsefulBitsComponent;
  https://stackoverflow.com/questions/26245942/how-do-i-leave-node-js-server-on-ec2-running-forever
  https://www.npmjs.com/package/pm2
 
- 
+
  */

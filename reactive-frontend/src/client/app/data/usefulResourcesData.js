@@ -2,6 +2,7 @@ export default [
   {
     id:0,
     site: 'stackoverflow',
+    image: 'https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded',
     link: 'https://stackoverflow.com/questions/46360567/error-npm-is-known-not-to-run-on-node-js-v4-2-6'
   },
   {
