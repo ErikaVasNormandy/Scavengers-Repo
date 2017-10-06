@@ -9,8 +9,7 @@ class WorldBuildingComponent extends React.Component {
   render(){
     return(
       <div>
-        <h2>Home</h2>
-        https://stackoverflow.com/questions/46360567/error-npm-is-known-not-to-run-on-node-js-v4-2-6
+        <h1>World Building</h1>
 
 
       </div>
