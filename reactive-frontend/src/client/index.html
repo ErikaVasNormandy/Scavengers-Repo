@@ -56,7 +56,7 @@
 
         currentImage = Math.floor(Math.random() * images.length)
         console.log(images[currentImage])
-        $('#overlay0').fadeOut('slow', function(){$('#overlay0').css({"opacity": 0.8, "background": images[currentImage], "background-repeat": "no-repeat", "background-size": "cover", "background-attachment": "fixed"})});
+        $('#overlay0').fadeOut('slow', function(){$('#overlay0').css({"opacity": 0.8, "background": images[currentImage], "background-repeat": "no-repeat", "background-size": "cover", "background-attachment": "fixed", "position": "fixed"})});
         $('#overlay1').fadeIn('slow');
         if (currentImage >= images.length - 1) {
            currentImage -= Math.floor(Math.random() * images.length/2)
@@ -67,7 +67,7 @@
       function img2Fade(){
         currentImage2 = Math.floor(Math.random() * images2.length)
               console.log(images2[currentImage2])
-        $('#overlay1').fadeOut('slow', function(){$('#overlay1').css({"opacity": 0.8, "background": images2[currentImage2], "background-repeat": "no-repeat", "background-size": "cover", "background-attachment": "fixed"})});
+        $('#overlay1').fadeOut('slow', function(){$('#overlay1').css({"opacity": 0.8, "background": images2[currentImage2], "background-repeat": "no-repeat", "background-size": "cover", "background-attachment": "fixed", "position": "fixed"})});
         $('#overlay0').fadeIn('slow');
         if (currentImage2 >= images2.length - 1) {
             currentImage2 -= Math.floor(Math.random() * images2.length/2)

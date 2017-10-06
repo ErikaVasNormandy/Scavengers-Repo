@@ -12,6 +12,7 @@ body
 
   }
 #overlay0 {
+		height: 1vh;
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -20,6 +21,7 @@ body
 		/*background-image: radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg);*/
 	}
 #overlay1 {
+	height: 1vh;
 			background-attachment: fixed;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -36,6 +38,8 @@ body
 }
 
 #contentContainer {
+	max-height: 1000px;
+	overflow-y: scroll;
 	background-color: rgba(0, 0, 0, 0.7);
 	color: rgba(255,255,255,.8);
 	margin-left: 5vw;
