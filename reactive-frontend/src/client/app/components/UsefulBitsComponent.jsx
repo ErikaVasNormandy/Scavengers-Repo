@@ -20,13 +20,22 @@ class UsefulBitsComponent extends React.Component {
 
       return(
 
-        <div key={dataList.id} className="card horizontal">
-          <div  className="card-image"> <img src = {dataList.image}></img></div>
-          <div className="card-stacked">
-              <div className="card-content"> <p>{dataList.site}</p></div>
-              <div className="card-action">  <a href={dataList.link}>{dataList.link}</a></div>
-          </div>
-        </div>
+          <ul className="collection" key = {dataList.id}>
+            <li className="collection-item avatar" style={{background: 'rgba(255,255,255, 0.5'}} >
+              <img src={dataList.image} className='circle'></img>
+                <h3 className="title">{dataList.link}</h3>
+                <p>Brief Description
+
+                     <br></br>
+                  Link: {dataList.link}
+                </p>
+                <a href="#!" className="secondary-content"><i className="material-icons">grade</i></a>
+            </li>
+
+  </ul>
+
+
+
 
       );
 
