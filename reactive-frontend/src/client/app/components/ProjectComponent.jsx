@@ -20,18 +20,25 @@ class ProjectComponent extends React.Component {
 
             <div className="col m4">
                <div className="card sticky-action">
+
                     <div className="card-image">
                         <img className="activator" src="https://i.pinimg.com/736x/8c/a7/21/8ca721aa046919d68bfa3187f548c539--spell-books-open-book.jpg"></img>
-                            <span className="card-title" style={{width:100}}>Sample1</span>
                     </div>
+
                     <div className="card-content">
-                               <p>A collection of pages from my Cybersecurity notes over the years</p>
+                        <span className="activator">A collection of pages from my Cybersecurity notes over the years</span><i className="material-icons right">Show</i>
+                        <a href="">Github Link: </a>
                     </div>
-                    <div className="card-action">
-                          <p>card action</p>
+
+                    <div className="card-reveal">
+                      <span className="card-title grey-text text-darken-4">More Information:<i className="material-icons right">Click to Close</i></span>
+                      <p>Here is more information </p>
                     </div>
-                      <div className="card-reveal"><p></p></div>
+
                 </div>
+
+
+
             </div>
 
             <div className="col m4">
