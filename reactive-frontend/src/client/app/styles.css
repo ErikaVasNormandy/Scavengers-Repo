@@ -175,6 +175,9 @@ body.card.horizontal .card-image img{
 body.activator{
 	width: 505;
 }
+body.card{
+	display: inline-block;
+}
 
 .displayWebsiteIframe{
 	height: 50%;
