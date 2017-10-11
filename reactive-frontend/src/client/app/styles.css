@@ -174,13 +174,17 @@ body.card.horizontal .card-image img{
 body.activator{
 	width: 505;
 }
-body.card{
-	display: inline-block;
+
+
+.card-image>img{
+
+
+	  overflow: hidden;
+
 }
+
 
 .displayWebsiteIframe{
 	height: 50%;
-	-moz-transform-origin: 0 0;
-	-o-transform-origin: 0 0;
-	-webkit-transform-origin: 0 0;
+
 }

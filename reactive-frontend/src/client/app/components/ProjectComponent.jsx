@@ -26,51 +26,73 @@ class ProjectComponent extends React.Component {
                     </div>
 
                     <div className="card-content">
-                        <span className="activator">A collection of pages from my Cybersecurity notes over the years</span><i className="material-icons right">Show</i>
-                        <a href="">Github Link: </a>
+                        <span className="activator">A collection of pages from my Cybersecurity notes over the years</span><i className="material-icons right"></i>
+
+                        <p><a >Github Link: </a></p>
                     </div>
 
                     <div className="card-reveal">
-                      <span className="card-title grey-text text-darken-4">More Information:<i className="material-icons right">Click to Close</i></span>
-                      <p>Here is more information </p>
+                      <span className="card-title grey-text text-darken-4">Details: <p>Pages from each notebook uploaded</p>
+
+                      <i className="material-icons right"> Click to Close</i></span>
                     </div>
 
+            </div>
+          </div>
+
+
+          <div className="col m4">
+             <div className="card sticky-action">
+
+                  <div className="card-image">
+                    <span className="card-title activator grey-text text-darken-4">Spellbook Materials</span>
+                      <img className="activator " src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/BaseBot.png"></img>
+                  </div>
+
+                  <div className="card-content">
+                      <span className="activator">Website for demonstrating full-stack Web Development </span><i className="material-icons right"></i>
+
+                      <p><a >Github Link: </a></p>
+                  </div>
+
+                  <div className="card-reveal">
+                    <span className="card-title grey-text text-darken-4">Details: <p>All the way from AWS and Gunicorn to Flask and NodeJS</p>
+
+                    <i className="material-icons right"> Click to Close</i></span>
+                  </div>
+
+                </div>
+            </div>
+            <div className="col m4">
+               <div className="card sticky-action">
+
+                    <div className="card-image">
+                        <img className="activator" src=""></img>
+                    </div>
+
+                    <div className="card-content">
+                        <span className="activator">A collection of pages from my Cybersecurity notes over the years</span><i className="material-icons right"></i>
+
+                        <p><a >Github Link: </a></p>
+                    </div>
+
+                    <div className="card-reveal">
+                      <span className="card-title grey-text text-darken-4">Details: <p>Pages from each notebook uploaded</p>
+
+                      <i className="material-icons right"> Click to Close</i></span>
+                    </div>
+
+                  </div>
                 </div>
 
 
 
-            </div>
-
-            <div className="col m4">
-               <div className="card sticky-action">
-                      <div className="card-image ">
-                        <img className="activator"src="http://www.ilikewallpaper.net/ipad-wallpapers/download/2268/Square-Pattern-ipad-wallpaper-ilikewallpaper_com.jpg"></img>
-                            <span className="card-title" style={{width:100}}>Sample2</span>
-                      </div>
-                      <div className="card-content">
-                          <p></p>
-                      </div>
-                      <div className="card-action">
-                          <a href="#">This is a link</a>
-                      </div>
-                        <div className="card-reveal">...</div>
-              </div>
-            </div>
 
 
 
         </div>
 
-
-
-
-        <ul>
-
           <li>"https://github.com/ErikaVasNormandy/Scavengers-Repo"</li>
-          <li>"https://github.com/ErikaVasNormandy/DeAnza-Ethical-Hacking-Summer2016"</li>
-        </ul>
-
-
 
 
       </div>
