@@ -78,7 +78,7 @@
 $(document).ready(function(){
     var randomVar=Math.floor(Math.random() * images.length);
   $('#overlay1').css({"opacity": 0.8, "background": images[randomVar], "background-repeat": "no-repeat", "background-size": "cover"})
-  $('.sideMenu').css(  { "margin-top": $('#contentContainer').css('height')}
+  $('.sideMenu').css(  { "margin-top": $('#banner').css('height')}
   )
   // console.log($('#banner').css('height'))
     setInterval(changeBackgroundImages, 60000);
