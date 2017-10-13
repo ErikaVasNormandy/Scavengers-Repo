@@ -6,16 +6,18 @@
 
     <title>Scavengers' Repo</title>
     <link href = '../../src/client/app/styles.css' rel='stylesheet' type='text/css'>
-
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
     <script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+
+
     <script type="text/javascript">
       var images = new Array(
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/Snapdragon-Color-Meaning.jpg)',
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/maxresdefault.jpg)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/thumb-1920-625703.jpg)',
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/M2T6aUy.jpg)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/a5432863572ed79c0972569d213dc149.png)',
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/thumb-1920-735771.png)',
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/tumblr_mvt4dfUVx71smn4pqo9_1280.jpg)',
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/2030_over_the_garden_wall.jpg)',
@@ -25,13 +27,16 @@
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg)',
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/efcb4c0e828c1809e38b9cdc02aea227.png)',
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/Dx5LJoH.jpg)',
-        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg)'
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg)',
+
       );
 
       var images2 = new Array(
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/Snapdragon-Color-Meaning.jpg)',
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/maxresdefault.jpg)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/thumb-1920-625703.jpg)',
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/M2T6aUy.jpg)',
+        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/a5432863572ed79c0972569d213dc149.png)',
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/thumb-1920-735771.png)',
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/tumblr_mvt4dfUVx71smn4pqo9_1280.jpg)',
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/2030_over_the_garden_wall.jpg)',
@@ -77,8 +82,9 @@
 }
 $(document).ready(function(){
     var randomVar=Math.floor(Math.random() * images.length);
-  $('#overlay1').css({"opacity": 0.8, "background": images[randomVar], "background-repeat": "no-repeat", "background-size": "cover"})
-  $('.sideMenu').css(  { "margin-top": $('#banner').css('height')}
+    $('#overlay1').css({"opacity": 0.8, "background": images[randomVar], "background-repeat": "no-repeat", "background-size": "cover"})
+
+    $('.sideMenu').css(  { "margin-top": $('#banner').css('height')}
   )
   // console.log($('#banner').css('height'))
     setInterval(changeBackgroundImages, 60000);
@@ -100,8 +106,9 @@ $(document).ready(function(){
 //       });
 
     </script>
-  </head>
 
+
+  </head>
   <body>
       <!--So that we can use anything jquery dependent aka materialize-->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -117,7 +124,8 @@ $(document).ready(function(){
           <div id="app" >
               <script src= "/src/client/public/bundle.js" type="text/javascript"></script>
           </div>
-
+          
+          <!-- Load up Wallpaper -->
           <div id ="overlay0" style="height: 100vh; width: 100vw; position: absolute;left:0px; top: 0px;"></div>
           <div id= "overlay1" style=" height: 100vh; width: 100vw; position: absolute;left:0px; top: 0px;"/></div>
 
