@@ -13,7 +13,7 @@ class HomeComponent extends React.Component {
         <p><small>Website is currently under construction</small></p>
 
         <p>If you're reading this, you've found my webpage/portfolio.
-          I started working on this back in January 2017 as a way to learn
+        I started working on this back in January 2017 as a way to learn
           scalable web development and get a taste of the AWS stack.</p>
         <p>My main focus is going to be Cybersecurity, with a focus on Web App
         vulnerabilities since nearly everyone uses web apps nowadays. I started
