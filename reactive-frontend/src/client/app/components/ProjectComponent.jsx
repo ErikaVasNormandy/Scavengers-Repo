@@ -37,8 +37,8 @@ class ProjectComponent extends React.Component {
                     </div>
 
                     <div className="card-reveal">
-                      <span className="card-title grey-text text-darken-4"><p>Pages from each notebook uploaded</p>
-
+                      <p style={{align: 'center'}}>Hack a vulnerable VM with shells and Ubuntu privilege escalation</p>
+                      <span className="card-title grey-text text-darken-4">
                       <i className="material-icons right"> Click to Close</i></span>
                     </div>
 
