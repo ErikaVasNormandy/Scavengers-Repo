@@ -1,5 +1,8 @@
 import React from 'react';
 import {render} from 'react-dom';
+import SickOSComponent from './SickOSComponent.jsx';
+
+
 import styles from '../styles.css';
 
 class ProjectComponent extends React.Component {
@@ -18,21 +21,23 @@ class ProjectComponent extends React.Component {
          <div className="row" style = {{color: 'black'}}>
 
 
-            <div className="col m4">
-               <div className="card sticky-action">
+            <div className="col s4 m4 l4">
+               <div className="card large sticky-action">
 
-                    <div className="card-image">
-                        <img className="activator" src="https://i.pinimg.com/736x/8c/a7/21/8ca721aa046919d68bfa3187f548c539--spell-books-open-book.jpg"></img>
+                    <div className="card-image" >
+                        <img className="activator" src="https://orig00.deviantart.net/079e/f/2014/012/e/9/spell_book_and_wand_png_stock_by_jumpfer_stock-d71vg5f.png"></img>
                     </div>
 
                     <div className="card-content">
-                        <span className="activator">A collection of pages from my Cybersecurity notes over the years</span><i className="material-icons right"></i>
+                        <span className="activator"><h3>SickOS by Vulnhub </h3></span><i className="material-icons right"></i>
 
-                        <p><a >Github Link: </a></p>
+                        <p><a > </a></p>
+                        <p><a href="https://www.vulnhub.com/entry/sickos-12,144/">Vulnhub Site Link</a></p>
+
                     </div>
 
                     <div className="card-reveal">
-                      <span className="card-title grey-text text-darken-4">Details: <p>Pages from each notebook uploaded</p>
+                      <span className="card-title grey-text text-darken-4"><p>Pages from each notebook uploaded</p>
 
                       <i className="material-icons right"> Click to Close</i></span>
                     </div>
@@ -41,12 +46,12 @@ class ProjectComponent extends React.Component {
           </div>
 
 
-          <div className="col m4">
-             <div className="card sticky-action">
+          <div className="col s4 m4 l4">
+             <div className="card large sticky-action">
 
-                  <div className="card-image">
-                    <span className="card-title activator grey-text text-darken-4">Spellbook Materials</span>
-                      <img className="activator " src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/BaseBot.png"></img>
+                  <div className="card-image" >
+                    <span className="card-title activator grey-text text-darken-4"  >Spellbook Materials</span>
+                      <img className="activator " src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/Project+Thumbnails/BaseBotThumbnail.png"></img>
                   </div>
 
                   <div className="card-content">
@@ -63,11 +68,13 @@ class ProjectComponent extends React.Component {
 
                 </div>
             </div>
-            <div className="col m4">
-               <div className="card sticky-action">
+
+
+            <div className="col s4 m4 l4">
+               <div className="card large sticky-action">
 
                     <div className="card-image">
-                        <img className="activator" src=""></img>
+                        <img className="activator" src="https://www.neto.com.au/assets/images/default_product.gif"></img>
                     </div>
 
                     <div className="card-content">
@@ -87,14 +94,51 @@ class ProjectComponent extends React.Component {
 
 
 
+            <div className="col s4 m4 l4">
+              <div className="card large sticky-action">
+
+                  <div className="card-image">
+                    <img className="activator" src="https://www.neto.com.au/assets/images/default_product.gif"></img>
+                  </div>
+
+                  <div className="card-content">
+                        <span className="activator">A collection of pages from my Cybersecurity notes over the years</span><i className="material-icons right"></i>
+                        <p><a >Github Link: </a></p>
+                  </div>
+
+                  <div className="card-reveal">
+                      <span className="card-title grey-text text-darken-4">Details: <p>Pages from each notebook uploaded</p>
+                      <i className="material-icons right"> Click to Close</i></span>
+                  </div>
+
+              </div>
+            </div>
+
+
+            <div className="col s4 m4 l4">
+              <div className="card large sticky-action">
+
+                  <div className="card-image">
+                    <img className="activator" src="https://www.neto.com.au/assets/images/default_product.gif"></img>
+                  </div>
+
+                  <div className="card-content">
+                        <span className="activator">A collection of pages from my Cybersecurity notes over the years</span><i className="material-icons right"></i>
+                        <p><a >Github Link: </a></p>
+                  </div>
+
+                  <div className="card-reveal">
+                      <span className="card-title grey-text text-darken-4">Details: <p>Pages from each notebook uploaded</p>
+                      <i className="material-icons right"> Click to Close</i></span>
+                  </div>
+
+              </div>
+            </div>
+
 
 
 
         </div>
-
-          <li>"https://github.com/ErikaVasNormandy/Scavengers-Repo"</li>
-
-
       </div>
     )
   }

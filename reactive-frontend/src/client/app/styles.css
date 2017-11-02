@@ -200,3 +200,7 @@ body.activator{
 	height: 50%;
 
 }
+
+.card .card-image img{
+	width: 50%;
+}
