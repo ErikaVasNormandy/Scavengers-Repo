@@ -23,17 +23,17 @@ class ProjectComponent extends React.Component {
 
             <div className="col s4 m4 l4">
                <div className="card large sticky-action">
-
                     <div className="card-image" >
                         <img className="activator" src="https://orig00.deviantart.net/079e/f/2014/012/e/9/spell_book_and_wand_png_stock_by_jumpfer_stock-d71vg5f.png"></img>
                     </div>
 
                     <div className="card-content">
-                        <span className="activator"><h3>SickOS by Vulnhub </h3></span><i className="material-icons right"></i>
+                        <span className="activator"><h3>SickOS </h3><p>by Vulnhub </p></span>
+                    </div>
 
-                        <p><a href="https://erikavasnormandy.github.io/sickOS"> --> Subdirectory </a></p>
-                        <p><a href="https://www.vulnhub.com/entry/sickos-12,144/">Vulnhub Site Link</a></p>
-
+                    <div className="card-action">
+                      <a href="https://erikavasnormandy.github.io/sickOS.html">Subdirectory </a>
+                      <a href="https://www.vulnhub.com/entry/sickos-12,144/">Vulnhub</a>
                     </div>
 
                     <div className="card-reveal">
@@ -41,9 +41,11 @@ class ProjectComponent extends React.Component {
                       <span className="card-title grey-text text-darken-4">
                       <i className="material-icons right"> Click to Close</i></span>
                     </div>
-
             </div>
+
+
           </div>
+
 
 
           <div className="col s4 m4 l4">
@@ -51,19 +53,24 @@ class ProjectComponent extends React.Component {
 
                   <div className="card-image" >
                     <span className="card-title activator grey-text text-darken-4"  >Spellbook Materials</span>
-                      <img className="activator " src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/Project+Thumbnails/BaseBotThumbnail.png"></img>
+                      <img className="activator" src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/Project+Thumbnails/BaseBotThumbnail.png"></img>
                   </div>
 
                   <div className="card-content">
                       <span className="activator">Website for demonstrating full-stack Web Development </span><i className="material-icons right"></i>
 
-                      <p><a >Github Link: </a></p>
+                  </div>
+
+                  <div className="card-action">
+                      <a href="https://github.com/ErikaVasNormandy/Scavengers-Repo">Github Link</a>
+
                   </div>
 
                   <div className="card-reveal">
-                    <span className="card-title grey-text text-darken-4">Details: <p>All the way from AWS and Gunicorn to Flask and NodeJS</p>
-
-                    <i className="material-icons right"> Click to Close</i></span>
+                    <p style={{align: 'center'}}> All the way from AWS and Gunicorn to Flask and NodeJS</p>
+                    <span className="card-title grey-text text-darken-4">
+                        <i className="material-icons right"> Click to Close</i>
+                    </span>
                   </div>
 
                 </div>
