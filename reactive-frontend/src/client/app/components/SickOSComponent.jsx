@@ -32,7 +32,7 @@ class SickOSComponent extends React.Component{
 
 
     <p>I also put in some nice backgrounds to inspire some creativity</p>
-      
+
       </div>
     )
   }

@@ -31,13 +31,13 @@ class ProjectComponent extends React.Component {
                     <div className="card-content">
                         <span className="activator"><h3>SickOS by Vulnhub </h3></span><i className="material-icons right"></i>
 
-                        <p><a > </a></p>
+                        <p><a href="https://erikavasnormandy.github.io/sickOS"> --> Subdirectory </a></p>
                         <p><a href="https://www.vulnhub.com/entry/sickos-12,144/">Vulnhub Site Link</a></p>
 
                     </div>
 
                     <div className="card-reveal">
-                      <p style={{align: 'center'}}>Hack a vulnerable VM with shells and Ubuntu privilege escalation</p>
+                      <p style={{align: 'center'}}>Hack a vulnerable VM with shells and Ubuntu privilege escalation. All you need is VirtualBox and an Internet Browser. Overall this activity was mildly difficult if you have no prior experience of pen-testing, so it is a good application of the concepts that a class might teach you.</p>
                       <span className="card-title grey-text text-darken-4">
                       <i className="material-icons right"> Click to Close</i></span>
                     </div>
