@@ -13,15 +13,11 @@ var config = {
   },
 
 
-    devServer: {
+     devServer: {
         inline: true,
         port: 8081
     },
     module: {
-
-
-
-
         loaders: [
             {
 
