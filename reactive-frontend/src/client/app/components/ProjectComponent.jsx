@@ -42,9 +42,30 @@ class ProjectComponent extends React.Component {
                       <i className="material-icons right"> Click to Close</i></span>
                     </div>
             </div>
-
-
           </div>
+
+          <div className="col s4 m4 l4">
+             <div className="card large sticky-action">
+                  <div className="card-image" >
+                      <img className="activator" src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/Sketches/Eye+Sketch.png"></img>
+                  </div>
+
+                  <div className="card-content">
+                      <span className="activator"><h3>Clickjacking</h3><p>Pen-testing your own website, fixing up a hole.</p></span>
+                  </div>
+
+                  <div className="card-action">
+                    <a href="https://erikavasnormandy.github.io/ClickJacking">Github Link</a>
+                    <a href="https://www.wordfence.com/learn/penetration-testing-your-wordpress-website/">Tutorial Followed</a>
+                  </div>
+
+                  <div className="card-reveal">
+                    <p style={{align: 'center'}}>Wanted to test out my own site to see if it was vulnerable. The tutorial might be specifically for Wordpress sites, but the basic principles are the same, and it's fairly easy to follow without being too simplistic</p>
+                    <span className="card-title grey-text text-darken-4">
+                    <i className="material-icons right"> Click to Close</i></span>
+                  </div>
+          </div>
+        </div>
 
 
 
@@ -98,51 +119,6 @@ class ProjectComponent extends React.Component {
 
                   </div>
                 </div>
-
-
-
-            <div className="col s4 m4 l4">
-              <div className="card large sticky-action">
-
-                  <div className="card-image">
-                    <img className="activator" src="https://www.neto.com.au/assets/images/default_product.gif"></img>
-                  </div>
-
-                  <div className="card-content">
-                        <span className="activator">A collection of pages from my Cybersecurity notes over the years</span><i className="material-icons right"></i>
-                        <p><a >Github Link: </a></p>
-                  </div>
-
-                  <div className="card-reveal">
-                      <span className="card-title grey-text text-darken-4">Details: <p>Pages from each notebook uploaded</p>
-                      <i className="material-icons right"> Click to Close</i></span>
-                  </div>
-
-              </div>
-            </div>
-
-
-            <div className="col s4 m4 l4">
-              <div className="card large sticky-action">
-
-                  <div className="card-image">
-                    <img className="activator" src="https://www.neto.com.au/assets/images/default_product.gif"></img>
-                  </div>
-
-                  <div className="card-content">
-                        <span className="activator">A collection of pages from my Cybersecurity notes over the years</span><i className="material-icons right"></i>
-                        <p><a >Github Link: </a></p>
-                  </div>
-
-                  <div className="card-reveal">
-                      <span className="card-title grey-text text-darken-4">Details: <p>Pages from each notebook uploaded</p>
-                      <i className="material-icons right"> Click to Close</i></span>
-                  </div>
-
-              </div>
-            </div>
-
-
 
 
         </div>
