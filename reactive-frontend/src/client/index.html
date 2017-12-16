@@ -84,26 +84,11 @@ $(document).ready(function(){
     var randomVar=Math.floor(Math.random() * images.length);
     $('#overlay1').css({"opacity": 0.8, "background": images[randomVar], "background-repeat": "no-repeat", "background-size": "cover"})
 
-    $('.sideMenu').css(  { "margin-top": $('#banner').css('height')}
-  )
-  // console.log($('#banner').css('height'))
+  
+
     setInterval(changeBackgroundImages, 60000);
 });
-////brought to you by:::
-//https://stackoverflow.com/questions/18346577/cross-fade-background-image-with-jquery
-//
-//
-//       $(function() {
-//   // $("$overlay").fadeTo('slow', 0.3, function() {  $(this).css('background-image', images[currentImage+1] ) } ).fadeTo('slow', 1);
-//         setInterval(function(){
-//           currentImage = Math.floor(Math.random() * images.length)
-//           if(currentImage >=images.length){
-//             currentImage-=1
-//           }
-// ///start out with this opacity and then go towards that other one
-//     // $('#overlay0').css({ opacity:0, "background": images[currentImage], "background-repeat": "no-repeat", "background-size": "cover"}).fadeTo(4000, .25)
-//         }, 10000);
-//       });
+
 
     </script>
 
@@ -115,12 +100,11 @@ $(document).ready(function(){
 
           <!-- Load up Tabs -->
 
-<!-- <div class="parallax"></div> -->
           <div id="app" >
               <script src= "/src/client/public/bundle.js" type="text/javascript"></script>
           </div>
 
-      
+
   </body>
 
 </html>

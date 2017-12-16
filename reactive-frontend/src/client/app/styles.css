@@ -13,27 +13,22 @@ body
   }
 #overlay0 {
 
-		background-image: url('https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg');
+		background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg");
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+#overlay1 {
 
-		min-height: 500px;
+	background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg");
 
 		/* Create the parallax scrolling effect */
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-
-
-	}
-#overlay1 {
-		min-height: 500px;
-
-	/* Create the parallax scrolling effect */
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-			/*background-image: radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg);*/
 		}
 
 
@@ -61,38 +56,10 @@ body
 	border-color: rgba(255,255,255,0.5);
 
 
-
-
 }
-
-#bannerText{
-	text-shadow: 2px -1px 1.5px rgba(51,22,1, .9);
-	font-family:"AugustaShadow";
-	z-index: -1;
-	font-weight: 600;
-	font-size: 3vw;
-	float: right;
-	vertical-align: bottom;
-	background-image: url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/Banner2017_1.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	margin-top: .2em;
-	padding-top: 3vw;
-	padding-right: 1vw;
-	padding-left: 4.4em;
-  width: 100%;
-
-}
-
-/*@media screen and (min-width: 500px) {
-	body{
-		  font: underline;
-	}
-}
-
 @media only screen and (max-width: 320px) {
    body { font-size: 2em; }
-}*/
+}
 
 
 
@@ -225,9 +192,9 @@ body.activator{
 	width: 70%;
 }
 
-.parallax {
+#parallax {
     /* The image used */
-    background-image: url("https://images2.alphacoders.com/735/thumb-1920-735771.png");
+    background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg");
 
     /* Set a specific height */
     min-height: 500px;
