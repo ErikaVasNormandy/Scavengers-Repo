@@ -8,27 +8,27 @@ import WorldBuildingComponent from './components/WorldBuildingComponent.jsx';
 import data from './data/usefulResourcesData.js';
 import styles from '../app/styles.css';
 
-var imgUrl="";
-
 class App extends React.Component{
     constructor(props){
         super(props);
-        this.state = {currentTab: 1, tab1Active: true, tab2Active: false, tab3Active: false, tab4Active: false}
+        this.state = {currentTab: 1, tab1Active: true, tab2Active: false, tab3Active: false, tab4Active: false, imgUrl:""}
         this.setTab = this.setTab.bind(this);
-        this.randomImage=this.randomImage.bind(this);
-
-
+        this.randomImage = this.randomImage.bind(this);
     }
     getInitialState(){
-      return {imgUrl: ""};
+      this.setState({
+        imgUrl: ""
+      })
     }
     componentDidMount(){
-      let timer = setInterval(this.tick, 1000);
-   this.setState({timer});
-      // setTimeout(function(){ this.setState({imgUrl :  "https://images2.alphacoders.com/735/thumb-1920-735771.png"}); }.bind(this), 5000  );
+      setInterval(this.randomImage.bind(this), 5000);
+
     }
 
+
     randomImage(){
+      this.state.imgUrl = "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg";
+
       var fileNames = [
         "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/Snapdragon-Color-Meaning.jpg",
         "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/maxresdefault.jpg",
@@ -46,14 +46,30 @@ class App extends React.Component{
         "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/Dx5LJoH.jpg",
         "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg"
       ];
-      var randomIndex = 4;
-      document.getElementById("smallParallax1").backgroundImage= fileNames[randomIndex];
-      setTimeout(function(){
-        randomImage();
-      }, 10000);
+       var randomIndex =  Math.floor((Math.random() * fileNames.length) + 0);
 
+      /// this.setState({imgUrl: fileNames[randomIndex]})
+      this.setState({imgUrl: this.state.imgUrl })
+        ///console.log(this.state.imgUrl)
       }
 
+
+
+      setSlideShow(){
+        return (
+        <div>
+          <div id = "smallParallax1" style = {{ backgroundImage: this.state.imgUrl }}></div>
+          <div id = "smallParallax2" style = {{ backgroundImage: "https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg" }}></div>
+        </div>
+        )
+      }
+
+// var getCss=(imageName) => {
+//
+//   return {
+//     backgroundImage:"https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg"
+//   }
+// }
 
     setTab(newTab)
     {
@@ -114,11 +130,13 @@ class App extends React.Component{
 
 
       var parallax1Style = {
-        backgroundImage: 'url(' + imgUrl + ')'
+        backgroundImage: 'url(' + this.state.imgUrl + ')'
       }
 
+
         return(
-          <div>
+
+          <div >
 
                 <div className="topMenu">
 
@@ -132,20 +150,14 @@ class App extends React.Component{
                 </div>
 
 
-            <div id ="parallax">
-              <div id= "smallParallax1"></div>
-              <div id ="smallParallax2"></div>
 
-
-
-            </div>
 
 
               <div id="contentContainer" >
                 <div id ="Content1" className= {this.state.tab1Active ? '' : 'dormantTab'}><ProjectComponent>Hello hello </ProjectComponent></div>
                 <div id ="Content2" className= {this.state.tab2Active ? '' : 'dormantTab'}><WorldBuildingComponent>Hello hello </WorldBuildingComponent></div>
                 <div id ="Content3" className= {this.state.tab3Active ? '' : 'dormantTab'}><UsefulBitsComponent data = {data}>CONTENT HERE</UsefulBitsComponent></div>
-                <div id ="Content4" className= {this.state.tab4Active ? '' : 'dormantTab'}><h1>About</h1><MaterialComponent>Hello hellTab4Tab4Tab4Tab4Tab4Tab4o </MaterialComponent></div>
+                <div id ="Content4" className= {this.state.tab4Active ? '' : 'dormantTab'}><h1>About</h1><MaterialComponent>Material Component </MaterialComponent></div>
 
               </div>
 

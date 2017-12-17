@@ -22,7 +22,7 @@ body
 	}
 #overlay1 {
 
-	background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg");
+	background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg");
 
 		/* Create the parallax scrolling effect */
 		background-attachment: fixed;
@@ -172,6 +172,7 @@ body.activator{
 
 
 
+
 @-webkit-keyframes fadeOut {
 	0%    {opacity: 1;}
 	50%  {opacity: 0; }
@@ -219,7 +220,7 @@ body.activator{
 
 }
 #smallParallax1{
-	background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/Snapdragon-Color-Meaning.jpg");
+	background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -228,11 +229,11 @@ body.activator{
 	z-index: 0;
 	width: 100%;
 	position: absolute;
-	animation: fadeOut 10s infinite;
+	animation: fadeOut 30s infinite;
 
 }
 #smallParallax2{
-		background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/maxresdefault.jpg");
+		background-image: url("https://images2.alphacoders.com/735/thumb-1920-735771.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -241,17 +242,5 @@ body.activator{
     z-index: 1;
     position: absolute;
     width: 100%;
-	animation: fadeIn 10s infinite;
-}
-#smallParallax3{
-		background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/maxresdefault.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 500px;
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-	animation: fadeIn 10s infinite;
+	animation: fadeIn 30s infinite;
 }

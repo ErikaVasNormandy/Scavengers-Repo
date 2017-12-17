@@ -12,14 +12,8 @@
 
 
     <script type="text/javascript">
-      var images = new Array(
-        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/Snapdragon-Color-Meaning.jpg)',
-        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/maxresdefault.jpg)',
-        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/thumb-1920-625703.jpg)',
-        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/M2T6aUy.jpg)',
-        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/a5432863572ed79c0972569d213dc149.png)',
-        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/thumb-1920-735771.png)',
-        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/tumblr_mvt4dfUVx71smn4pqo9_1280.jpg)',
+      var images1 = new Array(
+
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/2030_over_the_garden_wall.jpg)',
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/87cbb3248a40f91479e8ab7da60cb09e.jpg)',
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/jwHdoTn.png)',
@@ -28,7 +22,6 @@
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/efcb4c0e828c1809e38b9cdc02aea227.png)',
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/Dx5LJoH.jpg)',
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg)',
-
       );
 
       var images2 = new Array(
@@ -39,18 +32,52 @@
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/a5432863572ed79c0972569d213dc149.png)',
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/thumb-1920-735771.png)',
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SummerMoodBoard/tumblr_mvt4dfUVx71smn4pqo9_1280.jpg)',
-        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/2030_over_the_garden_wall.jpg)',
-        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/87cbb3248a40f91479e8ab7da60cb09e.jpg)',
-        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/jwHdoTn.png)',
-        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/Over-the-Garden-Wall-S01E02-720p-HDTVSeriesdl.com_00_02_54_00000.png)',
-        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg)',
-        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/efcb4c0e828c1809e38b9cdc02aea227.png)',
-        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/Dx5LJoH.jpg)',
-        'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg)'
+
       );
-     smallParallax1 =  document.getElementById("smallParallax1")
-     smallParallax1.style.backgroundImage = 'url(' + images[Math.round(Math.random() * images.length)] + ')';
-      console.log("hello")
+
+      var currentImage1 = Math.floor(Math.random() * images1.length)
+      var currentImage2 = Math.floor(Math.random() * images2.length);
+      var counter = 0;
+
+      function changeBG1(){
+        if (currentImage1 >images1.length){
+          currentImage1 == 0
+        }
+          $("#smallParallax1").css('background', images1[++currentImage1])
+          $("#smallParallax1").css('background-repeat', 'no-repeat')
+          $("#smallParallax1").css('background-size', 'cover')
+          console.log("changedbg1")
+
+          console.log(currentImage1)
+          setTimeout( changeBG1, 30000)
+
+
+
+      }
+
+      function changeBG2(){
+        if (currentImage2 >= images2.length){
+          currentImage2 == 0
+        }
+        $("#smallParallax2").css('background', images2[++currentImage2])
+        $("#smallParallax2").css('background-repeat', 'no-repeat')
+        $("#smallParallax2").css('background-size', 'cover')
+        console.log("changedbg2")
+
+
+        setTimeout(changeBG2, 30000)
+
+
+
+      }
+
+      $(document).ready(function(){
+        setTimeout(changeBG1, 15000)
+        setTimeout(changeBG2, 30000)
+
+      })
+        // smallParallax1.style.backgroundImage = 'url(' + images[Math.round(Math.random() * images.length)] + ')';
+
 //       var currentImage = 0;
 //       var currentImage2 = 0;
 //       var counter = 0;
@@ -123,7 +150,10 @@
       <!--Load up the front page banner-->
 
 
-
+      <div id="parallax">
+          <div id= "smallParallax1"></div>
+          <div id="smallParallax2"></div>
+      </div>
 
           <!-- Load up Tabs -->
 
