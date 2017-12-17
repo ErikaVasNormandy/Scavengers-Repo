@@ -205,7 +205,7 @@ body.activator{
     /*background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg");*/
 		background-color: black;
     /* Set a specific height */
-    min-height: 500px;
+    min-height: 600px;
 
     /* Create the parallax scrolling effect */
   	attachment: fixed;
@@ -215,7 +215,7 @@ body.activator{
 
 
 
-		margin-top: 80px;
+		padding-top: 100px;
 
 
 }
