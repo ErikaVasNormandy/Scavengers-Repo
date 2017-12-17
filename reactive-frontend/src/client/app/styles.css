@@ -64,7 +64,6 @@ body
 
 
 button{
-
 	text-overflow: ellipsis;
 }
 
@@ -113,8 +112,6 @@ p.btn-flat{
 
 	border-color: white;
 
-
-
 	border-left-style: none;
 	border-bottom-style: none;
 	border-right-style: solid;
@@ -135,23 +132,7 @@ p.btn-flat{
 		text-decoration-line: underline;
 }
 
-/*.MainMenu{
-    list-style-type: none;
-    color: rgba(255,255,255, 0.8);
-    border-top-style:solid;
-    border-bottom-style: solid;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-width: 2px;
 
-}
-
-
-.MenuItem {
-   display: inline;
-   padding: 10vw;
-   color: white;
-
-}*/
 
 .materialsDiv{
     background-color: rgba(255,255,255, .5);
@@ -176,12 +157,8 @@ body.activator{
 
 
 .card-image>img{
-
-
 	  overflow: hidden;
-
 }
-
 
 .displayWebsiteIframe{
 	height: 50%;
@@ -191,10 +168,37 @@ body.activator{
 .card .card-image img{
 	width: 70%;
 }
+/*-------  animations  ---------*/
+@-webkit-keyframes fade {
+  0%   { opacity: 0;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes fade3 {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fade4 {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
 
-#parallax {
+
+
+@-webkit-keyframes fadeOut {
+	0%    {opacity: 1;}
+	50%  {opacity: 0; }
+	100%  {opacity: 1; }
+}
+@-webkit-keyframes fadeIn{
+	0%    {opacity: 0;}
+	50%  {opacity: 1; }
+	100%  {opacity: 0; }
+}
+
+
+#OriginalParallax {
     /* The image used */
-    background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg");
+    background-color: green;
 
     /* Set a specific height */
     min-height: 500px;
@@ -204,4 +208,51 @@ body.activator{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+#parallax {
+    /* The image used */
+    /*background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg");*/
+		background-color: black;
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+  	attachment: fixed;
+  	position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+		margin-top: 80px;
+
+
+}
+#smallParallax1{
+	background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/Snapdragon-Color-Meaning.jpg");
+	background-color: red;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 500px;
+	z-index: 0;
+	width: 100%;
+	position: absolute;
+	animation: fadeOut 10s infinite;
+
+}
+#smallParallax2{
+		background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/maxresdefault.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+	animation: fadeIn 10s infinite;
 }

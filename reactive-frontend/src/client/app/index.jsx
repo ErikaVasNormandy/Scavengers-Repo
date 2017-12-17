@@ -75,13 +75,11 @@ class App extends React.Component{
 
 
     render() {
+
         return(
           <div>
 
-
                 <div className="topMenu">
-
-
 
                       <button className ="waves-effect waves-light btn-flat " style = {{color:'white'}}  onClick = {() => this.setTab(1)} >Projects</button>
 
@@ -92,7 +90,14 @@ class App extends React.Component{
                       <button className ="waves-effect waves-light  btn-flat" style = {{color:'white'}}  onClick = {() => this.setTab(4)}>About</button>
                 </div>
 
-                <div id="parallax"></div>
+
+            <div id ="parallax">
+              <div id= "smallParallax1"></div>
+              <div id ="smallParallax2"></div>
+
+
+            </div>
+
 
               <div id="contentContainer" >
                 <div id ="Content1" className= {this.state.tab1Active ? '' : 'dormantTab'}><ProjectComponent>Hello hello </ProjectComponent></div>
