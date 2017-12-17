@@ -169,18 +169,6 @@ body.activator{
 	width: 70%;
 }
 /*-------  animations  ---------*/
-@-webkit-keyframes fade {
-  0%   { opacity: 0;}
-  100% { opacity: 1;}
-}
-@-moz-keyframes fade3 {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
-@-o-keyframes fade4 {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-}
 
 
 
@@ -232,7 +220,6 @@ body.activator{
 }
 #smallParallax1{
 	background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/Snapdragon-Color-Meaning.jpg");
-	background-color: red;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -245,6 +232,18 @@ body.activator{
 
 }
 #smallParallax2{
+		background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/maxresdefault.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+	animation: fadeIn 10s infinite;
+}
+#smallParallax3{
 		background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/maxresdefault.jpg");
     background-attachment: fixed;
     background-position: center;

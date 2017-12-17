@@ -48,47 +48,55 @@
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/Dx5LJoH.jpg)',
         'url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg)'
       );
-      var currentImage = 0;
-      var currentImage2 = 0;
-      var counter = 0;
-      function changeBackgroundImages(){
-        img1Fade()
-        setTimeout(img2Fade, 5000);
+     smallParallax1 =  document.getElementById("smallParallax1")
+     smallParallax1.style.backgroundImage = 'url(' + images[Math.round(Math.random() * images.length)] + ')';
+      console.log("hello")
+//       var currentImage = 0;
+//       var currentImage2 = 0;
+//       var counter = 0;
+//       function changeBackgroundImages(){
+//         img1Fade()
+//         setTimeout(img2Fade, 5000);
+//
+//       }
+//
+//       function img1Fade(){
+//         counter = counter + 1;
+//         console.log("counter is ", counter)
+//
+//         currentImage = Math.floor(Math.random() * images.length)
+//         console.log(images[currentImage])
+//         $('#overlay0').fadeOut('slow', function(){$('#overlay0').css({"opacity": 0.8, "background": images[currentImage], "background-repeat": "no-repeat", "background-size": "cover", "background-attachment": "fixed", "position": "fixed"})});
+//         $('#overlay1').fadeIn('slow');
+//         if (currentImage >= images.length - 1) {
+//            currentImage -= Math.floor(Math.random() * images.length/2)
+//        };
+//       }
+//
+//
+//       function img2Fade(){
+//         currentImage2 = Math.floor(Math.random() * images2.length)
+//               console.log(images2[currentImage2])
+//         $('#overlay1').fadeOut('slow', function(){$('#overlay1').css({"opacity": 0.8, "background": images2[currentImage2], "background-repeat": "no-repeat", "background-size": "cover", "background-attachment": "fixed", "position": "fixed"})});
+//         $('#overlay0').fadeIn('slow');
+//         if (currentImage2 >= images2.length - 1) {
+//             currentImage2 -= Math.floor(Math.random() * images2.length/2)
+//         };
+// }
+// $(document).ready(function(){
+//     var randomVar=Math.floor(Math.random() * images.length);
+//     $('#overlay1').css({"opacity": 0.8, "background": images[randomVar], "background-repeat": "no-repeat", "background-size": "cover"})
+//
+//     $('.sideMenu').css(  { "margin-top": $('#banner').css('height')}
+//   )
+//   // console.log($('#banner').css('height'))
+//     setInterval(changeBackgroundImages, 60000);
+// });
+//
 
-      }
-
-      function img1Fade(){
-        counter = counter + 1;
-        console.log("counter is ", counter)
-
-        currentImage = Math.floor(Math.random() * images.length)
-        console.log(images[currentImage])
-        $('#overlay0').fadeOut('slow', function(){$('#overlay0').css({"opacity": 0.8, "background": images[currentImage], "background-repeat": "no-repeat", "background-size": "cover", "background-attachment": "fixed", "position": "fixed"})});
-        $('#overlay1').fadeIn('slow');
-        if (currentImage >= images.length - 1) {
-           currentImage -= Math.floor(Math.random() * images.length/2)
-       };
-      }
 
 
-      function img2Fade(){
-        currentImage2 = Math.floor(Math.random() * images2.length)
-              console.log(images2[currentImage2])
-        $('#overlay1').fadeOut('slow', function(){$('#overlay1').css({"opacity": 0.8, "background": images2[currentImage2], "background-repeat": "no-repeat", "background-size": "cover", "background-attachment": "fixed", "position": "fixed"})});
-        $('#overlay0').fadeIn('slow');
-        if (currentImage2 >= images2.length - 1) {
-            currentImage2 -= Math.floor(Math.random() * images2.length/2)
-        };
-}
-$(document).ready(function(){
-    var randomVar=Math.floor(Math.random() * images.length);
-    $('#overlay1').css({"opacity": 0.8, "background": images[randomVar], "background-repeat": "no-repeat", "background-size": "cover"})
 
-    $('.sideMenu').css(  { "margin-top": $('#banner').css('height')}
-  )
-  // console.log($('#banner').css('height'))
-    setInterval(changeBackgroundImages, 60000);
-});
 ////brought to you by:::
 //https://stackoverflow.com/questions/18346577/cross-fade-background-image-with-jquery
 //
