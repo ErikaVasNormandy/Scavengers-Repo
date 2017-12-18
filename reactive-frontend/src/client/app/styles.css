@@ -191,7 +191,7 @@ body.activator{
 
 		background-color: black;
 
-    min-height: 700px;
+    min-height: 500px;
 
     /* Create the parallax scrolling effect */
   	background-attachment: fixed;
@@ -211,7 +211,7 @@ body.activator{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 700px;
+	min-height: 500px;
 	z-index: 0;
 	width: 100%;
 	position: absolute;
@@ -224,7 +224,7 @@ body.activator{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 700px;
+    min-height: 500px;
     z-index: 1;
     position: absolute;
     width: 100%;
