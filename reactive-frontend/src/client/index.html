@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- <meta property="og:title" content="Scavengers' Repo">
-    <meta charset="utf-8"> -->
+      <meta charset="utf-8">
+    <meta name="description" content="Scavengers' Repo">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+      <meta name="author" content="Erika Vas Normandy">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <title>Scavengers' Repo</title>
     <link href = '../../src/client/app/styles.css' rel='stylesheet' type='text/css'>
@@ -40,8 +44,8 @@
       var counter = 0;
 
       function changeBG1(){
-        if (currentImage1 >images1.length){
-          currentImage1 == 0
+        if (currentImage1 >=images1.length){
+          currentImage1 =  currentImage1 - currentImage1
         }
           $("#smallParallax1").css('background', images1[++currentImage1])
           $("#smallParallax1").css('background-repeat', 'no-repeat')
@@ -58,8 +62,9 @@
 
       function changeBG2(){
         if (currentImage2 >= images2.length){
-          currentImage2 == 0
+          currentImage2 = currentImage2 - currentImage2
         }
+          console.log(currentImage2)
         $("#smallParallax2").css('background', images2[++currentImage2])
         $("#smallParallax2").css('background-repeat', 'no-repeat')
         $("#smallParallax2").css('background-size', 'cover')
