@@ -201,21 +201,20 @@ body.activator{
 
 
 #parallax {
-    /* The image used */
-    /*background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg");*/
+
 		background-color: black;
-    /* Set a specific height */
-    min-height: 600px;
+
+    min-height: 500px;
 
     /* Create the parallax scrolling effect */
-  	attachment: fixed;
-  	position: center;
+  	background-attachment: fixed;
+  	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
 
 
-		padding-top: 100px;
+		margin-top: 80px;
 
 
 }
