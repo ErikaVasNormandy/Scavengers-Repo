@@ -43,7 +43,7 @@ body
 	color: #e6edf7;
 	margin-left: 5vw;
 	margin-right: 5vw;
-	margin-top: 2vw;
+	margin-top: 8vw;
 
 	padding-left: 5%;
 	padding-right: 5%;
@@ -61,8 +61,8 @@ body
 
 
 button{
-	text-overflow: ellipsis;
 	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
+
 }
 
 /*referring to div*/
@@ -72,7 +72,7 @@ button{
 
 	left: 0;
 	right: 0;
-	padding: 15px 6px 10px 0px;
+	padding: 10px 5px 5px 5px;
 	text-align: center;
 
 	text-transform: uppercase;
@@ -91,9 +91,47 @@ button{
 	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
 
 }
+.topHeader{
+	text-align: left;
+	float: left;
+	font-size: 6px;
+	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
+	margin-right: 50px;
+
+}
+.topsubtext{
+	margin-left: 50px;
+}
+.bottomHeader{
+	margin-left: 50px;
+	text-align: left;
+	float: left;
+	font-size: 8px;
+}
+
+.circleImage{
+	background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/VoidRune2.png");
+	width: 40px;
+	height: 40px;
+
+	position: fixed;
+
+	background-position: center;
+	background-origin:padding-box;
+	background-size: 75px 45px;
+
+  filter: grayscale(100%);
+
+	-webkit-clip-path: circle(50% at 50% 50%);
+clip-path: circle(50% at 50% 50%);
+
+
+
+}
 
 p.btn-flat{
 	color: white;
+	font-size: 1em;
 }
 
 
@@ -248,19 +286,6 @@ body.activator{
 	text-align : center;
 }
 
-.topHeader{
-	text-align: left;
-	float: left;
-	display: inline-block;
-	font-size: .6em;
-	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
-}
-.bottomHeader{
-	text-align: left;
-	float: left;
-	font-size: .8em;
-	display: inline-block;
-}
 
 .bannerShape{
 	text-align: center;
@@ -293,13 +318,13 @@ body.activator{
 
 }
 
-.vl {
-    border-top: 10px solid white;
-    height: 500px;
+.v1 {
+    border-top: 1px solid white;
+    height: 35px;
 		border-style: solid;
-		width: 5px;
-
-		border-style: double;
-		border-width: medium;
-		border-color: rgba(255,255,255,0.5);
+		width: 1px;
+		border-width: 1px;
+		position: absolute;
+		margin-left: 220px;
+		margin-top: 5px;
 }

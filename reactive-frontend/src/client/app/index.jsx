@@ -141,21 +141,24 @@ class App extends React.Component{
                 <div className="topMenu">
                     <div>
                         <span className = "topHeader">
-                            <p>A Namespace for every Bird and Beastie </p>
-                            <p>This side of the universe</p>
+                            <div className="circleImage"></div>
+                            <p className="topsubtext">An All-Purpose Namespace </p>
+                            <p className="bottomHeader">For Every Bird and Beastie</p>
+
                         </span>
                     </div>
+
                       <div className="v1"></div>
 
 
 
-                      <button className ="waves-effect waves-light btn-flat " style = {{color:'white'}}  onClick = {() => this.setTab(1)} >Projects</button>
+                      <button className ="waves-effect waves-light btn-flat " style = {{color:'white', fontSize: "1.5vw"}}  onClick = {() => this.setTab(1)} >Projects</button>
 
-                      <button className ="waves-effect waves-light  btn-flat"  style = {{color:'white'}}  onClick = {() => this.setTab(2)}>World Building</button>
+                      <button className ="waves-effect waves-light  btn-flat"  style = {{color:'white', fontSize: "1.5vw"}}  onClick = {() => this.setTab(2)}>World Building</button>
 
-                      <button className ="waves-effect waves-light  btn-flat"  style = {{color:'white'}}  onClick = {() => this.setTab(3)}>Useful</button>
+                      <button className ="waves-effect waves-light  btn-flat"  style = {{color:'white', fontSize: "1.5vw"}}  onClick = {() => this.setTab(3)}>Useful</button>
 
-                      <button className ="waves-effect waves-light  btn-flat" style = {{color:'white'}}  onClick = {() => this.setTab(4)}>About</button>
+                      <button className ="waves-effect waves-light  btn-flat" style = {{color:'white', fontSize: "1.5vw"}}  onClick = {() => this.setTab(4)}>About</button>
 
                 </div>
 
