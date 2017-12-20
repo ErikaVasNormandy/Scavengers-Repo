@@ -1,6 +1,6 @@
 body
 	{
-		background-color:#000000;
+		background-color: #0d0203;
 		/*background-image: radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg);*/
 		background-attachment: fixed;
 		background-position: center;
@@ -31,8 +31,6 @@ body
 		background-size: cover;
 		}
 
-
-
 @font-face {
 			font-family:"AugustaShadow";
 			src: url('../app/fonts/Augusta-Shadow.ttf');
@@ -40,14 +38,12 @@ body
 
 #contentContainer {
 	min-height: 40vh;
-
 	overflow-y: scroll;
 	background-color: rgba(0, 0, 0, 0.7);
-	color: rgba(255,255,255,.8);
+	color: #e6edf7;
 	margin-left: 5vw;
 	margin-right: 5vw;
-
-	margin-top: 100px;
+	margin-top: 2vw;
 
 	padding-left: 5%;
 	padding-right: 5%;
@@ -66,36 +62,39 @@ body
 
 button{
 	text-overflow: ellipsis;
+	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
 }
-
-
-
 
 /*referring to div*/
 .topMenu{
 	margin: 0 auto;
-top: 0;
-margin-top: 0px;
-left: 0;
-right: 0;
-padding: 19.5px 6px 16.5px 0px;
-text-align: center;
+	top: 0;
 
-text-transform: uppercase;
-font-weight: bold;
-font-size: 12px;
-letter-spacing: 2px;
-color: white;
-background-color: black;
-position: fixed;
-z-index: 2;
+	left: 0;
+	right: 0;
+	padding: 15px 6px 10px 0px;
+	text-align: center;
+
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+	color: #e6edf7;
+	background-color:#000a16;
+	position: fixed;
+	z-index: 5;
+
+	border-color: rgba(255,255,255,0.8);
+	border-width: 1px;
+	border-bottom-style: solid;
+	text-align: left;
+	padding-left: 10px;
+	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
 
 }
+
 p.btn-flat{
 	color: white;
 }
-
-
 
 
 .sideMenuItem{
@@ -118,7 +117,6 @@ p.btn-flat{
 	border-right-style: solid;
 	border-color: rgba(255,255,255, 0.2);
 	border-right-width: thin;
-
 }
 
 
@@ -137,7 +135,7 @@ p.btn-flat{
 
 .materialsDiv{
     background-color: rgba(255,255,255, .5);
-    color: white;
+    color: #e6edf7;
     padding: 1% 5% 1% 5%;
 }
 
@@ -171,9 +169,6 @@ body.activator{
 }
 /*-------  animations  ---------*/
 
-
-
-
 @-webkit-keyframes fadeOut {
 	0%    {opacity: 1;}
 	50%  {opacity: 0; }
@@ -186,24 +181,16 @@ body.activator{
 }
 
 
-
 #parallax {
 
 		background-color: black;
-
     min-height: 500px;
-
     /* Create the parallax scrolling effect */
   	background-attachment: fixed;
   	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-
-
-		margin-top: 80px;
-
-
+		margin-top: 10px;
 }
 #smallParallax1{
 	background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg");
@@ -216,7 +203,6 @@ body.activator{
 	width: 100%;
 	position: absolute;
 	animation: fadeOut 30s infinite;
-
 }
 #smallParallax2{
 		background-image: url("https://images2.alphacoders.com/735/thumb-1920-735771.png");
@@ -229,4 +215,91 @@ body.activator{
     position: absolute;
     width: 100%;
 	animation: fadeIn 30s infinite;
+}
+
+.bannerContainer{
+	margin: 0 auto;
+	height: 100px;
+	position: relative;
+	top: calc(1vh - 100px);
+	width: 100%;
+	background-repeat: repeat;
+	background-position: center;
+	z-index: 1;
+}
+.banner{
+
+  top: calc(50vh - 100px);
+
+	margin: 0 auto;
+	height: 100px;
+	position: relative;
+
+	padding-top: 0.1px;
+	padding-bottom: 0.1px;
+	color: #e6edf7;
+
+	width: 100%;
+	background-color: #000a16;
+	opacity:0.9;
+	background-repeat: repeat;
+	background-position: center;
+	z-index: 1;
+	text-align : center;
+}
+
+.topHeader{
+	text-align: left;
+	float: left;
+	display: inline-block;
+	font-size: .6em;
+	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
+}
+.bottomHeader{
+	text-align: left;
+	float: left;
+	font-size: .8em;
+	display: inline-block;
+}
+
+.bannerShape{
+	text-align: center;
+	padding-top: 75px;
+	padding-bottom: 75px;
+	background-color:#000a16;
+	background-repeat: repeat;
+	background-position: center;
+	z-index: 2;
+	opacity: .95;
+	margin-right: auto;
+	margin-left: auto;
+	height: 200px;
+	width: 300px;
+	position: relative;
+  top: calc(90vh - 200px);
+	color: #e6edf7;
+
+
+	-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+	clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+
+}
+.CenterText{
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 3em;
+	text-align: center;
+	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;;
+
+}
+
+.vl {
+    border-top: 10px solid white;
+    height: 500px;
+		border-style: solid;
+		width: 5px;
+
+		border-style: double;
+		border-width: medium;
+		border-color: rgba(255,255,255,0.5);
 }

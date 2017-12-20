@@ -139,6 +139,15 @@ class App extends React.Component{
           <div >
 
                 <div className="topMenu">
+                    <div>
+                        <span className = "topHeader">
+                            <p>A Namespace for every Bird and Beastie </p>
+                            <p>This side of the universe</p>
+                        </span>
+                    </div>
+                      <div className="v1"></div>
+
+
 
                       <button className ="waves-effect waves-light btn-flat " style = {{color:'white'}}  onClick = {() => this.setTab(1)} >Projects</button>
 
@@ -147,6 +156,7 @@ class App extends React.Component{
                       <button className ="waves-effect waves-light  btn-flat"  style = {{color:'white'}}  onClick = {() => this.setTab(3)}>Useful</button>
 
                       <button className ="waves-effect waves-light  btn-flat" style = {{color:'white'}}  onClick = {() => this.setTab(4)}>About</button>
+
                 </div>
 
 
