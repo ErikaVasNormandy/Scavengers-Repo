@@ -305,9 +305,8 @@ body.activator{
 	color: #e6edf7;
 
 
-	-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-	clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-
+	-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 .CenterText{
 	margin-right: auto;
@@ -316,6 +315,11 @@ body.activator{
 	text-align: center;
 	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;;
 
+}
+
+.sideMenu{
+	float: left;
+	
 }
 
 .v1 {
