@@ -49,6 +49,7 @@ https://developers.facebook.com/tools/debug/
       var currentImage1 = Math.floor(Math.random() * images1.length)
       var currentImage2 = Math.floor(Math.random() * images2.length);
       var counter = 0;
+      // var contentContainerPlacement = $("#contentContainer").css('top', 'no-repeat')
 
 
 
@@ -81,18 +82,24 @@ https://developers.facebook.com/tools/debug/
 
       function makeBanner(){
         var parallaxPosition = $("#parallax").offset().top;
-
-        console.log(parallaxPosition);
         $(".banner").css('top', parallaxPosition * 20)
-        $(".bannerShape").css('top', parallaxPosition * 35)
+        $(".bannerShape").css('top', parallaxPosition * 41)
 
       }
 
+      function setSideMenu(){
+
+        console.log($('html').scrollTop())
+         // $("#sideMenu").css('top', $('html').scrollTop())
+
+      }
+
+
       $(document).ready(function(){
-          makeBanner()
+        makeBanner()
         setTimeout(changeBG1, 15000)
         setTimeout(changeBG2, 30000)
-
+        setSideMenu()
 
       })
         // smallParallax1.style.backgroundImage = 'url(' + images[Math.round(Math.random() * images.length)] + ')';

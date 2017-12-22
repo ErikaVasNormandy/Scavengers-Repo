@@ -64,13 +64,6 @@ class App extends React.Component{
         )
       }
 
-// var getCss=(imageName) => {
-//
-//   return {
-//     backgroundImage:"https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg"
-//   }
-// }
-
     setTab(newTab)
     {
         this.state.currentTab = newTab;
@@ -136,7 +129,8 @@ class App extends React.Component{
 
         return(
 
-          <div >
+          <div>
+
 
                 <div className="topMenu">
                     <div>
@@ -163,19 +157,30 @@ class App extends React.Component{
                 </div>
 
 
+            <div className="row">
+              <div className="col s2 m2 l2">
+                <div id="sideMenu" className="card medium sticky-action">
 
+                      <h1> </h1>
 
-
-              <div id="contentContainer" >
-                <div id ="Content1" className= {this.state.tab1Active ? '' : 'dormantTab'}><ProjectComponent>Hello hello </ProjectComponent></div>
-                <div id ="Content2" className= {this.state.tab2Active ? '' : 'dormantTab'}><WorldBuildingComponent>Hello hello </WorldBuildingComponent></div>
-                <div id ="Content3" className= {this.state.tab3Active ? '' : 'dormantTab'}><UsefulBitsComponent data = {data}>CONTENT HERE</UsefulBitsComponent></div>
-                <div id ="Content4" className= {this.state.tab4Active ? '' : 'dormantTab'}><h1>About</h1><MaterialComponent>Material Component </MaterialComponent></div>
-
+                </div>
               </div>
 
 
-          </div>
+
+                 <div className="col s9 m9 l9" id="contentContainer" >
+                   <div id ="Content1" className= {this.state.tab1Active ? '' : 'dormantTab'}><ProjectComponent>Hello hello </ProjectComponent></div>
+                    <div id ="Content2" className= {this.state.tab2Active ? '' : 'dormantTab'}><WorldBuildingComponent>Hello hello </WorldBuildingComponent></div>
+                    <div id ="Content3" className= {this.state.tab3Active ? '' : 'dormantTab'}><UsefulBitsComponent data = {data}>CONTENT HERE</UsefulBitsComponent></div>
+                    <div id ="Content4" className= {this.state.tab4Active ? '' : 'dormantTab'}><h1>About</h1><MaterialComponent>Material Component </MaterialComponent></div>
+                  </div>
+
+                </div>
+
+
+        </div>
+
+
 
         )
     }
