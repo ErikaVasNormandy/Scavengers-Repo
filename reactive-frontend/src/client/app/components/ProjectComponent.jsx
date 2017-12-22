@@ -18,7 +18,6 @@ class ProjectComponent extends React.Component {
         <h1>Projects</h1>
         <p>Mostly Github links for now, planning on categorizing them more </p>
         https://github.com/ErikaVasNormandy
-         <div className="row" style = {{color: 'black'}}>
 
 
             <div className="col s4 m4 l4">
@@ -121,7 +120,7 @@ class ProjectComponent extends React.Component {
                 </div>
 
 
-        </div>
+
       </div>
     )
   }

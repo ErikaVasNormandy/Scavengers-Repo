@@ -1,8 +1,7 @@
 body
 	{
-		background-color: #000a16;
-		/*background-image: radial-gradient(rgba(0,0,0,.2), rgba(1,0,0, 1)), url(https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg);*/
-		background-attachment: fixed;
+		background-color:#00060c;
+		/*background-image:  radial-gradient(rgba(0,0,0,.5), rgba(1,0,0, 1)), url(https://www.jpl.nasa.gov/spaceimages/images/mediumsize/PIA17568_ip.jpg);*/
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -79,7 +78,8 @@ button{
 	font-weight: bold;
 	font-size: 12px;
 	color: #e6edf7;
-	background-color:#0d0203;
+	background-color:#0f0003;
+
 	position: fixed;
 	z-index: 5;
 
@@ -278,8 +278,8 @@ body.activator{
 	color: #e6edf7;
 
 	width: 100%;
-	background-color: #0d0203;
-	opacity:0.9;
+	background-color: #0f0003;
+	opacity:0.95;
 	background-repeat: repeat;
 	background-position: center;
 	z-index: 1;
@@ -291,7 +291,7 @@ body.activator{
 	text-align: center;
 	padding-top: 75px;
 	padding-bottom: 75px;
-	background-color:#0d0203;
+	background-color:#0f0003;
 	background-repeat: repeat;
 	background-position: center;
 	z-index: 2;
