@@ -5,6 +5,9 @@ import ProjectComponent from './components/ProjectComponent.jsx';
 import UsefulBitsComponent from './components/UsefulBitsComponent.jsx';
 import WorldBuildingComponent from './components/WorldBuildingComponent.jsx';
 
+import BusinessCardComponent from './components/BusinessCardComponent.jsx';
+
+
 import data from './data/usefulResourcesData.js';
 import styles from '../app/styles.css';
 
@@ -136,8 +139,8 @@ class App extends React.Component{
                     <div>
                         <span className = "topHeader">
                             <div className="circleImage"></div>
-                            <p className="topsubtext">An All-Purpose Namespace </p>
-                            <p className="bottomHeader">For Every Bird and Beastie</p>
+                            <p className="topsubtext">Fly Me to the Galaxy </p>
+                            <p className="bottomHeader">And All the Worlds Beyond</p>
 
                         </span>
                     </div>
@@ -159,11 +162,7 @@ class App extends React.Component{
 
             <div className="row">
               <div className="col s2 m2 l2">
-                <div id="sideMenu" className="card medium sticky-action">
-
-                      <h1> </h1>
-
-                </div>
+                <BusinessCardComponent/>
               </div>
 
 

@@ -38,12 +38,12 @@ body
 #contentContainer {
 	min-height: 40vh;
 	overflow-y: scroll;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color:#0f0003;
 	color: #e6edf7;
 
 	margin-right: 20px;
 
-	margin-top: 25vh;
+	margin-top: 30vh;
 
 	padding-left: 5%;
 	padding-right: 5%;
@@ -52,7 +52,6 @@ body
 	border-width: medium;
 	border-color: rgba(255,255,255,0.5);
 	float: right;
-
 
 
 }
@@ -139,39 +138,6 @@ p.btn-flat{
 }
 
 
-.sideMenuItem{
-	font-size: 80%;
-	padding: 4px 30px 4px 4px;
-
-	word-wrap: break-word;
-	font-size: 1.5em;
-	min-height: 4vw;
-	min-width: 15vw;
-
-	background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0, 1));
-	text-overflow: ellipsis;
-	text-align: right;
-
-	border-color: white;
-
-	border-left-style: none;
-	border-bottom-style: none;
-	border-right-style: solid;
-	border-color: rgba(255,255,255, 0.2);
-	border-right-width: thin;
-}
-
-
-.sideMenuItem:hover{
-	font-size:160%;
-	font-weight: bold;
-
-}
-
-.sideMenuItem:active{
-	font-size:150%;
-		text-decoration-line: underline;
-}
 
 
 
@@ -322,18 +288,95 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 
 }
 
+/*-------------------------
+/*----- Side Menu Materials */
 #sideMenu{
-	background-color: rgba(0, 0, 0, 0);
-	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;;
+	background-color:#0f0003;
 
 	color: #e6edf7;
 	float: left;
 	margin-left: 1px;
 	width: 20vw;
 
-	margin-top: 22vh;
+	margin-top: 30vh;
+	border-style: solid;
+
+	text-align: center;
+
+	border-style: double;
+	border-width: thin;
+	border-color: rgba(230, 237, 247,0.2);
+	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
 
 }
+.sideMenuItem{
+	font-size: 80%;
+	padding: 4px 30px 4px 4px;
+
+	word-wrap: break-word;
+	font-size: 1.5em;
+	min-height: 4vw;
+	min-width: 15vw;
+
+	background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0, 1));
+	text-overflow: ellipsis;
+	text-align: right;
+
+	border-color: white;
+
+	border-left-style: none;
+	border-bottom-style: none;
+	border-right-style: solid;
+	border-color: rgba(255,255,255, 0.2);
+	border-right-width: thin;
+}
+
+
+.sideMenuItem:hover{
+	font-size:160%;
+	font-weight: bold;
+
+}
+
+.sideMenuItem:active{
+	font-size:150%;
+		text-decoration-line: underline;
+}
+
+.menuImg{
+	width: 150px;
+	height: 150px;
+	margin-left: auto;
+	margin-top: 10px;
+}
+
+ul.sideMenuLinks{
+		list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+
+}
+li.sideMenuLinksLI{
+	float: left;
+}
+
+a.sideMenuLinksA{
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.sideMenuLinksA:hover{
+	background-color: #111;
+}
+
+/* */
+
+
+
+
 
 .v1 {
     border-top: 1px solid white;
