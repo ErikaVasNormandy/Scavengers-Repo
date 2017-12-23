@@ -16,8 +16,6 @@ class ProjectComponent extends React.Component {
     return(
       <div>
         <h1>Projects</h1>
-        <p>Mostly Github links for now, planning on categorizing them more </p>
-        https://github.com/ErikaVasNormandy
          <div className="row" style = {{color: 'black'}}>
 
 
