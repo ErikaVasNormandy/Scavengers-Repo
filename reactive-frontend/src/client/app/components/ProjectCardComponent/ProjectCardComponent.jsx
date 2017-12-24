@@ -50,7 +50,7 @@ render(){
         <h4>{this.props.projectTitle}</h4>
         <p className ="description" onMouseOver={this.handleMouseOver}>
           <p style= {containerStyle}>-----</p>
-        <p style= {containerStyle}>-----</p>
+          <p style= {containerStyle}>-----</p>
           <p style= {containerStyle}>-----</p>
           <p style= {containerStyle}>-----</p>
           {this.props.projectDescription}
