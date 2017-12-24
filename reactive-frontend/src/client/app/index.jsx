@@ -7,9 +7,7 @@ import WorldBuildingComponent from './components/WorldBuildingComponent.jsx';
 
 import BusinessCardComponent from './components/BusinessCardComponent.jsx';
 import ProjectCardComponent from './components/ProjectCardComponent/ProjectCardComponent.jsx';
-import ProjectCardComponentStyles from './components/ProjectCardComponent/ProjectCardComponent.css';
-
-
+s
 import data from './data/usefulResourcesData.js';
 import styles from '../app/styles.css';
 
