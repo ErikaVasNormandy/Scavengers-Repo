@@ -28,11 +28,11 @@ body
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		}
+}
 
 @font-face {
-			font-family:"AugustaShadow";
-			src: url('../app/fonts/Augusta-Shadow.ttf');
+		font-family:"AugustaShadow";
+		src: url('../app/fonts/Augusta-Shadow.ttf');
 }
 
 #contentContainer {
@@ -63,7 +63,6 @@ body
 
 button{
 	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
-
 }
 
 /*referring to div*/
@@ -308,6 +307,9 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 	border-color: rgba(230, 237, 247,0.2);
 	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
 
+	padding-left: 1vw;
+	padding-right: 1vw;
+
 }
 .sideMenuItem{
 	font-size: 80%;
@@ -317,6 +319,7 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 	font-size: 1.5em;
 	min-height: 4vw;
 	min-width: 15vw;
+
 
 	background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0, 1));
 	text-overflow: ellipsis;
@@ -331,7 +334,6 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 	border-right-width: thin;
 }
 
-
 .sideMenuItem:hover{
 	font-size:160%;
 	font-weight: bold;
@@ -344,8 +346,8 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
 .menuImg{
-	width: 150px;
-	height: 150px;
+	width: 15vw;
+	height: 15vw;
 	margin-left: auto;
 	margin-top: 10px;
 }
@@ -372,11 +374,6 @@ a.sideMenuLinksA{
 	background-color: #111;
 }
 
-/* */
-
-
-
-
 
 .v1 {
     border-top: 1px solid white;
@@ -387,4 +384,41 @@ a.sideMenuLinksA{
 		position: absolute;
 		margin-left: 220px;
 		margin-top: 5px;
+}
+
+/*-------------------------
+/*----- Project Card Components */
+
+
+.projectCardBody{
+	background-color: rgba(255,255,255,1);
+	background-image: url(styles.css);
+	padding: 10px 10px 10px 10px;
+	width: 30em;
+	height: 25em;
+	top: 0px;
+	left: 0px;
+
+	display: inline-block;
+	text-align: center;
+	margin-top: auto;
+
+	margin-left: 60%;
+
+}
+.projectCardBody:hover{
+	background-color: rgba(255,255,255,0.5);
+}
+
+.projectCardBody.activated{
+	background-color:red;
+
+}
+
+.projectCenterText{
+	margin-top: 25%;
+	font-size: 1em;
+}
+a.specialLink{
+	color: white;
 }

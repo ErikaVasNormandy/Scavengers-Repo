@@ -11,21 +11,25 @@ app = Flask(__name__)
 def index():
     return redirect("http://scavengers-repo.com")
 
+@app.route('/clickjacking')
+def clickjacking():
+    return redirect("http://scavengers-repo.com/")
+
     #return redirect("http://ec2-54-153-124-128.us-west-1.compute.amazonaws.com:8081", code=302)
 
 
 
-@app.route('/flaskAngular')
-def flaskAngular():
-    return redirect("http://ec2-54-153-124-128.us-west-1.compute.amazonaws.com:3000", code=302)
-
-@app.route('/flaskAngularlocal')
-def flaskAngularLocal():
-    return redirect("http://localhost:3000", code=302)
-
-@app.route('/reactive-local')
-def ReactiveFlask():
-    return redirect("http://localhost:8081", code=302)
+# @app.route('/flaskAngular')
+# def flaskAngular():
+#     return redirect("http://ec2-54-153-124-128.us-west-1.compute.amazonaws.com:3000", code=302)
+# 
+# @app.route('/flaskAngularlocal')
+# def flaskAngularLocal():
+#     return redirect("http://localhost:3000", code=302)
+# 
+# @app.route('/reactive-local')
+# def ReactiveFlask():
+#     return redirect("http://localhost:8081", code=302)
 
 
 
