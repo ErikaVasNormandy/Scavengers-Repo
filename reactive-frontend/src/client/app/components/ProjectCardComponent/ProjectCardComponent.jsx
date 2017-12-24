@@ -22,8 +22,7 @@ class ProjectCardComponent extends React.Component{
 
   handleMouseOver(){
     this.setState({
-      PropOpacity: '0.1'
-
+      PropOpacity: 0.1
     })
   }
 
@@ -35,6 +34,13 @@ render(){
       backgroundImage: 'url(' +this.props.projectImg+ ')',
       backgroundSize: "cover",
     }
+  const descriptionStyle={
+    // opacity: this.props.PropOpacity,
+    // marginTop: '5.0'
+  }
+  const containerStyle={
+    opacity: '0'
+  }
 
   return(
 
@@ -42,7 +48,16 @@ render(){
     <div className="projectCardBody" style= {divStyle} onMouseOver={this.handleMouseOver}>
       <div className="projectCenterText">
         <h4>{this.props.projectTitle}</h4>
-        <a href={this.props.projectLink}>Subdirectory</a>
+        <p className ="description" onMouseOver={this.handleMouseOver}>
+          <p style= {containerStyle}>-----</p>
+        <p style= {containerStyle}>-----</p>
+          <p style= {containerStyle}>-----</p>
+          <p style= {containerStyle}>-----</p>
+          {this.props.projectDescription}
+
+        <p className = "linkStyle"><a href={this.props.projectLink}>Subdirectory --></a></p>
+
+        </p>
       </div>
 
     </div>

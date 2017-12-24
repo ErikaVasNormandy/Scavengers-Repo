@@ -403,14 +403,15 @@ a.sideMenuLinksA{
 	text-align: center;
 	margin-top: auto;
 
-	text-shadow: 3px 3px #000000;
+	text-shadow: 1px 2px #000000;
+	font-weight: bold;
 
 }
 .projectCardBody:hover{
 	-webkit-filter: brightness(50%); /* Safari */
 	filter: brightness(60%);
 	color: white;
-	text-shadow: 0 0 1em #a8cbff, 0 0 1em #a8cbff;
+	text-shadow: 0 0 1em #a8cbff;
 	text-decoration-color: white;
   background-color: gray;
 
@@ -420,6 +421,35 @@ a.sideMenuLinksA{
 	margin-top: 25%;
 	font-size: 1em;
 }
-a.specialLink{
-	
+.description{
+	text-align: left;
+ /*padding: 10em 10em 10em 10em;*/
+	opacity: .01;
+	width: 30em;
+	height: 25em;
+	margin-top: -10em;
+	position:absolute;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.description:hover{
+	text-align: left;
+ /*padding: 10em 10em 10em 10em;*/
+	opacity: 1;
+	width: 30em;
+	height: 25em;
+		margin-top: -10em;
+		position: absolute;
+
+		margin-left: 10px;
+		margin-right: 10px;
+
+}
+
+.linkStyle{
+	text-align: right;
+	margin-right: 30px;
+	text-shadow: 0 0 1px black, 0 0 1px black;
+	font-size: 1.5em;
+
 }
