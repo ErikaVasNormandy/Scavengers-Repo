@@ -42,7 +42,7 @@ render(){
     <div className="projectCardBody" style= {divStyle} onMouseOver={this.handleMouseOver}>
       <div className="projectCenterText">
         <h4>{this.props.projectTitle}</h4>
-        <a href={this.props.projectLink}>Subdirectory</a>
+        <a className="specialLink" href={this.props.projectLink}>Subdirectory</a>
       </div>
 
     </div>
