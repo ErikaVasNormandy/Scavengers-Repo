@@ -128,7 +128,7 @@ class App extends React.Component{
 
 
       var parallax1Style = {
-        backgroundImage: 'url(' + this.state.imgUrl + ')'
+        backgroundImage: 'url(' + this.props.imgUrl + ')'
       }
 
 

@@ -403,15 +403,16 @@ a.sideMenuLinksA{
 	text-align: center;
 	margin-top: auto;
 
-	margin-left: 60%;
+	text-shadow: 3px 3px #000000;
 
 }
 .projectCardBody:hover{
-	background-color: rgba(255,255,255,0.5);
-}
-
-.projectCardBody.activated{
-	background-color:red;
+	-webkit-filter: brightness(50%); /* Safari */
+	filter: brightness(60%);
+	color: white;
+	text-shadow: 0 0 1em #a8cbff, 0 0 1em #a8cbff;
+	text-decoration-color: white;
+  background-color: gray;
 
 }
 

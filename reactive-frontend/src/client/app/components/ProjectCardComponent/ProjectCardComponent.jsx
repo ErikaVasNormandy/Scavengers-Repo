@@ -12,18 +12,19 @@ class ProjectCardComponent extends React.Component{
         projectTitle:'',
         projectDescription:'',
         projectLink:'',
-        projectImg:''
+        projectImg:'',
+        PropOpacity:'0.3'
       }
-
+    this.handleMouseOver = this.handleMouseOver.bind(this);
 
   }
 
-  handleClick(){
-    console.log("hello")
-  }
 
-  loadBG(){
+  handleMouseOver(){
+    this.setState({
+      PropOpacity: '0.1'
 
+    })
   }
 
 
@@ -33,17 +34,15 @@ render(){
   const divStyle={
       backgroundImage: 'url(' +this.props.projectImg+ ')',
       backgroundSize: "cover",
-      opacity: ".2"
     }
 
   return(
 
 
-    <div className="projectCardBody" style= {divStyle}>
+    <div className="projectCardBody" style= {divStyle} onMouseOver={this.handleMouseOver}>
       <div className="projectCenterText">
         <h4>{this.props.projectTitle}</h4>
-        <p>   {this.state.projectImg}</p>
-        <a className="specialLink" href="https://www.google.com">link test</a>
+        <a className="specialLink" href={this.props.projectLink}>{this.props.projectLink}</a>
       </div>
 
     </div>
