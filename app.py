@@ -11,11 +11,13 @@ app = Flask(__name__)
 def index():
     return redirect("http://scavengers-repo.com")
 
-@app.route('/clickjacking')
-def clickjacking():
-    return render_template('index.html' )
+
     #return redirect("http://ec2-54-153-124-128.us-west-1.compute.amazonaws.com:8081", code=302)
 
+#
+# @app.route('/index.html')
+# def index():
+#     return redirect("http://scavengers-repo.com")
 
 
 # @app.route('/flaskAngular')
@@ -54,4 +56,4 @@ def signup():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)

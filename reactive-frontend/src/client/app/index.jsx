@@ -11,6 +11,8 @@ import ProjectCardComponent from './components/ProjectCardComponent/ProjectCardC
 import data from './data/usefulResourcesData.js';
 import styles from '../app/styles.css';
 
+import {Router, Route} from 'react-router';
+
 class App extends React.Component{
     constructor(props){
         super(props);
