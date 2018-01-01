@@ -178,7 +178,7 @@ class App extends React.Component{
 
                 </div>
                 <Router>
-                  <Route path="DemoRoute" component={WorldBuildingComponent}/>
+                  // <Route path="DemoRoute" component={WorldBuildingComponent}/>
 
                 </Router>
 
