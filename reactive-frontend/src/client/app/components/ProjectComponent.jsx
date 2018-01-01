@@ -2,6 +2,13 @@ import React from 'react';
 import {render} from 'react-dom';
 import ProjectCardComponent from './ProjectCardComponent/ProjectCardComponent.jsx';
 
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link,
+} from 'react-router-dom';
+
 import SickOSComponent from './SickOSComponent.jsx';
 
 
@@ -18,21 +25,24 @@ class ProjectComponent extends React.Component {
     return(
       <div>
         <h1>Projects</h1>
-          <ProjectCardComponent
-            projectTitle="SickOS"
-            projectDescription="Hack a vulnerable VM with shells and Ubuntu privilege escalation. All you need is VirtualBox and an Internet Browser. Overall this activity was mildly difficult if you have no prior experience of pen-testing, so it is a good application of the concepts that a class might teach you."
-            projectImg="https://orig00.deviantart.net/079e/f/2014/012/e/9/spell_book_and_wand_png_stock_by_jumpfer_stock-d71vg5f.png"
-            projectLink="https://erikavasnormandy.github.io/sickOS.html"
+          <Router>
+          <div>
 
-            >
-          </ProjectCardComponent>
+              <Link to="/sickOs" style = {{ color: 'white'}} >
+              <ProjectCardComponent
+                  projectTitle="SickOS"
+                  projectDescription="Hack a vulnerable VM with shells and Ubuntu privilege escalation. All you need is VirtualBox and an Internet Browser. Overall this activity was mildly difficult if you have no prior experience of pen-testing, so it is a good application of the concepts that a class might teach you."
+                  projectImg="https://orig00.deviantart.net/079e/f/2014/012/e/9/spell_book_and_wand_png_stock_by_jumpfer_stock-d71vg5f.png"
+                >
+
+                </ProjectCardComponent>
+                </Link>
+
 
           <ProjectCardComponent
             projectTitle="Clickjacking"
             projectDescription="Wanted to test out my own site to see if it was vulnerable. The tutorial might be specifically for Wordpress sites, but the basic principles are the same, and it's fairly easy to follow without being too simplistic"
             projectImg="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/Sketches/Eye+Sketch.png"
-            projectLink="https://erikavasnormandy.github.io/ClickJacking"
-
             >
           </ProjectCardComponent>
 
@@ -44,6 +54,14 @@ class ProjectComponent extends React.Component {
 
             >
           </ProjectCardComponent>
+          <Switch>
+          <Route path="/sickOS" component={SickOSComponent}/>
+          </Switch>
+
+
+        </div>
+        </Router>
+
 
       </div>
     )

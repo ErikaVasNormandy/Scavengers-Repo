@@ -4,14 +4,20 @@ import MaterialComponent from './materials.jsx';
 import ProjectComponent from './components/ProjectComponent.jsx';
 import UsefulBitsComponent from './components/UsefulBitsComponent.jsx';
 import WorldBuildingComponent from './components/WorldBuildingComponent.jsx';
+import SickOSComponent from './components/SickOSComponent.jsx';
+
 
 import BusinessCardComponent from './components/BusinessCardComponent.jsx';
 import ProjectCardComponent from './components/ProjectCardComponent/ProjectCardComponent.jsx';
 
 import data from './data/usefulResourcesData.js';
 import styles from '../app/styles.css';
-
-import {Router, Route} from 'react-router';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link,
+} from 'react-router-dom'
 
 class App extends React.Component{
     constructor(props){
@@ -177,10 +183,34 @@ class App extends React.Component{
                   </div>
 
                 </div>
-                
+
+
+                {/*
+                              <Router >
+                                <div>
+                                  <h1>HERE JOEY</h1>
+                                  <div>
+
+                                    <Link to='/materials'><button >Materials</button></Link>
+                                    <Link to='/resources'><button >Resources</button></Link>
+                                    <Link to='/'><button >Projects</button></Link>
+                                  </div>
+                                  <Switch>
+                                    <Route path="/materials" component={MaterialComponent}/>
+                                    <Route path="/" component={ProjectComponent}/>
+                                    <Route path="/resources" component={UsefulBitsComponent}/>
+                                  </Switch>
+                                </div>
+
+                              </Router>
+ */}
 
 
         </div>
+
+
+
+
 
 
 

@@ -221,7 +221,7 @@ body.activator{
     z-index: 1;
     position: absolute;
     width: 100%;
-	animation: fadeIn 30s infinite;
+		animation: fadeIn 30s infinite;
 }
 
 .bannerContainer{
@@ -284,7 +284,6 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 	font-size: 2.5em;
 	text-align: center;
 	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;;
-
 }
 
 /*-------------------------
@@ -390,10 +389,17 @@ a.sideMenuLinksA{
 /*----- Project Card Components */
 
 
-.projectCardBody{
+.projectCardParent h4{
+	font-size: 3em;
+}
+
+
+
+
+.projectCardParent{
+
 	background-color: rgba(255,255,255,1);
 	background-image: url(styles.css);
-	padding: 10px 10px 10px 10px;
 	width: 30em;
 	height: 25em;
 	top: 0px;
@@ -405,9 +411,11 @@ a.sideMenuLinksA{
 
 	text-shadow: 1px 2px #000000;
 	font-weight: bold;
-
 }
-.projectCardBody:hover{
+.projectCardParent:hover{
+
+
+
 	-webkit-filter: brightness(50%); /* Safari */
 	filter: brightness(60%);
 	color: white;
@@ -415,35 +423,51 @@ a.sideMenuLinksA{
 	text-decoration-color: white;
   background-color: gray;
 
+	width: 30em;
+	height: 25em;
+	top: 0px;
+	left: 0px;
+
+	display: inline-block;
+	text-align: center;
+	margin-top: auto;
+
+	text-shadow: 1px 2px #000000;
+	font-weight: bold;
 }
 
-.projectCenterText{
-	margin-top: 25%;
-	font-size: 1em;
+.projectCardChild1{
+		position: absolute;
+		width: 30em;
+		height: 25em;
+		padding-top: 5%;
+
 }
-.description{
-	text-align: left;
- /*padding: 10em 10em 10em 10em;*/
-	opacity: .01;
-	width: 30em;
-	height: 25em;
-	margin-top: -10em;
-	position:absolute;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-.description:hover{
-	text-align: left;
- /*padding: 10em 10em 10em 10em;*/
-	opacity: 1;
-	width: 30em;
-	height: 25em;
-		margin-top: -10em;
+.projectCardChild2{
+		opacity: .01;
+
+
 		position: absolute;
 
-		margin-left: 10px;
-		margin-right: 10px;
+		text-align: left;
+		width: 30em;
+		height: 25em;
 
+}
+
+.projectCardChild2:hover{
+	 	opacity: 1;
+
+		position: absolute;
+
+		text-align: left;
+		width: 30em;
+		height: 25em;
+}
+.projectCardChild2 p{
+		padding-top:35%;
+		padding-left: 2%;
+		padding-right: 2%;
 }
 
 .linkStyle{

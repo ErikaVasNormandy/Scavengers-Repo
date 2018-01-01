@@ -2,7 +2,8 @@ var express = require('express');
 var app=express();
 
 app.use(express.static(__dirname));
-app.get('/', function(req, res){
+var activeRoutes = ['/materials', '/resources', '/', '/clickjacking', '/sickOS']
+app.get(activeRoutes, function(req, res){
 
 
 	res.sendFile(__dirname + '/src/client/index.html');
