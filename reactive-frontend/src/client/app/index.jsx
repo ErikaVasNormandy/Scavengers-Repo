@@ -177,10 +177,10 @@ class App extends React.Component{
                   </div>
 
                 </div>
-                <Router>
-                  // <Route path="DemoRoute" component={WorldBuildingComponent}/>
-
-                </Router>
+                // <Router>
+                //   // <Route path="DemoRoute" component={WorldBuildingComponent}/>
+                //
+                // </Router>
 
         </div>
 
