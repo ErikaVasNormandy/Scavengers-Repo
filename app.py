@@ -56,4 +56,4 @@ def signup():
 
 
 if __name__ == '__main__':
-    app.run(host="scavengers-repo.com", debug=True)
+    app.run(host="http://scavengers-repo.com", debug=True)
