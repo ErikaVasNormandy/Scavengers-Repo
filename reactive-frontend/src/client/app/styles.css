@@ -390,18 +390,15 @@ a.sideMenuLinksA{
 
 
 .projectCardParent h4{
-	font-size: 3em;
+	font-size: 2em;
 }
-
-
-
 
 .projectCardParent{
 
 	background-color: rgba(255,255,255,1);
 	background-image: url(styles.css);
-	width: 30em;
-	height: 25em;
+	width: 20em;
+	height: 15em;
 	top: 0px;
 	left: 0px;
 
@@ -414,8 +411,6 @@ a.sideMenuLinksA{
 }
 .projectCardParent:hover{
 
-
-
 	-webkit-filter: brightness(50%); /* Safari */
 	filter: brightness(60%);
 	color: white;
@@ -423,8 +418,8 @@ a.sideMenuLinksA{
 	text-decoration-color: white;
   background-color: gray;
 
-	width: 30em;
-	height: 25em;
+	width: 20em;
+	height: 15em;
 	top: 0px;
 	left: 0px;
 
@@ -438,21 +433,19 @@ a.sideMenuLinksA{
 
 .projectCardChild1{
 		position: absolute;
-		width: 30em;
-		height: 25em;
-		padding-top: 5%;
+		width: 20em;
+		height: 15em;
+		padding-top: 2%;
 
 }
 .projectCardChild2{
 		opacity: .01;
 
-
 		position: absolute;
 
 		text-align: left;
-		width: 30em;
-		height: 25em;
-
+		width: 20em;
+		height: 15em;
 }
 
 .projectCardChild2:hover{
@@ -461,13 +454,14 @@ a.sideMenuLinksA{
 		position: absolute;
 
 		text-align: left;
-		width: 30em;
-		height: 25em;
+		width: 20em;
+		height: 15em;
 }
 .projectCardChild2 p{
 		padding-top:35%;
 		padding-left: 2%;
 		padding-right: 2%;
+		font-size: 0.8em;
 }
 
 .linkStyle{

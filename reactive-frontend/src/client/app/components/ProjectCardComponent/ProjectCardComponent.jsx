@@ -42,7 +42,6 @@ render(){
   return(
     <div className="projectCardParent" style= {divStyle} onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
 
-
       <div className="projectCardChild1">
         <h4>{this.props.projectTitle}</h4>
       </div>
