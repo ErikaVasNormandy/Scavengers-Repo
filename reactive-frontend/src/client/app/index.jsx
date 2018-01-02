@@ -4,11 +4,7 @@ import MaterialComponent from './materials.jsx';
 import ProjectComponent from './components/ProjectComponent.jsx';
 import UsefulBitsComponent from './components/UsefulBitsComponent.jsx';
 import WorldBuildingComponent from './components/WorldBuildingComponent.jsx';
-import SickOSComponent from './components/SickOSComponent.jsx';
-
-
 import BusinessCardComponent from './components/BusinessCardComponent.jsx';
-import ProjectCardComponent from './components/ProjectCardComponent/ProjectCardComponent.jsx';
 
 import data from './data/usefulResourcesData.js';
 import styles from '../app/styles.css';
