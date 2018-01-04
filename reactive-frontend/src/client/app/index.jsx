@@ -18,8 +18,7 @@ import {
 class App extends React.Component{
     constructor(props){
         super(props);
-        this.state = {currentTab: 1, tab1Active: true, tab2Active: false, tab3Active: false, tab4Active: false, imgUrl:""}
-        this.setTab = this.setTab.bind(this);
+        this.state = {imgUrl:""}
         this.randomImage = this.randomImage.bind(this);
     }
     getInitialState(){
@@ -71,60 +70,6 @@ class App extends React.Component{
         )
       }
 
-    setTab(newTab)
-    {
-        this.state.currentTab = newTab;
-        if(this.state.currentTab == 1)
-        {
-            console.log("Clicked on 1")
-          this.setState({
-
-              tab1Active: true,
-              tab2Active: false,
-              tab3Active: false,
-              tab4Active: false
-            })
-        }
-        if(this.state.currentTab == 2)
-        {
-          console.log("Clicked on 2")
-          this.setState({
-
-              tab1Active: false,
-              tab2Active: true,
-              tab3Active: false,
-              tab4Active: false
-            })
-        }
-        if(this.state.currentTab == 3)
-        {
-          console.log("Clicked on 3")
-          this.setState({
-
-              tab1Active: false,
-              tab2Active: false,
-              tab3Active: true,
-              tab4Active: false
-
-            })
-        }
-
-        if(this.state.currentTab == 4)
-        {
-          console.log("Clicked on 4")
-          this.setState({
-
-              tab1Active: false,
-              tab2Active: false,
-              tab3Active: false,
-              tab4Active: true
-
-            })
-        }
-        this.state.currentContent = newTab;
-        console.log(this.state.currentTab)
-    }
-
 
     render() {
 
@@ -135,29 +80,26 @@ class App extends React.Component{
 
 
         return(
-
+          <Router>
           <div>
-
-
                 <div className="topMenu">
-                    <div>
-                        <span className = "topHeader">
-                            <div className="circleImage"></div>
-                            <p className="topsubtext">Fly Me to the Galaxy </p>
-                            <p className="bottomHeader">And All the Worlds Beyond</p>
+                      <div>
+                          <span className = "topHeader">
+                              <div className="circleImage"></div>
+                              <p className="topsubtext">Fly Me to the Galaxy </p>
+                              <p className="bottomHeader">And All the Worlds Beyond</p>
 
-                        </span>
-                    </div>
-
-                      <div className="v1"></div>
-
+                          </span>
+                      </div>
+                    <div className="v1"></div>
 
 
-                      <button className ="waves-effect waves-light btn-flat " style = {{color:'white', fontSize: "1.5vw"}}  onClick = {() => this.setTab(1)} >Projects</button>
 
-                      <button className ="waves-effect waves-light  btn-flat"  style = {{color:'white', fontSize: "1.5vw"}}  onClick = {() => this.setTab(2)}>World Building</button>
+                      <Link to="/Projects"><button className ="waves-effect waves-light btn-flat " style = {{color:'white', fontSize: "1.5vw"}}>Projects</button></Link>
 
-                      <button className ="waves-effect waves-light  btn-flat"  style = {{color:'white', fontSize: "1.5vw"}}  onClick = {() => this.setTab(3)}>Useful</button>
+                      <Link to="/WorldBuilding"><button className ="waves-effect waves-light  btn-flat"  style = {{color:'white', fontSize: "1.5vw"}}>World Building</button></Link>
+
+                      <Link to="/UsefulBits"><button className ="waves-effect waves-light  btn-flat"  style = {{color:'white', fontSize: "1.5vw"}} >Useful</button></Link>
 
                       <button className ="waves-effect waves-light  btn-flat" style = {{color:'white', fontSize: "1.5vw"}}  onClick = {() => this.setTab(4)}>About</button>
 
@@ -165,20 +107,22 @@ class App extends React.Component{
 
 
             <div className="row">
-              <div className="col s2 m2 l2">
-                <BusinessCardComponent/>
-              </div>
+             <div className="col s2 m2 l2">
+               <BusinessCardComponent/>
+             </div>
 
 
+                    <Switch>
+                      <div className="col s9 m9 l9" id="contentContainer" >
+                             <Route exact path="/" component={ProjectComponent}/>
+                             <Route path="/Projects" component={ProjectComponent}/>
+                             <Route path="/UsefulBits" component={UsefulBitsComponent}/>
+                             <Route path="/WorldBuilding" component={WorldBuildingComponent}/>
 
-                 <div className="col s9 m9 l9" id="contentContainer" >
-                   <div id ="Content1" className= {this.state.tab1Active ? '' : 'dormantTab'}><ProjectComponent>Hello hello </ProjectComponent></div>
-                    <div id ="Content2" className= {this.state.tab2Active ? '' : 'dormantTab'}><WorldBuildingComponent>Hello hello </WorldBuildingComponent></div>
-                    <div id ="Content3" className= {this.state.tab3Active ? '' : 'dormantTab'}><UsefulBitsComponent data = {data}>CONTENT HERE</UsefulBitsComponent></div>
-                    <div id ="Content4" className= {this.state.tab4Active ? '' : 'dormantTab'}><h1>About</h1><MaterialComponent>Material Component </MaterialComponent></div>
-                  </div>
+                      </div>
+                    </Switch>
 
-                </div>
+            </div>
 
 
                 {/*
@@ -201,12 +145,8 @@ class App extends React.Component{
                               </Router>
  */}
 
-
         </div>
-
-
-
-
+      </Router>
 
 
 

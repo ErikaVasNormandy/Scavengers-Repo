@@ -10,7 +10,7 @@ class WorldBuildingComponent extends React.Component {
     return(
       <div>
         <h1>World Building</h1>
-        https://docs.google.com/document/d/1R0gys3RjfGtbFwWeUpMBzmt96WQI_5wpOC33RM3URSg/edit?usp=sharing
+      //  https://docs.google.com/document/d/1R0gys3RjfGtbFwWeUpMBzmt96WQI_5wpOC33RM3URSg/edit?usp=sharing
 
       </div>
     )

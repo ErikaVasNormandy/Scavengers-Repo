@@ -22,21 +22,15 @@ class ProjectComponent extends React.Component {
   }
 
 
-
   render(){
     return(
       <div>
           <Router>
-            <div>
-
+            <div style ={{marginTop: '10px'}}>
               <div className="col s8 m8 l8">
-
                 <Switch>
-class
-
                   <Route path="/sickOS" component={SickOSComponent}/>
                   <Route path="/clickjacking" component={ClickJackingComponent}/>
-
                 </Switch>
               </div>
 

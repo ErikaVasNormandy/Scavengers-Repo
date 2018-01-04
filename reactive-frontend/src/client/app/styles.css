@@ -45,9 +45,9 @@ body
 
 	margin-top: 30vh;
 
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-bottom: 5%;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 1%;
 	border-style: double;
 	border-width: medium;
 	border-color: rgba(255,255,255,0.5);
@@ -289,25 +289,20 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 /*-------------------------
 /*----- Side Menu Materials */
 #sideMenu{
-	background-color:#0f0003;
+	background-color: #0f0003;
+color: #e6edf7;
+float: left;
+margin-left: 1px;
+width: 20vw;
+margin-top: 30vh;
+border-style: double;
+text-align: center;
+border-color: rgba(230, 237, 247,0.5);
+text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
+padding-left: 10px;
+padding-right: 10px;
+height: 100%
 
-	color: #e6edf7;
-	float: left;
-	margin-left: 1px;
-	width: 20vw;
-
-	margin-top: 30vh;
-	border-style: solid;
-
-	text-align: center;
-
-	border-style: double;
-	border-width: thin;
-	border-color: rgba(230, 237, 247,0.2);
-	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
-
-	padding-left: 1vw;
-	padding-right: 1vw;
 
 }
 .sideMenuItem{
@@ -397,8 +392,8 @@ a.sideMenuLinksA{
 
 	background-color: rgba(255,255,255,1);
 	background-image: url(styles.css);
-	width: 20em;
-	height: 15em;
+	width: 22em;
+	height: 16em;
 	top: 0px;
 	left: 0px;
 
@@ -418,8 +413,8 @@ a.sideMenuLinksA{
 	text-decoration-color: white;
   background-color: gray;
 
-	width: 20em;
-	height: 15em;
+	width: 22em;
+    height: 16em;
 	top: 0px;
 	left: 0px;
 
@@ -433,8 +428,8 @@ a.sideMenuLinksA{
 
 .projectCardChild1{
 		position: absolute;
-		width: 20em;
-		height: 15em;
+		width: 22em;
+    height: 16em;
 		padding-top: 2%;
 
 }
@@ -444,8 +439,8 @@ a.sideMenuLinksA{
 		position: absolute;
 
 		text-align: left;
-		width: 20em;
-		height: 15em;
+		width: 22em;
+    height: 16em;
 }
 
 .projectCardChild2:hover{
@@ -454,8 +449,8 @@ a.sideMenuLinksA{
 		position: absolute;
 
 		text-align: left;
-		width: 20em;
-		height: 15em;
+		width: 22em;
+		height: 16em;
 }
 .projectCardChild2 p{
 		padding-top:35%;
@@ -470,4 +465,24 @@ a.sideMenuLinksA{
 	text-shadow: 0 0 1px black, 0 0 1px black;
 	font-size: 1.5em;
 
+}
+
+
+
+/* ------------------ load Spellbook materials
+*/
+div.projectComponentDisplay{
+	background-color: black;
+	color: black;
+	background-image: url(https://orig00.deviantart.net/e8e0/f/2011/247/6/e/old_paper_stock_02_by_ftourini-d48ubt0.png);
+	padding: 10% 10% 10% 10%;
+	background-attachment: fixed;
+	background-position-y: 50px;
+	background-position-x: 46%;
+	background-size: 50% 100%;
+	font-size: 1.4em;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: calc(600px + 50em);
+	overflow-y: scroll;
 }
