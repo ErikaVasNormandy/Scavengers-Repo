@@ -116,6 +116,8 @@ class App extends React.Component{
                       <div className="col s9 m9 l9" id="contentContainer" >
                              <Route exact path="/" component={ProjectComponent}/>
                              <Route path="/Projects" component={ProjectComponent}/>
+
+
                              <Route path="/UsefulBits" component={UsefulBitsComponent}/>
                              <Route path="/WorldBuilding" component={WorldBuildingComponent}/>
 
