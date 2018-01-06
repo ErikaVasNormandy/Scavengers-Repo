@@ -5,6 +5,11 @@ class SickOSComponent extends React.Component{
   render(){
     return(
       <div className = "projectComponentDisplay">
+        <meta property="og:image" content="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/WebPreview_ClickJacking.png"/>
+        <meta property="og:image:secure_url" content="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/WebPreview_ClickJacking.pngg"/>
+        <meta property="og:url" content="http://scavengers-repo.com/Projects/ClickJacking"/>
+        <meta property="og:description" content="Pen-Testing your own site, and finding out about clickjacking"/>
+
 
             <h4 className="mainTitle">Securing Your Own Site:: Clickjacking</h4>
               <img className="centerIllustration" src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/Sketches/Eye+Sketch.png"/>
