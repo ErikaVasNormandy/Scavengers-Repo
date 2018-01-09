@@ -493,9 +493,19 @@ div.projectComponentDisplay{
 	margin-right: auto;
 	margin-top: auto;
 }
+.centerIllustration2{
+	display: block;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
 
+}
 .rightIllustration{
 	width: 50%;
+	float: right;
+}
+.rightIllustration2{
+	width: 30%;
 	float: right;
 }
 .leftIllustration{
@@ -541,11 +551,29 @@ img.screenshot{
 
 .treeDrawing{
 	width: 60%;
-
 	margin-right: -100;
 	float: left;
 
 }
-.smallerScreenshot{
+.smallerScreenshot_a{
+	width:80%;
+	float: left;
+}
 
+.smallerScreenshot_b{
+	width:70%;
+		float: right;
+		z-index: 20;
+}
+
+.ingredientsList{
+	background-image: url(https://img00.deviantart.net/3c86/i/2013/327/d/9/very_old_paper_texture___free_for_personal_use_by_moonlight4ngel-d2ytt1r.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x: -20px;
+	font-size: 0.7em;
+	padding: 1em 1em 1em 1em;
+	width: 50%;
+	float: left;
+	margin: 10px 10px 10px 10px;
 }

@@ -11,6 +11,7 @@ import {
 
 import SickOSComponent from './ProjectComponents/SickOSComponent.jsx';
 import ClickJackingComponent from './ProjectComponents/ClickJackingComponent.jsx';
+import BootableKaliWindowsComponent from './ProjectComponents/BootableKaliWindows.jsx';
 
 
 
@@ -29,13 +30,30 @@ class ProjectComponent extends React.Component {
             <div style ={{marginTop: '10px'}}>
               <div className="col s8 m8 l8">
                 <Switch>
+                  <Route exact path="/Projects/BootableKaliWindows" component={BootableKaliWindowsComponent}/>
+
                   <Route exact path="/Projects/sickOS" component={SickOSComponent}/>
                   <Route exact path="/Projects/clickjacking" component={ClickJackingComponent}/>
                 </Switch>
               </div>
 
 
+
+
+
               <div className="col s2 m2 l2">
+
+                    <Link to="/Projects/BootableKaliWindows" style = {{ color: 'white'}} >
+                        <ProjectCardComponent
+                          projectTitle="Booting a Kali Linux from a USB (Windows)"
+                          projectDescription="How would you like to drop in and boot up a Kali Linux from any machine (assuming it's a PC)"
+                          projectImg="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/staticWebPages/BootableKaliLinux/Windows/PORG1.png"
+                          >
+                        </ProjectCardComponent>
+                    </Link>
+
+
+
                     <Link to="/Projects/sickOS" style = {{ color: 'white'}} >
                         <ProjectCardComponent
                           projectTitle="SickOS"
