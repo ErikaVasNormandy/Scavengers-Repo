@@ -194,9 +194,32 @@ class BootableKaliWindowsComponent extends React.Component{
         <img src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/staticWebPages/BootableKaliLinux/Windows/6_1Results.jpg" className="screenshot"></img>
 
         <p>After much coaxing, I managed to get a it to work on my Mom's 5+ year old computer, although apparently the mouse would not work and no one could figure why : /</p>
-        <img src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/staticWebPages/BootableKaliLinux/Windows/6_2Results.JPG" className="screenshot"></img>
+        <img src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/staticWebPages/BootableKaliLinux/Windows/6_2Results.jpg" className="screenshot"></img>
+        <p>Starting it up...</p>
+
+        <img style={{width: '50%', marginRight: '20', marginLeft:'20', marginBottom:'20'}} className="smallerScreenshot_b" src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/staticWebPages/BootableKaliLinux/Windows/Results_5.JPG"></img>
+        <img style={{width: '50%', marginRight: '20', marginLeft:'20', marginBottom:'20'}} className="smallerScreenshot_b" src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/staticWebPages/BootableKaliLinux/Windows/Results_6.JPG"></img>
+
+        <p>&nbsp; </p>
+        <p>&nbsp; </p>
+        <p>&nbsp; </p>
+        <p>&nbsp; </p>
+        <p>&nbsp; </p>
+        <p>&nbsp; </p>
+        <p>&nbsp; </p>
+        <p>&nbsp; </p>
+        <p>&nbsp; </p>
+        <p>&nbsp; </p>
+        <p>&nbsp; </p>
+        <p>It does work!</p>
+        <img style={{width: '50%', marginRight: '20', marginLeft:'20', marginBottom:'20'}} src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/staticWebPages/BootableKaliLinux/Windows/Results_7.JPG"></img>
+
+        <img style={{width: '50%', marginRight: '20', marginLeft:'20', marginBottom:'20'}} src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/staticWebPages/BootableKaliLinux/Windows/Results_8.JPG"></img>
+
+        <p>This BB-8 flashdrive originally held the map to Luke Skywalker, but now it has a Kali Linux I can drop into a PC at any moment : )</p>
         <img src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/staticWebPages/BootableKaliLinux/Windows/6_3Results.JPG" className="screenshot"></img>
-      </div>
+        <p>Mac Version in progress</p>
+    </div>
     )
   }
 }
