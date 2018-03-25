@@ -1,0 +1,13 @@
+
+
+
+https://mediatemple.net/community/products/developer/204405534/install-nginx-on-ubuntu
+
+sudo /etc/init.d/nginx start   
+
+
+pm2 start app.js
+
+gunicorn app:app -b localhost:8000
+
+

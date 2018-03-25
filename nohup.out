@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "app.py", line 59, in <module>
+    app.run(host="http://scavengers-repo.com", debug=True)
+  File "/home/apps/.virtualenvs/myapp/local/lib/python2.7/site-packages/flask/app.py", line 841, in run
+    run_simple(host, port, self, **options)
+  File "/home/apps/.virtualenvs/myapp/local/lib/python2.7/site-packages/werkzeug/serving.py", line 691, in run_simple
+    s.bind((hostname, port))
+  File "/usr/lib64/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+socket.gaierror: [Errno -2] Name or service not known
+[2018-03-24 22:12:09 +0000] [8426] [INFO] Starting gunicorn 19.6.0
+[2018-03-24 22:12:09 +0000] [8426] [INFO] Listening at: http://127.0.0.1:8000 (8426)
+[2018-03-24 22:12:09 +0000] [8426] [INFO] Using worker: sync
+[2018-03-24 22:12:09 +0000] [8430] [INFO] Booting worker with pid: 8430
+[2018-03-24 22:14:47 +0000] [8426] [INFO] Handling signal: int
+[2018-03-24 22:14:47 +0000] [8430] [INFO] Worker exiting (pid: 8430)
+[2018-03-24 22:14:47 +0000] [8426] [INFO] Shutting down: Master
