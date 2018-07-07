@@ -109,9 +109,11 @@ class App extends React.Component{
 
             <div className="row">
 
+                <BusinessCardComponent/>
+
 
                     <Switch>
-			<div className="col s11 m11 l11" id="contentContainer">
+			<div className="col s10 m10 l10" id="contentContainer">
                              <Route exact path="/" component={ProjectComponent}/>
                              <Route path="/Projects" component={ProjectComponent}/>
 

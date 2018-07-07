@@ -16,9 +16,9 @@ class BusinessCardComponent extends React.Component{
     return(
       <div id="sideMenu" className="card large">
           <img className="menuImg" src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/VoidRune2MenuImg.png"></img>
-          <h6>An all-purpose namespace for every bird, beastie, developer, and pen tester</h6>
+          <p></p>
             <p>--------------</p>
-              <p>Just an amateur here trying to git gud so bear with me if some of my technical documentation runs on a different note than usual. I like to draw; my artsy-hipster side is a sucker for hand-drawn illustrating but I'm hoping to get into CG concept art instead and start having more colors.</p>
+              <p>Aspiring technical illustrator of old and new </p>
 
                 <ul className="sideMenuLinks">
                   <li className="sideMenuLinksLI"><a className="sideMenuLinksA" href="https://github.com/ErikaVasNormandy">Github</a></li>
