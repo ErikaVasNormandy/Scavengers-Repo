@@ -1,13 +1,14 @@
 import React from 'react';
 import {render} from 'react-dom';
-import MaterialComponent from './materials.jsx';
+// import MaterialComponent from './materials.jsx';
 import ProjectComponent from './components/ProjectComponent.jsx';
 import UsefulBitsComponent from './components/UsefulBitsComponent.jsx';
 import WorldBuildingComponent from './components/WorldBuildingComponent.jsx';
 import BusinessCardComponent from './components/BusinessCardComponent.jsx';
 
 import data from './data/usefulResourcesData.js';
-import styles from '../app/styles.css';
+
+import styles from './styles.css';
 import {
   BrowserRouter as Router,
   Route,
@@ -107,7 +108,7 @@ class App extends React.Component{
 
 
             <div className="row">
-         
+
 
                     <Switch>
 			<div className="col s11 m11 l11" id="contentContainer">
