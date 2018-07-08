@@ -16,14 +16,16 @@ class BusinessCardComponent extends React.Component{
     return(
       <div id="sideMenu" className="card large">
           <img className="menuImg" src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/VoidRune2MenuImg.png"></img>
-          <p></p>
-            <p>--------------</p>
-              <p>Aspiring technical illustrator of old and new </p>
+
+
+              <p className = "sideMenuText">Aspiring technical illustrator of old and new
 
                 <ul className="sideMenuLinks">
                   <li className="sideMenuLinksLI"><a className="sideMenuLinksA" href="https://github.com/ErikaVasNormandy">Github</a></li>
                   <li className="sideMenuLinksLI"><a className= "sideMenuLinksA" href="https://www.linkedin.com/in/erika-hudiono-97a0285b">LinkedIn</a></li>
                 </ul>
+
+                </p>
       </div>
     )
   }

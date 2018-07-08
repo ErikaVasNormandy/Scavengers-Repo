@@ -108,8 +108,8 @@ class App extends React.Component{
 
 
             <div className="row">
+              <BusinessCardComponent/>
 
-                <BusinessCardComponent/>
 
 
                     <Switch>
@@ -121,7 +121,10 @@ class App extends React.Component{
                              <Route path="/UsefulBits" component={UsefulBitsComponent}/>
                              <Route path="/WorldBuilding" component={WorldBuildingComponent}/>
 			</div>
+
                     </Switch>
+
+
 
             </div>
 

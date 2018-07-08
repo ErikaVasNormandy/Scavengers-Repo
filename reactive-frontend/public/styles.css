@@ -1,7 +1,11 @@
 body
 	{
-		background-color:black;
+		background: black;
+
+    /* background: #cccccc url("http://static.tumblr.com/00b22e9…/2vluziz/rYNort489/tumblr_static_cpzzr6z1oxkwcc0c0g848os08.png") fixed; */
 		/*background-image:  radial-gradient(rgba(0,0,0,.5), rgba(1,0,0, 1)), url(https://www.jpl.nasa.gov/spaceimages/images/mediumsize/PIA17568_ip.jpg);*/
+
+
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -38,11 +42,13 @@ body
 #contentContainer {
 	min-height: 40vh;
 	overflow-y: scroll;
-	background-color:black;
+	/* background-color:black; */
+	background-color: #000001;
+
 	color: #e6edf7;
 
-	margin-right: 15px;
-	margin-left: 10px;
+	margin-right: 20px;
+
 	margin-bottom: 10px;
 
 	margin-top: 30vh;
@@ -57,9 +63,8 @@ body
 
 	display:inline-block;
 }
-@media only screen and (max-width: 320px) {
-   body { font-size: 2em; }
-}
+
+
 
 
 
@@ -75,7 +80,6 @@ button{
 	left: 0;
 	right: 0;
 	padding: 10px 5px 5px 5px;
-	text-align: center;
 
 	text-transform: uppercase;
 	font-weight: bold;
@@ -249,6 +253,7 @@ body.activator{
 	color: #e6edf7;
 
 	width: 100%;
+	/* background-color: black; */
 	background-color: black;
 	opacity:0.95;
 	background-repeat: repeat;
@@ -291,14 +296,13 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 /*-------------------------
 /*----- Side Menu Materials */
 #sideMenu{
-	background-color: #0f0003;
+	background-color: #000001;
 color: #e6edf7;
 float: left;
-margin-left: 1px;
-width: 10vw;
+margin-left: 20px;
+width: 12vw;
 margin-top: 30vh;
 border-style: double;
-text-align: center;
 border-color: rgba(230, 237, 247,0.5);
 text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
 padding-left: 3px;
@@ -307,6 +311,20 @@ height: 100%
 
 
 }
+
+@media only screen and (max-width: 1000px) {
+	#sideMenu {
+	      display: none;
+    }
+	#contentContainer {
+		float: none;
+		margin-left: 8%;
+
+	}
+}
+
+
+
 .sideMenuItem{
 	font-size: 80%;
 	padding: 4px 30px 4px 4px;
@@ -344,9 +362,21 @@ height: 100%
 .menuImg{
 	width: 8vw;
 	height: 8vw;
-	margin-left: auto;
+	margin-left: 14.5%;
 	margin-top: 10px;
+
 }
+
+.sideMenuText{
+	font-size: .8em;
+	margin-left: 1em;
+	margin-right: 1em;
+	font-family: 'Gibson', sans-serif, sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+	word-wrap: break-word;
+}
+
 
 ul.sideMenuLinks{
 		list-style-type: none;
