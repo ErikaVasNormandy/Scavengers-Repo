@@ -110,49 +110,23 @@ class App extends React.Component{
             <div className="row">
               <BusinessCardComponent/>
 
-
-
                     <Switch>
-			<div className="col s10 m10 l10" id="contentContainer">
+			                   <div className="col s10 m10 l10" id="contentContainer">
                              <Route exact path="/" component={ProjectComponent}/>
                              <Route path="/Projects" component={ProjectComponent}/>
 
 
                              <Route path="/UsefulBits" component={UsefulBitsComponent}/>
                              <Route path="/WorldBuilding" component={WorldBuildingComponent}/>
-			</div>
+			                    </div>
 
                     </Switch>
 
 
 
             </div>
-
-
-                {/*
-                              <Router >
-                                <div>
-                                  <h1>HERE JOEY</h1>
-                                  <div>
-
-                                    <Link to='/materials'><button >Materials</button></Link>
-                                    <Link to='/resources'><button >Resources</button></Link>
-                                    <Link to='/'><button >Projects</button></Link>
-                                  </div>
-                                  <Switch>
-                                    <Route path="/materials" component={MaterialComponent}/>
-                                    <Route path="/" component={ProjectComponent}/>
-                                    <Route path="/resources" component={UsefulBitsComponent}/>
-                                  </Switch>
-                                </div>
-
-                              </Router>
- */}
-
         </div>
       </Router>
-
-
 
         )
     }
