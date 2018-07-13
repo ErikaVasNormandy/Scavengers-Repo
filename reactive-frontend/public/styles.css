@@ -14,25 +14,6 @@ body
 		font-size:1vw;
 
   }
-#overlay0 {
-
-		background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg");
-		/* Create the parallax scrolling effect */
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-#overlay1 {
-
-	background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg");
-
-		/* Create the parallax scrolling effect */
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-}
 
 @font-face {
 		font-family:"AugustaShadow";
@@ -194,41 +175,42 @@ body.activator{
 }
 
 
-#parallax {
-
-		background-color: black;
-    min-height: 500px;
-    /* Create the parallax scrolling effect */
-  	background-attachment: fixed;
-  	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-		margin-top: 10px;
-}
-#smallParallax1{
-	background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg");
+.parallax{
+	color: white;
 	background-attachment: fixed;
-	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 500px;
-	z-index: 0;
+		z-index: -10;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		overflow: hidden
+
+	-webkit-transition: 5s;
+	-moz-transition: 5s;
+	-o-transition: 5s;
+	transition: 5s;
+}
+
+.parallax2{
+	color: white;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 500px;
+	z-index: -10;
 	width: 100%;
 	position: absolute;
-	animation: fadeOut 30s infinite;
+	top: 0;
+	overflow: hidden;
+
+	-webkit-transition: 5s;
+	-moz-transition: 5s;
+	-o-transition: 5s;
+	transition:  5s;
 }
-#smallParallax2{
-		background-image: url("https://images2.alphacoders.com/735/thumb-1920-735771.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 500px;
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-		animation: fadeIn 30s infinite;
-}
+
 
 .bannerContainer{
 	margin: 0 auto;
@@ -242,7 +224,7 @@ body.activator{
 }
 .banner{
 
-  top: calc(50vh - 100px);
+  top: calc(50vh - 310px);
 
 	margin: 0 auto;
 	height: 120px;
@@ -262,12 +244,11 @@ body.activator{
 	text-align : center;
 }
 
-
 .bannerShape{
 	text-align: center;
 	padding-top: 100px;
 	padding-bottom: 100px;
-	background-color:black;
+	background-color:(0,0,0,0);
 
 	z-index: 2;
 	opacity: .95;
@@ -276,12 +257,10 @@ body.activator{
 	height: 300px;
 	width: 400px;
 	position: relative;
-  top: calc(90vh - 200px);
+  top: calc(90vh - 410px);
 	color: #e6edf7;
 
 
-	-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
 
@@ -608,4 +587,9 @@ img.screenshot{
 	width: 50%;
 	float: left;
 	margin: 10px 10px 10px 10px;
+}
+
+
+#actualbody{
+	background-color: black;
 }

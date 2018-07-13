@@ -10,7 +10,7 @@ var config = {
   output:
   {
     path: BUILD_DIR,
-    filename: '/bundle.js'
+    filename: 'bundle.js'
   },
 
 
@@ -19,7 +19,7 @@ var config = {
         port: 8081
     },
     module: {
-        loaders: [
+        rules: [
             {
 
                 test: /\.jsx?$/,
