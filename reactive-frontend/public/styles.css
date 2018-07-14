@@ -180,7 +180,7 @@ body.activator{
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 500px;
+	min-height: 600px;
 		z-index: -10;
 		width: 100%;
 		position: fixed;
@@ -198,10 +198,10 @@ body.activator{
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 500px;
+	min-height: 600px;
 	z-index: -10;
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	overflow: hidden;
 
