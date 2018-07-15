@@ -81,31 +81,28 @@ class WindowComponent extends React.Component{
   					// This will give a number with one digit after the decimal dot (xx.x):
   		var seconds = (elapsed / 10).toFixed(1);
 
-  		if(seconds%100===0)
+  		if(seconds%60===0)
   		{
-  			console.log(seconds)
-  			if( this.state.currentClass==="parallax")
+        if(this.state.currentClass=="parallax2")
+        {
+          this.setState({ currentClass: "parallax" })
+          this.setState({ currentImage: Math.floor(Math.random() * 15) })
 
-  			{
-  					console.log(this.state.images[this.state.currentImage] )
-  				 this.setState(
-  					 {
-  							 currentImage: Math.floor(Math.random() * 15),
-  							 currentClass: "parallax2"
-  					}
-  					)
-  			}
-  			else
-  			{
-  				this.setState(
-  					{
-                currentImage: Math.floor(Math.random() * 15),
-  							currentClass: "parallax"
-  					}
-  				)
-  			}
+        }
+        else
+        {
+          this.setState({ currentClass: "parallax2"})
+        }
   		}
-  		}
+
+
+        {/*
+      if(seconds%10===0){
+        this.setState({
+           currentImage: Math.floor(Math.random() * 15) })
+      }
+      */}
+}
 
 
 
@@ -139,12 +136,10 @@ class WindowComponent extends React.Component{
   					</button>
 
 
-  				<p>This example was started <b>{seconds} seconds</b> ago.</p>
 
-  					{/*	// <button onClick={this.dottedBoxfunction.bind(this)}>
-  						// 	Button
-  						// </button>
-  						*/}
+  				<p style={{marginTop: 100}}>This example was started <b>{seconds} seconds</b> ago.</p>
+
+
   			</div>
   		);
   	}
