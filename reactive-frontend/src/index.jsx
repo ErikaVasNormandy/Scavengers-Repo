@@ -8,7 +8,6 @@ import BusinessCardComponent from './components/BusinessCardComponent.jsx';
 
 import data from './data/usefulResourcesData.js';
 
-import styles from './styles.css';
 import {
   BrowserRouter as Router,
   Route,
