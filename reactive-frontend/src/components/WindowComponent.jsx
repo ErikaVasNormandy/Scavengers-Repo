@@ -136,9 +136,9 @@ class WindowComponent extends React.Component{
   					</button>
 
 
-
+{/*
   				<p style={{marginTop: 100}}>This example was started <b>{seconds} seconds</b> ago.</p>
-
+*/}
 
   			</div>
   		);
