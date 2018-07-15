@@ -17,12 +17,9 @@ import {
 } from 'react-router-dom'
 
 class App extends React.Component{
-
     render() {
         return(
           <div>
-
-
             <Router>
               <div>
                 <div className="topMenu">
@@ -48,12 +45,13 @@ class App extends React.Component{
                 </div>
                 <div>
                     <WindowComponent start = {Date.now()}/>
-                    <div className="bannerShape">
-                      <span className="CenterText">Scavengers Repo</span></div>
-                    <div className="banner"></div>
+                    <div className="banner">
+                      <span className="CenterText">
+
+                        Scavengers Repo
+                      </span>
+                    </div>
                 </div>
-
-
 
 
             <div className="row" id = "actualbody">
@@ -67,6 +65,7 @@ class App extends React.Component{
                   <Route path="/WorldBuilding" component={WorldBuildingComponent}/>
                 </div>
               </Switch>
+
             </div>
 
 

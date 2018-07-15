@@ -119,7 +119,7 @@ class WindowComponent extends React.Component{
   	{
 
       var num = this.state.currentImage;
-      
+
   		var style_1 =	{
   			backgroundImage: 'url('+   this.state.images[this.state.currentImage]   +')',
   			fontColor: 'black'

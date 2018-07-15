@@ -10,25 +10,7 @@ body
 		font-size:1vw;
 
   }
-#overlay0 {
 
-		background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/WinterMoodBoard/gHQr2Tr.jpg");
-		/* Create the parallax scrolling effect */
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-#overlay1 {
-
-	background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg");
-
-		/* Create the parallax scrolling effect */
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-}
 
 @font-face {
 		font-family:"AugustaShadow";
@@ -200,30 +182,7 @@ body.activator{
     background-size: cover;
 		margin-top: 10px;
 }
-#smallParallax1{
-	background-image: url("https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/960.jpg");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 500px;
-	z-index: 0;
-	width: 100%;
-	position: absolute;
-	animation: fadeOut 30s infinite;
-}
-#smallParallax2{
-		background-image: url("https://images2.alphacoders.com/735/thumb-1920-735771.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 500px;
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-		animation: fadeIn 30s infinite;
-}
+
 
 .bannerContainer{
 	margin: 0 auto;

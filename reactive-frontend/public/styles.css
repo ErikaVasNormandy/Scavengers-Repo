@@ -1,18 +1,12 @@
 body
 	{
 		background: black;
-
-    /* background: #cccccc url("http://static.tumblr.com/00b22e9…/2vluziz/rYNort489/tumblr_static_cpzzr6z1oxkwcc0c0g848os08.png") fixed; */
-		/*background-image:  radial-gradient(rgba(0,0,0,.5), rgba(1,0,0, 1)), url(https://www.jpl.nasa.gov/spaceimages/images/mediumsize/PIA17568_ip.jpg);*/
-
-
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 		white-space:inherit;
 		font-size:1vw;
-
   }
 
 @font-face {
@@ -23,17 +17,11 @@ body
 #contentContainer {
 	min-height: 40vh;
 	overflow-y: scroll;
-	/* background-color:black; */
 	background-color: #000001;
-
 	color: #e6edf7;
-
 	margin-right: 20px;
-
 	margin-bottom: 10px;
-
-	margin-top: 30vh;
-
+	margin-top: 2vh;
 	padding-left: 1%;
 	padding-right: 1%;
 	padding-bottom: 1%;
@@ -41,13 +29,8 @@ body
 	border-width: medium;
 	border-color: rgba(255,255,255,0.5);
 	float: right;
-
-	display:inline-block;
+	display: inline-block;
 }
-
-
-
-
 
 button{
 	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
@@ -78,19 +61,20 @@ button{
 	padding-left: 10px;
 	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
 	vertical-align: middle;
-
 }
+
 .topHeader{
 	text-align: left;
 	float: left;
 	font-size: 6px;
 	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
 	margin-right: 50px;
-
 }
+
 .topsubtext{
 	margin-left: 50px;
 }
+
 .bottomHeader{
 	margin-left: 50px;
 	text-align: left;
@@ -112,9 +96,7 @@ button{
   filter: grayscale(100%);
 
 	-webkit-clip-path: circle(50% at 50% 50%);
-clip-path: circle(50% at 50% 50%);
-
-
+	clip-path: circle(50% at 50% 50%);
 
 }
 
@@ -122,10 +104,6 @@ p.btn-flat{
 	color: white;
 	font-size: 1em;
 }
-
-
-
-
 
 .materialsDiv{
     background-color: rgba(255,255,255, .5);
@@ -148,14 +126,12 @@ body.activator{
 	width: 505;
 }
 
-
 .card-image>img{
 	  overflow: hidden;
 }
 
 .displayWebsiteIframe{
 	height: 50%;
-
 }
 
 .card .card-image img{
@@ -180,12 +156,11 @@ body.activator{
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 600px;
+	min-height: 500px;
 		z-index: -10;
 		width: 100%;
 		position: fixed;
 		top: 0;
-		overflow: hidden
 
 	-webkit-transition: 5s;
 	-moz-transition: 5s;
@@ -198,12 +173,11 @@ body.activator{
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 600px;
+	min-height: 500px;
 	z-index: -10;
 	width: 100%;
 	position: fixed;
 	top: 0;
-	overflow: hidden;
 
 	-webkit-transition: 5s;
 	-moz-transition: 5s;
@@ -223,25 +197,17 @@ body.activator{
 	z-index: 1;
 }
 .banner{
-
-  top: calc(50vh - 310px);
-
 	margin: 0 auto;
 	height: 120px;
 	position: relative;
-
-	padding-top: 0.1px;
+	padding-top: 40px;
 	padding-bottom: 0.1px;
 	color: #e6edf7;
-
 	width: 100%;
-	/* background-color: black; */
+	margin-top: 500px;
 	background-color: black;
-	opacity:0.95;
-	background-repeat: repeat;
-	background-position: center;
 	z-index: 1;
-	text-align : center;
+	text-align: center;
 }
 
 .bannerShape{
@@ -276,19 +242,17 @@ body.activator{
 /*----- Side Menu Materials */
 #sideMenu{
 	background-color: #000001;
-color: #e6edf7;
-float: left;
-margin-left: 20px;
-width: 12vw;
-margin-top: 30vh;
-border-style: double;
-border-color: rgba(230, 237, 247,0.5);
-text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
-padding-left: 3px;
-padding-right: 3px;
-height: 100%
-
-
+	color: #e6edf7;
+	float: left;
+	margin-left: 20px;
+	width: 12vw;
+	margin-top: 2vh;
+	border-style: double;
+	border-color: rgba(230, 237, 247,0.5);
+	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
+	padding-left: 3px;
+	padding-right: 3px;
+	height: 100%
 }
 
 @media only screen and (max-width: 1000px) {
@@ -394,41 +358,37 @@ a.sideMenuLinksA{
 /*-------------------------
 /*----- Project Card Components */
 
-
+.horizontalDisplay{
+	list-style: none;
+}
+.horizontalDisplay li{
+	display: inline;
+	margin-bottom: 0;
+	margin-top: 0;
+}
 .projectCardParent h4{
 	font-size: 2em;
+	padding-top: 28%;
 }
-
 .projectCardParent{
-
 	background-color: rgba(255,255,255,1);
-	background-image: url(styles.css);
-	width: 22em;
-	height: 16em;
-	top: 0px;
-	left: 0px;
-
-	display: inline-block;
+	display:inline-flex;
+	width: 33.28%;
+  height: 25em;
 	text-align: center;
-	margin-top: auto;
-
 	text-shadow: 1px 2px #000000;
 	font-weight: bold;
+	box-sizing: border-box;
 }
 .projectCardParent:hover{
-
 	-webkit-filter: brightness(50%); /* Safari */
 	filter: brightness(60%);
 	color: white;
 	text-shadow: 0 0 1em #a8cbff;
 	text-decoration-color: white;
   background-color: gray;
-
-	width: 22em;
-    height: 16em;
-	top: 0px;
-	left: 0px;
-
+	width: 33.28%;
+	height: 25em;
 	display: inline-block;
 	text-align: center;
 	margin-top: auto;
@@ -437,34 +397,43 @@ a.sideMenuLinksA{
 	font-weight: bold;
 }
 
+
+.projectCardParent2{
+	background-color: rgba(255,255,255,1);
+	display:inline-flex;
+	width: 33.28%;
+  height: 20px;
+	text-align: center;
+	text-shadow: 1px 2px #000000;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+
+
 .projectCardChild1{
-		position: absolute;
-		width: 22em;
-    height: 16em;
-		padding-top: 2%;
+	position: absolute;
+	width: 27%;
+	height: 25em;
 
 }
 .projectCardChild2{
 		opacity: .01;
+		text-align: left;
 
 		position: absolute;
-
-		text-align: left;
-		width: 22em;
-    height: 16em;
+    width: 27%;
+    height: 25em;
 }
 
 .projectCardChild2:hover{
 	 	opacity: 1;
-
-		position: absolute;
-
 		text-align: left;
-		width: 22em;
-		height: 16em;
+		position: absolute;
+    width: 27%;
+    height: 25em;
 }
 .projectCardChild2 p{
-		padding-top:35%;
+		padding-top:45%;
 		padding-left: 2%;
 		padding-right: 2%;
 		font-size: 0.8em;
@@ -475,7 +444,6 @@ a.sideMenuLinksA{
 	margin-right: 30px;
 	text-shadow: 0 0 1px black, 0 0 1px black;
 	font-size: 1.5em;
-
 }
 
 
@@ -488,8 +456,8 @@ div.projectComponentDisplay{
 	background-image: url(https://orig00.deviantart.net/e8e0/f/2011/247/6/e/old_paper_stock_02_by_ftourini-d48ubt0.png);
 	padding: 10% 10% 10% 10%;
 	background-attachment: fixed;
-	background-position-y: 50px;
-	background-position-x: 47.5%;
+	background-position-y: 100px;
+	background-position-x: 38%;
 	background-size: 48% 100%;
 	font-size: 1.4em;
 	background-repeat: no-repeat;
