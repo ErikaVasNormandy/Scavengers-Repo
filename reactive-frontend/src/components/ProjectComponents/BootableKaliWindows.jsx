@@ -4,7 +4,7 @@ import {render} from 'react-dom';
 class BootableKaliWindowsComponent extends React.Component{
   render(){
     return(
-      <div>
+      <div className = "projectComponentDisplay">
         <img className="centerIllustration2" src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/staticWebPages/BootableKaliLinux/Windows/PORG1.png"></img>
 
         <h4 style={{textAlign: 'center'}}>Booting a Kali Linux Machine from a USB (Windows version)</h4>
