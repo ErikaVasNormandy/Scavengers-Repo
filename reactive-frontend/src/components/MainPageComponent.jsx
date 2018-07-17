@@ -10,9 +10,9 @@ class MainPageComponent extends React.Component {
     return(
       <div className="mainPageComponent">
         {/*load up posts, versus projects*/}
-        <h3>{Date()} </h3>
+        <h3>Today</h3>
+        {/* Default Post*/}
         <DefaultPostComponent/>
-            <DefaultPostComponent/>
       </div>
     )
   }
