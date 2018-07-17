@@ -2,7 +2,7 @@ var express = require('express');
 var app=express();
 
 app.use(express.static(__dirname));
-var activeRoutes = [ '/', '/clickjacking', '/sickOS','/UsefulBits','/WorldBuilding','/Projects','/materials', '/resources','/Projects/clickjacking','/Projects/sickOS','/Projects/BootableKaliWindows']
+var activeRoutes = [ '/', '/sickOS','/WorldBuilding','/Projects','/materials', '/resources','/Projects/clickjacking','/Projects/sickOS','/Projects/BootableKaliWindows']
 
 app.get(activeRoutes, function(req, res){
 	console.log("hello");

@@ -1,6 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
 import WindowComponent from './components/WindowComponent.jsx'
+import MainPageComponent from './components/MainPageComponent.jsx'
 import ProjectComponent from './components/ProjectComponent.jsx';
 import UsefulBitsComponent from './components/UsefulBitsComponent.jsx';
 import WorldBuildingComponent from './components/WorldBuildingComponent.jsx';
@@ -23,12 +24,13 @@ class App extends React.Component{
               <div>
                 <div className="topMenu">
                       <div>
-                          <span className = "topHeader">
+                          <Link to="/"><span className = "topHeader">
                               <div className="circleImage"></div>
                               <p className="topsubtext">Fly Me to the Galaxy </p>
                               <p className="bottomHeader">And All the Worlds Beyond</p>
-
                           </span>
+
+                          </Link>
                       </div>
 
                       {/*Line separating moto and link menu*/}
@@ -58,7 +60,7 @@ class App extends React.Component{
 
               <Switch>
                 <div className="col s10 m10 l10" id="contentContainer">
-                  <Route exact path="/" component={ProjectComponent}/>
+                  <Route exact path="/" component={MainPageComponent}/>
                   <Route path="/Projects" component={ProjectComponent}/>
                   <Route path="/UsefulBits" component={UsefulBitsComponent}/>
                   <Route path="/WorldBuilding" component={WorldBuildingComponent}/>

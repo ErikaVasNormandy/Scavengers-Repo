@@ -4,7 +4,7 @@ body
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: 'Gibson', sans-serif, sans-serif;
 		white-space:inherit;
 		font-size:1vw;
   }
@@ -69,6 +69,7 @@ button{
 
 .topsubtext{
 	margin-left: 50px;
+	color: white;
 }
 
 .bottomHeader{
@@ -76,6 +77,7 @@ button{
 	text-align: left;
 	float: left;
 	font-size: 8px;
+	color: white;
 }
 
 .circleImage{
@@ -174,8 +176,6 @@ body.activator{
 	width: 100%;
 	position: fixed;
 	top: 0;
-
-
 }
 
 
@@ -558,7 +558,23 @@ background-color: rgba(5,5,5,0.6);
 min-height:800px;
 margin-bottom: 0px;
 padding-bottom:20px;
+}
 
+.mainPageComponent{
+	width: 70%;
+	display: block;
+	margin: 0px auto
+}
 
+.DefaultPostComponent{
+
+	padding: 10%;
+	border-radius: 3px;
+	background-color: white;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 800px;
 
 }
