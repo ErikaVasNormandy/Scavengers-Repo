@@ -30,6 +30,9 @@ body
 	border-color: rgba(246,246,246,0.6);
 	float: right;
 	display: inline-block;
+
+	overflow-y: scroll;
+	height: 600px;
 }
 
 button{
@@ -563,18 +566,32 @@ padding-bottom:20px;
 .mainPageComponent{
 	width: 70%;
 	display: block;
-	margin: 0px auto
+	margin: 0px auto;
+
 }
 
 .DefaultPostComponent{
-
+	text-align: center;
 	padding: 10%;
 	border-radius: 3px;
-	background-color: rgba(240,240,240,0.5);
+	background-color: rgba(240,240,240,0.9);
 	margin-top: 40px;
 	margin-bottom: 40px;
 	margin-left: auto;
 	margin-right: auto;
 	min-height: 600px;
+	color: black;
 
+}
+
+.DefaultPostComponent img{
+	width: 100%;
+
+}
+.postHeader{
+	text-align: center;
+}
+
+.postText{
+	text-align: left;
 }
