@@ -7,40 +7,89 @@ import {
   Route,
   Switch,
   Link,
+  BrowserRouter,
 } from 'react-router-dom';
 
 import SickOSComponent from './ProjectComponents/SickOSComponent.jsx';
 import ClickJackingComponent from './ProjectComponents/ClickJackingComponent.jsx';
 import BootableKaliWindowsComponent from './ProjectComponents/BootableKaliWindows.jsx';
 
-class ProjectComponent extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+
+const ProjectComponent = ({match}) =>(
+  <BrowserRouter>
+    <div>
+     <ul>
+       <li>
+         <Link to="/Projects/BootableKali">BootableKali</Link>
+       </li>
+       <li>
+         <Link to="/Projects/SickOS">SickOS</Link>
+       </li>
+
+       <li>
+         <Link to="/Projects/ClickJacking">ClickJacking</Link>
+       </li>
+     </ul>
+
+     <hr />
+
+     <Route exact path="/Projects/BootableKali" component={BootableKaliWindowsComponent} />
+     <Route path="/Projects/SickOS" component={SickOSComponent} />
+     <Route path="/Projects/ClickJacking" component={ClickJackingComponent } />
+   </div>
+
+  </BrowserRouter>
 
 
+)
+
+const Topics = ({ match }) => (
+  <div>
+    <h3>{match.params.topicId}</h3>
+    <ul>
+      <li> <Link to={`${match.url}/BootableKaliLinux`}>Bootable Kali Linux</Link> </li>
+      <li> <Link to={`${match.url}/SickOS`}>SickOS</Link></li>
+      <li> <Link to={`${match.url}/props-v-state`}>Props v. State</Link></li>
+
+
+    </ul>
+    <Route path={`${match.url}/:topicId`} component={Topic} />
+        <Route
+          exact
+          path={match.url}
+          render={() => <h3>Please select a topic.</h3>}
+        />
+
+
+  </div>
+);
+
+const Topic = ({match}) => (
+  <div>
+    <h3>{match.params.topicId}</h3>
+
+  </div>
+)
+
+/*
   render(){
     return(
 
       <div>
-          <Router>
-            <div>
-                <Switch>
-                  <Route exact path="/Projects/BootableKaliWindows" component={BootableKaliWindowsComponent}/ >
-                  <Route exact path="/Projects/sickOS" component={SickOSComponent}/>
-                  <Route exact path="/Projects/clickjacking" component={ClickJackingComponent}/>
-                </Switch>
+        <BrowserRouter>
+          <div>
+            <Route exact path="/Projects/BootableKaliWindows" component={BootableKaliWindowsComponent}/ >
+            <Route exact path="/Projects/sickOS" component={SickOSComponent}/>
+            <Route exact path="/Projects/clickjacking" component={ClickJackingComponent}/>
 
 
            <ul className ="horizontalDisplay">
                 <li>
-                  <Link to="/Projects/BootableKaliWindows"  style = {{ color: 'white'}} >
+                  <Link to= {'${match.url}/Projects/BootableKaliWindows'}  style = {{ color: 'white'}} >
                         <ProjectCardComponent
-
-                          projectTitle="Booting a Kali Linux from a USB (Windows)"
-                          projectDescription="How would you like to drop in and boot up a Kali Linux from any machine (assuming it's a PC)"
-                          projectImg="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/staticWebPages/BootableKaliLinux/Windows/PORG1.png"
-                          >
+                            projectTitle="Booting a Kali Linux from a USB (Windows)"
+                            projectDescription="How would you like to drop in and boot up a Kali Linux from any machine (assuming it's a PC)"
+                            projectImg="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/staticWebPages/BootableKaliLinux/Windows/PORG1.png" >
                         </ProjectCardComponent>
                     </Link>
                 </li>
@@ -78,15 +127,17 @@ class ProjectComponent extends React.Component {
                            >
                          </ProjectCardComponent>
 
-                       </li>
-
-
-
+                      </li>
               </ul>
               </div>
-          </Router>
+
+              </BrowserRouter>
       </div>
     )
   }
 }
+}
+*/
+
+
 export default ProjectComponent;

@@ -451,12 +451,9 @@ a.sideMenuLinksA{
 div.projectComponentDisplay{
 	background-color: black;
 	color: black;
-	background-image: url(https://orig00.deviantart.net/e8e0/f/2011/247/6/e/old_paper_stock_02_by_ftourini-d48ubt0.png);
+	background-image: url(https://cdn.inspirationhut.net/wp-content/uploads/2012/11/Paper-Texture-2.jpg);
 	padding: 10% 10% 10% 10%;
-	background-attachment: fixed;
-	background-position-y: 100px;
-	background-position-x: 38%;
-	background-size: 48% 100%;
+	background-size: 100% 100%;
 	font-size: 1.4em;
 	background-repeat: no-repeat;
 	width: 100%;

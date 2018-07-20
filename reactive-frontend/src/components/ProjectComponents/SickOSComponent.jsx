@@ -8,9 +8,8 @@ class SickOSComponent extends React.Component{
         <h1>SICKOS</h1>
         <p>SickOS</p>
 
-        
 
-    <p>I also put in some nice backgrounds to inspire some creativity</p>
+
 
       </div>
     )
