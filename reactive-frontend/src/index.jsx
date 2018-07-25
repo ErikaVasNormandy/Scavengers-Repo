@@ -10,7 +10,7 @@ import BusinessCardComponent from './components/BusinessCardComponent.jsx';
 import data from './data/usefulResourcesData.js';
 
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Route,
   Switch,
   Link,
@@ -20,7 +20,7 @@ class App extends React.Component{
     render() {
         return(
           <div>
-            <Router>
+            <BrowserRouter>
               <div>
                 <div className="topMenu">
                       <div>
@@ -71,7 +71,7 @@ class App extends React.Component{
 
 
         </div>
-      </Router>
+      </BrowserRouter>
 
 
     </div>

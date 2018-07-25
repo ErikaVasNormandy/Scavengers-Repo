@@ -1,0 +1,8 @@
+
+{
+
+    "mongoData": {
+        "localURL": "",
+        "productionURL": "mongodb://Clust"
+    }
+}
