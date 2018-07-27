@@ -1,13 +1,23 @@
 import React from 'react';
 import {render} from 'react-dom';
-import data from '../data/usefulResourcesData.js';
+import UsefulBitsData from '../data/UsefulBits/UsefulBits.json';
 
 
 class UsefulBitsComponent extends React.Component {
   constructor(props) {
     super(props);
+    this.state={
+      UsefulBits: UsefulBitsData,
 
+    }
   }
+
+   componentDidMount() {
+     {UsefulBits.map(title =>
+       <li>{title}</li>
+
+     )}
+   }
 
   render(){
     {/*
@@ -46,9 +56,8 @@ class UsefulBitsComponent extends React.Component {
     return(
       <div>
         <h1>Useful Bits</h1>
+          {this.state.UsefulBits.map((item) =>{ return(<li>{item.title}</li>)}  )}
 
-
-        useful bits array
 
       </div>
     )
