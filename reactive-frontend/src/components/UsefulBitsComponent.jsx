@@ -17,14 +17,13 @@ class UsefulBitsComponent extends React.Component {
    }
 
   render(){
-
     return(
       <div>
-        <h1>Useful Bits</h1>
+        <h3>UsefulBits</h3>
 
-        
+  
 
-
+Hello
 
 
         {
