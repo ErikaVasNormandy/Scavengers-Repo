@@ -7,7 +7,7 @@
       "imageaddress": "http://41.media.tumblr.com/14e0a2bed52e8d9c2c0059a2a1534da6/tumblr_nup17oiuyd1sxagvto1_500.jpg",
       "timestamp":"",
       "description":"",
-      "tags": ["AWS","ec2","Amazon Web Services","Flask","Python"]
+      "tags": ["AWS","ec2","Flask","Python"]
     },
     {
       "id": 1,
@@ -51,12 +51,12 @@
     },
     {
       "id": 4,
-      "title": "Import JSON to Mongo",
+      "title": "JSON - Mongo",
       "address": "https://stackoverflow.com/questions/19441228/insert-json-file-into-mongodb",
         "imageaddress": "https://i.pinimg.com/736x/e1/51/64/e151643031632d01a0f33044a2c025a4--cloud-wallpaper-mobile-wallpaper.jpg",
       "timestamp":"",
       "description":"",
-      "tags": ["mongo","mongodb","database","data","node"]
+      "tags": ["mongo","json","database","data","node"]
     },
     {
       "id": 5,

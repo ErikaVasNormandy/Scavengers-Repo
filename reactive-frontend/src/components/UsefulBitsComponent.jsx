@@ -21,6 +21,12 @@ class UsefulBitsComponent extends React.Component {
     return(
       <div>
         <h1>Useful Bits</h1>
+
+        
+
+
+
+
         {
           /*
           Basic Instructions
