@@ -578,7 +578,15 @@ padding-bottom:20px;
 	margin-right: auto;
 	min-height: 600px;
 	color: black;
+}
 
+
+.UsefulBitPiece{
+	color: black;
+	display: inline-block;
+}
+.cardImg{
+    height: 200px;
 }
 
 .DefaultPostComponent img{

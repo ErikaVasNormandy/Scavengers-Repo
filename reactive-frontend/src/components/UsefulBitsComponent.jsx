@@ -13,50 +13,18 @@ class UsefulBitsComponent extends React.Component {
   }
 
    componentDidMount() {
-     {UsefulBits.map(title =>
-       <li>{title}</li>
 
-     )}
    }
 
   render(){
-    {/*
-
-    // console.log(this.props.data);
-    const { data } = this.props.data;
-
-    const UsefulBitsArray= data.map(dataList => {
-      // console.log(dataList.link);
-
-      return(
-
-          <ul className="collection" key = {dataList.id}>
-            <li className="collection-item avatar" style={{background: 'rgba(255,255,255, 0.5'}} >
-              <img src={dataList.image} className='circle'></img>
-                <h3 className="title">{dataList.link}</h3>
-                <p>Brief Description
-
-                     <br></br>
-                  Link: {dataList.link}
-                </p>
-                <a href="#!" className="secondary-content"><i className="material-icons">grade</i></a>
-            </li>
-
-  </ul>
-
-
-
-
-
-      );
-
-    });
-      */}
 
     return(
       <div>
         <h1>Useful Bits</h1>
-        {/*{
+        {
+          /*
+          Basic Instructions
+          {
           this.state.UsefulBits.map((item) =>
               {
                 return(<li>{item.title}</li>)
@@ -64,9 +32,33 @@ class UsefulBitsComponent extends React.Component {
           )}
 
           */}
-          
-          {this.state.UsefulBits.map((item) =>{ return(<li>{item.title}</li>)}  )}
 
+          {this.state.UsefulBits.map((item) =>
+            {
+                return(
+                  <div key = {item.title} className="col s9 m4 UsefulBitPiece">
+                    <div className="card horizontal">
+                      <div className="card-image">
+                        <img className = "cardImg" src= {item.imageaddress}/>
+                        </div>
+                        <div className="card-stacked">
+                          <div className="card-content">
+                            <h6><strong>{item.title}</strong></h6>
+                            <p>{item.description}</p>
+                            <p>tags: {item.tags.join(", ")}</p>
+                          </div>
+                          <div className="card-action">
+                             <h6><a href={item.address}>[Link] </a></h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                )
+            }
+            )
+          }
 
       </div>
     )
