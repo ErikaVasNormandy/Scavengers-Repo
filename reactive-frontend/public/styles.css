@@ -4,7 +4,7 @@ body
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-    font-family: 'Gibson', sans-serif, sans-serif;
+
 		white-space:inherit;
 		font-size:1vw;
   }
@@ -36,7 +36,13 @@ body
 }
 
 button{
+	color: white;
 	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
+}
+.waves-effect{
+	color: white !important;
+	background-color: rgba(255,255,255,0.1) !important;
+	margin: 1px 1px 1px 1px;
 }
 
 /*referring to div*/
@@ -66,7 +72,7 @@ button{
 	text-align: left;
 	float: left;
 	font-size: 6px;
-	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
+	/* text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff; */
 	margin-right: 50px;
 }
 
@@ -233,7 +239,7 @@ body.activator{
 	margin-left: auto;
 	font-size: 2.5em;
 	text-align: center;
-	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;;
+	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
 }
 
 /*-------------------------
@@ -247,7 +253,7 @@ body.activator{
 	margin-top: 2vh;
 	border-style: double;
 	border-color: rgba(230, 237, 247,0.5);
-	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
+	/* text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff; */
 	padding-left: 3px;
 	padding-right: 3px;
 	height: 100%;

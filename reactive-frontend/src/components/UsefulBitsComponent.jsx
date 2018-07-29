@@ -19,12 +19,23 @@ class UsefulBitsComponent extends React.Component {
   render(){
     return(
       <div>
-        <h3>UsefulBits</h3>
+        <h1>Useful Bits</h1>
 
-  
+        <div id="UsefulBtns">
+          {
+            this.state.UsefulBits.map((item) =>
+            {
+              return(
+                <button className ="usefulBitBtn waves-effect waves-light btn-flat" key = {item.tags[0]}>
+                  {item.tags[0]}
+                </button>
+              )
+            }
 
-Hello
 
+          )}
+
+        </div>
 
         {
           /*
