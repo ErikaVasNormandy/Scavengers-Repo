@@ -2,25 +2,19 @@ import React from 'react';
 import {render} from 'react-dom';
 import UsefulBitsData from '../data/UsefulBits/UsefulBits.json';
 
-const activeBit={
-  visibility: visible
-}
-
 
 class UsefulBitsComponent extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      usefulBits: UsefulBitsData,
-      bitStatus: “activeBit”
+    this.state={
+      UsefulBits: UsefulBitsData,
+
     }
   }
 
    componentDidMount() {
 
    }
-   
-  
 
   render(){
     return(
@@ -32,7 +26,7 @@ class UsefulBitsComponent extends React.Component {
             this.state.UsefulBits.map((item) =>
             {
               return(
-                <button className ="usefulBitBtn waves-effect waves-light btn-flat" key = {item.tags[0]}>
+                <button className ="waves-effect waves-light btn-flat" key = {item.tags[0]}>
                   {item.tags[0]}
                 </button>
               )
@@ -58,7 +52,7 @@ class UsefulBitsComponent extends React.Component {
           {this.state.UsefulBits.map((item) =>
             {
                 return(
-                  <div key = {item.title} className="col s9 m4 UsefulBitPiece" style ={this.state.bitstatus}>
+                  <div key = {item.title} className="col s9 m4 UsefulBitPiece">
                     <div className="card horizontal">
                       <div className="card-image">
                         <img className = "cardImg" src= {item.imageaddress}/>
