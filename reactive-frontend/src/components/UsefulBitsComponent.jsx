@@ -2,19 +2,25 @@ import React from 'react';
 import {render} from 'react-dom';
 import UsefulBitsData from '../data/UsefulBits/UsefulBits.json';
 
+const activeBit={
+  visibility: visible
+}
+
 
 class UsefulBitsComponent extends React.Component {
   constructor(props) {
     super(props);
-    this.state={
-      UsefulBits: UsefulBitsData,
-
+    this.state = {
+      usefulBits: UsefulBitsData,
+      bitStatus: “activeBit”
     }
   }
 
    componentDidMount() {
 
    }
+   
+  
 
   render(){
     return(
@@ -52,7 +58,7 @@ class UsefulBitsComponent extends React.Component {
           {this.state.UsefulBits.map((item) =>
             {
                 return(
-                  <div key = {item.title} className="col s9 m4 UsefulBitPiece">
+                  <div key = {item.title} className="col s9 m4 UsefulBitPiece" style ={this.state.bitstatus}>
                     <div className="card horizontal">
                       <div className="card-image">
                         <img className = "cardImg" src= {item.imageaddress}/>
