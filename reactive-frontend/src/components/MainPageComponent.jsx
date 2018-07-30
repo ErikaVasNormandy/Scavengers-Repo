@@ -1,6 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
 import DefaultPostComponent from './Posts/DefaultPostComponent.jsx'
+import Posts from '../data/UsefulBits/UsefulBits.json'
 
 class MainPageComponent extends React.Component {
   constructor(props) {
