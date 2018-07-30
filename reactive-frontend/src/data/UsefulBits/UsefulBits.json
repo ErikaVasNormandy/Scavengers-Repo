@@ -66,6 +66,15 @@
       "timestamp":"",
       "description":"",
       "tags": ["nodejs","node","npm","pm2","web"]
+    },
+    {
+      "id": 6,
+      "title": "Remove Duplicates from an Array",
+      "address": "https://stackoverflow.com/questions/16747798/delete-duplicate-elements-from-an-array",
+        "imageaddress": "https://i.pinimg.com/736x/95/1b/c8/951bc856d065eeeeef6a80056d443685--wallpaper-gallery-aesthetic-art.jpg",
+      "timestamp":"",
+      "description":"",
+      "tags": ["javascript","Coding","array","interview"]
     }
 
 
