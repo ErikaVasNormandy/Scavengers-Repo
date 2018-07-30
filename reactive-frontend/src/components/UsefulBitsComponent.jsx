@@ -9,36 +9,6 @@ const activeBit ={
 const inactiveBit={
   display: "none"
 }
-const Child = () => (
-  <div>
-    {this.state.UsefulBits.map((item) =>
-      {
-          return(
-            <div key = {item.title} className="col s9 m4 UsefulBitPiece" style={this.state.bitStatus}>
-              <div className="card horizontal">
-                <div className="card-image">
-                  <img className = "cardImg" src= {item.imageaddress}/>
-                  </div>
-                  <div className="card-stacked">
-                    <div className="card-content">
-                      <h6><strong>{item.title}</strong></h6>
-                      <p>{item.description}</p>
-                      <p>tags: {item.tags.join(", ")}</p>
-                    </div>
-                    <div className="card-action">
-                       <h6><a href={item.address}>[Link] </a></h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          )
-      }
-      )
-    }
-
-
-  </div>
-);
 
 var tagsArray=[]
 
@@ -58,6 +28,8 @@ class UsefulBitsComponent extends React.Component {
 
   }
 
+
+
   createArray(){
     var i = 0;
     for(i = 0; i < this.state.UsefulBits.length; i++){
@@ -72,6 +44,7 @@ class UsefulBitsComponent extends React.Component {
       })
       console.log(tagsArray)
     }
+
 
   sortByTags(e, tagInput1, tagInput2){
     if(tagInput1 = tagInput2 )
@@ -114,7 +87,7 @@ class UsefulBitsComponent extends React.Component {
       <div>
         <h1>Useful Bits</h1>
 
-  //////////////////////////////////////////////////////////////////////
+{/*//////////////////////////////////////////////////////////////////////*/}
         <div id="UsefulBtns">
           {
             tagsArray.map((potentialTag) =>
@@ -127,17 +100,15 @@ class UsefulBitsComponent extends React.Component {
             }
           )}
         </div>
-//////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////
+{/*//////////////////////////////////////////////////////////////////////*/}
 
-          <div>
-            {this.state.UsefulBits.map((item) =>
-              {
-
-
-                  return(<div>
-                        {!this.state.isHidden &&
-                          <div key = {item.title} className="col s9 m4 UsefulBitPiece" >
+        <div>
+          {this.state.UsefulBits.map((item) =>
+            {
+              return(
+                <div>
+                  {!this.state.isHidden &&
+                    <div key = {item.title} className="col s9 m4 UsefulBitPiece" >
                       <div className="card horizontal">
                         <div className="card-image">
                           <img className = "cardImg" src= {item.imageaddress}/>
@@ -156,20 +127,15 @@ class UsefulBitsComponent extends React.Component {
                       </div>
                   }
                 </div>
-
-
                 )
               }
               )
             }
-
-
           </div>
-  //////////////////////////////////////////////////////////////////////
+  {/*//////////////////////////////////////////////////////////////////////*/}
       </div>
-          )
+      )
     }
-
 }
 
 
