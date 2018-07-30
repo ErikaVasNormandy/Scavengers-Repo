@@ -19,7 +19,7 @@ class UsefulBitsComponent extends React.Component {
 
     this.state={
       UsefulBits: UsefulBitsData,
-      bitStatus: inactiveBit,
+      bitStatus: activeBit,
       isHidden: true
     }
     this.createArray = this.createArray.bind(this);
@@ -93,7 +93,7 @@ class UsefulBitsComponent extends React.Component {
             tagsArray.map((potentialTag) =>
             {
               return(
-                <button className ="waves-effect waves-light btn-flat" onClick = {this.sortByTags.bind(this, {potentialTag}, {potentialTag})}>
+                <button className ="waves-effect waves-light btn-flat disabled" onClick = {this.sortByTags.bind(this, {potentialTag}, {potentialTag})}>
                   {potentialTag}
                 </button>
               )
@@ -107,7 +107,7 @@ class UsefulBitsComponent extends React.Component {
             {
               return(
                 <div>
-                  {!this.state.isHidden &&
+                  {this.state.isHidden &&
                     <div key = {item.title} className="col s9 m4 UsefulBitPiece" >
                       <div className="card horizontal">
                         <div className="card-image">

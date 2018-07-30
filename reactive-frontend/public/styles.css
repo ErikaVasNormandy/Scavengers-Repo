@@ -332,18 +332,22 @@ ul.sideMenuLinks{
 }
 li.sideMenuLinksLI{
 	float: left;
+
 }
 
 a.sideMenuLinksA{
+	font-size: 0.8em;
 	display: block;
     color: white;
     text-align: center;
-    padding: 10px 10px;
+		padding-right: 5px;
+
     text-decoration: none;
 }
 
 .sideMenuLinksA:hover{
 	background-color: #111;
+	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
 }
 
 
@@ -407,7 +411,7 @@ a.sideMenuLinksA{
 	width: 33.28%;
   height: 20px;
 	text-align: center;
-	text-shadow: 1px 2px #000000;
+	text-shadow: 0 0 0.2em #a8cbff, 0 0 0.2em #a8cbff;
 	font-weight: bold;
 	box-sizing: border-box;
 }
