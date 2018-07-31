@@ -28,7 +28,7 @@ class DefaultPostComponent extends React.Component {
       <div className="DefaultPostComponent">
         {/*load up posts, versus projects*/}
         { /*{this.returnDate()}*/}
-          <h6 className="postHeader"> Tue Jul 17, 2018</h6>
+          <h6 className="postHeader">{this.props.header}</h6>
           <img src = {this.props.imageinput}></img>
             <span className="postText">
 
