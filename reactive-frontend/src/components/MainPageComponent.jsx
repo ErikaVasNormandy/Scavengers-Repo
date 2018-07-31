@@ -24,7 +24,7 @@ class MainPageComponent extends React.Component {
 
             <DefaultPostComponent
               key = {post.date}
-              imageinput = ""
+              imageinput = {post.imageinput}
               content = {post.content}
               />
             )

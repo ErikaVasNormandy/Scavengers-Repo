@@ -1,8 +1,16 @@
 
-  [  {
+  [
+
+    {
       "title": "Insert Default Title Here",
-      "date": "",
-      "imageinput": "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/30441830_10211585837750757_7216752123478802432_n.jpg?_nc_cat=0&oh=84b34d34a13954adc80c37faef1f8cfa&oe=5BDC269A",
+      "date": "July 30, 2018",
+      "imageinput": "https://scontent-sjc3-1.cdninstagram.com/vp/22e99a9fa70616284f0a81d42ec262c9/5BF79284/t51.2885-15/e35/22499713_456378294762883_5001729603648094208_n.jpg",
+      "content": [" It's a repo for scavengers. It's where I'll put my projects and whatever else I find useful/interesting"]
+    },
+    {
+      "title": "Insert Default Title Here",
+      "date": "July 20, 2018",
+      "imageinput": "https://scontent-sjc3-1.cdninstagram.com/vp/adb17447a4db2c9c30fe364f99b5bddc/5BF25C85/t51.2885-15/e35/36161499_192628861378031_8602629828132208640_n.jpg",
       "content": ["A new job, and a revamped site. Now that I'm not on the job hunt, I figured it was the time to rebuild the site instead of a slapped together project.","This is my bun Trixie, you can't see her well but she's my Player 2 when she isn't causing trouble"]
     }
 ]
