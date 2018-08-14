@@ -15,24 +15,24 @@ body
 }
 
 #contentContainer {
-	min-height: 40vh;
-	overflow-y: scroll;
-	background-color: rgba(10,10,10,0.7);
-	color: #e6edf7;
-	margin-right: 20px;
-	margin-bottom: 10px;
-	margin-top: 2vh;
-	padding-left: 1%;
-	padding-right: 1%;
-	padding-bottom: 1%;
-	border-style: double;
-	border-width: medium;
-	border-color: rgba(246,246,246,0.6);
-	float: right;
-	display: inline-block;
-
-	overflow-y: scroll;
-	height: 600px;
+	    min-height: 80vh;
+	    overflow-y: scroll;
+	    background-color: rgba(10,10,10,0.7);
+	    color: #e6edf7;
+	    margin-right: 20px;
+	    margin-bottom: 10px;
+	    margin-top: 2vh;
+	    padding-left: 1%;
+	    padding-right: 1%;
+	    padding-bottom: 1%;
+	    border-style: double;
+	    border-width: medium;
+	    border-color: rgba(246,246,246,0.6);
+	    float: right;
+	    display: inline-block;
+	    overflow-y: scroll;
+	    height: 600px;
+	}
 }
 
 button{
@@ -608,4 +608,29 @@ padding-bottom:20px;
 
 .postText{
 	text-align: left;
+}
+
+.DMPieceWrapper{
+	width: 640px;
+	min-height: 805px;
+	background-color: white;
+	margin: auto;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	color: black;
+}
+
+.DMImgWrapper{
+	margin: auto;
+	width: 640px;
+
+}
+
+.DMHeaderWrapper{
+	padding: 30px 20px 20px 20px;
+
+}
+.DMTextWrapper{
+	padding: 30px 20px 20px 20px;
+	font-size: 1.4em;
 }

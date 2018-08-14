@@ -17,7 +17,7 @@ class BusinessCardComponent extends React.Component{
           <img className="menuImg" src="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/VoidRune2MenuImg.png"></img>
 
 
-              <p className = "sideMenuText">Unranked blue team support, bronze-tier engineer, constant illustrator on wayside
+              <p className = "sideMenuText">Bronze-tier security analyst, occasional gamer, and constant illustrator on the side
                 <ul className="sideMenuLinks">
                   <li className="sideMenuLinksLI"><a className="sideMenuLinksA" href="https://github.com/ErikaVasNormandy">Github</a></li>
                   <li className="sideMenuLinksLI"><a className= "sideMenuLinksA" href="https://www.linkedin.com/in/erika-hudiono-97a0285b">LinkedIn</a></li>
