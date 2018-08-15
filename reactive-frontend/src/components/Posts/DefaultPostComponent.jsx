@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
-
+import InstagramEmbed from 'react-instagram-embed'
 class DefaultPostComponent extends React.Component {
   constructor(props) {
     super(props);
@@ -28,12 +28,24 @@ class DefaultPostComponent extends React.Component {
       <div className="DefaultPostComponent">
         {/*load up posts, versus projects*/}
         { /*{this.returnDate()}*/}
-          <h6 className="postHeader">{this.props.header}</h6>
+          <h4 className="postHeader">{this.props.header}</h4>
+            <InstagramEmbed
+              url={this.props.imageinput}
+              maxWidth={640}
+              hideCaption={true}
+              containerTagName='div'
+              protocol=''
+              injectScript
+              onLoading={() => {}}
+              onSuccess={() => {}}
+              onAfterRender={() => {}}
+              onFailure={() => {}}
+              />
           <img src = {this.props.imageinput}></img>
-            <span className="postText">
-
-            </span>
+            <div className="postText">
               {this.props.content}
+            </div>
+
 
       </div>
     )

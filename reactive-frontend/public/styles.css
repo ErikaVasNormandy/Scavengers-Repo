@@ -576,19 +576,6 @@ padding-bottom:20px;
 
 }
 
-.DefaultPostComponent{
-	text-align: center;
-	padding: 10%;
-	border-radius: 3px;
-	background-color: rgba(240,240,240,0.6);
-	margin-top: auto;
-	margin-bottom: 40px;
-	margin-left: auto;
-	margin-right: auto;
-	min-height: 300px;
-	color: black;
-}
-
 
 .UsefulBitPiece{
 	color: black;
@@ -598,16 +585,34 @@ padding-bottom:20px;
     height: 200px;
 }
 
+.DefaultPostComponent{
+	width: 640px;
+	min-height: 805px;
+	background-color: white;
+	margin: auto;
+	margin-bottom: 10%;
+	color: black;
+}
+
+
+
 .DefaultPostComponent img{
 	width: 100%;
+	margin: auto;
+
 
 }
 .postHeader{
-	text-align: center;
+	padding: 30px 20px 20px 20px;
+
+
 }
 
 .postText{
 	text-align: left;
+	padding: 30px 20px 20px 20px;
+		font-size: 1.4em;
+
 }
 
 .DMPieceWrapper{

@@ -11,11 +11,29 @@ class MainPageComponent extends React.Component {
       Posts: Posts
     }
   }
+
+
+  returnDate(){
+    var monthNames = [
+      "January", "February", "March",
+      "April", "May", "June", "July",
+      "August", "September", "October",
+      "November", "December"
+    ];
+
+    var date = new Date();
+    var day = date.getDate();
+    var monthIndex = date.getMonth();
+    var year = date.getFullYear();
+    return day + ' ' + monthNames[monthIndex] + ' ' + year;
+  }
+
   render(){
     return(
       <div className="mainPageComponent">
+
+        <h5>{this.returnDate()}</h5>
         {/*load up posts, versus projects*/}
-        <h3>Today</h3>
 
         {/* Default Post*/}
         {this.state.Posts.map((post)=>
