@@ -24,7 +24,6 @@ class WindowComponent extends React.Component{
   			currentClass:"parallax",
   			images : [
   			'https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/maxresdefault.jpg',
-  			'https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/dd2bfcfcc02cba84fef55e4c454f9c35.jpg',
   			'https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/SpringMoodBoard/Snapdragon-Color-Meaning.jpg',
   			'https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/2030_over_the_garden_wall.jpg',
   			'https://s3-us-west-1.amazonaws.com/scavengers-repo.com/images/AutumnMoodBoard/87cbb3248a40f91479e8ab7da60cb09e.jpg',
@@ -81,7 +80,7 @@ class WindowComponent extends React.Component{
   					// This will give a number with one digit after the decimal dot (xx.x):
   		var seconds = (elapsed / 10).toFixed(1);
 
-  		if(seconds%60===0)
+  		if(seconds%300===0)
   		{
         if(this.state.currentClass=="parallax2")
         {
