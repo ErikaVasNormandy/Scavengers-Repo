@@ -5,7 +5,6 @@ app.use(express.static(__dirname));
 var activeRoutes = [ '/', '/sickOS','/WorldBuilding','/UsefulBits','/Projects','/materials', '/resources','/Projects/clickjacking','/Projects/sickOS','/Projects/BootableKaliWindows','/WorldBuilding/ComicPages','/WorldBuilding/Cyberpunk']
 
 app.get(activeRoutes, function(req, res){
-	console.log("hello");
 	res.sendFile(__dirname + '/public/index.html');
 });
 
