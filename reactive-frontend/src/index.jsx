@@ -7,7 +7,6 @@ import UsefulBitsComponent from './components/UsefulBitsComponent.jsx';
 import WorldBuildingComponent from './components/WorldBuildingComponent.jsx';
 import BusinessCardComponent from './components/BusinessCardComponent.jsx';
 
-import data from './data/usefulResourcesData.js';
 
 import {
   BrowserRouter,
