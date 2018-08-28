@@ -4,6 +4,7 @@ import {render} from 'react-dom';
 import DMPieceComponent from "./WorldBuildingComponents/DMPieceComponent.jsx"
 import DMPieceComponent_001 from "./WorldBuildingComponents/DMPieceComponent_001.jsx"
 import DMPieceComponent_002 from "./WorldBuildingComponents/DMPieceComponent_002.jsx"
+import Card0Component from "./WorldBuildingComponents/CharacterSheets/card0component.js"
 
 import {
   BrowserRouter as Router,
@@ -23,6 +24,7 @@ class WorldBuildingComponent extends React.Component {
     return(
       <div>
         <h1>World Building</h1>
+        <Card0Component/>
         <DMPieceComponent_002></DMPieceComponent_002>
         <DMPieceComponent_001></DMPieceComponent_001>
         <DMPieceComponent></DMPieceComponent>

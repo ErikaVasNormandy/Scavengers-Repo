@@ -1,0 +1,225 @@
+.MainCard {
+  border-color: black;
+  /* background-color: blue; */
+  width: 640px;
+  border-style: solid;
+  /* min-width: 840px; */
+
+  background-color: white;
+  min-height: 800px;
+  overflow: scroll;
+  color: black;
+  display: inline-block;
+  margin: auto;
+  display: block;
+
+}
+
+.MagicCard{
+
+    /*border-color: red;*/
+    /*border-style: solid;*/
+    width: 230px;
+    height: 330px;
+    background-image: url("http://i268.photobucket.com/albums/jj14/NateET/wcard.jpg");
+    background-size: contain;
+    float: left;
+    background-color: red;
+    background-position: center;
+    display: block;
+}
+
+.MagicCard p {
+    padding-left: 20px;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 0em;
+}
+.cardContent{
+    margin-left: 15px;
+    padding-right: 20px;
+    padding-top: 10px;
+    font-style: italic;
+}
+.profilePic{
+    width: 190px;
+    height: 155px;
+    margin-left:19px;
+    margin-right: 18px;
+    overflow: hidden;
+    background-color: gray;
+}
+
+.profilePic img{
+    max-width: 100%;
+    max-height: 100%;
+    display:block;
+    margin:auto;
+}
+
+.BasicCard{
+  width: 60%;
+  float: right;
+  padding-left: 5px;
+  padding-top: 5px;
+  border-style: groove;
+  border-width: 7px;
+  font-size: 1em;
+  display: inline-block;
+
+}
+
+.BasicCard h3{
+  -webkit-margin-after: 0.2em;
+  -webkit-margin-before: 0.2em;
+  font-size: 14px;
+  font-weight: bold
+}
+h4{
+    -webkit-margin-after: 0em;
+    -webkit-margin-before: 0em;
+}
+
+.BasicCard ul{
+    list-style: none;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+.BasicCard li{
+    margin-bottom: 5px;
+}
+
+.column{
+    float: left;
+    width: 50%;
+
+}
+
+.columnMain {
+    float: left;
+    width: 35%;
+
+    font-weight: bold;
+}
+.columnNum {
+    float: left;
+    width: 20%;
+    border-style: solid;
+}
+.columnFiller {
+    float: left;
+    padding-left: 5%;
+    width: 40%;
+}
+.columnFiller h6 {
+    -webkit-margin-after: 0.2em;
+    -webkit-margin-before: 0.2em;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.StretchyLongCard {
+  display: inline-block;
+  width: 100%;
+  margin-right: auto;
+  border-style: groove;
+  border-width: 6px;
+}
+.StretchyLongCard ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.StretchyLongCard li{
+    float: left;
+    margin: 5px 5px 5px 5px;
+}
+
+.StretchyLongCard a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.StretchyLongCard h2 {
+    font-size: 18px;
+}
+
+.bottomCardA{
+    width: 48%;
+    float: left;
+    padding-left: 5px;
+    padding-top: 5px;
+    display: block;
+}
+.bottomCardA ul{
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    list-style: none;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bottomCardA li{
+    font-size: 12px;
+}
+h5 {
+    -webkit-margin-before: 0.2em;
+    -webkit-margin-after: 0.2em;
+}
+.bottomCardB{
+    width: 50%;
+    float: right;
+    padding-left: 5px;
+    padding-top: 5px;
+    display: block;
+    overflow: scroll;
+
+}
+.bottomCardB ul{
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.bottomCardB li{
+    font-size: 12px;
+}
+.bottomColumn{
+    float: left;
+    width: 46%;
+}
+
+.bottomCardB ol{
+    padding-left: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+.gearItem{
+    border-style: groove;
+    border-width: 6px;
+}
+.gearItem h6{
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
