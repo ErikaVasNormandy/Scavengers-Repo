@@ -70,7 +70,9 @@ class DefaultPostComponent extends React.Component {
 
   render(){
     return(
-      <div className="DefaultPostComponent" goTo={this.scrollToContent} id={this.props.postID}>
+      <div className="DefaultPostComponent" id={this.props.postID}>
+        <meta property="og:description" content={this.props.content}></meta>
+        
         <a href = {"http://scavengers-repo.com/#" + `${this.props.postID}`}>link</a>
         {/*load up posts, versus projects*/}
         { /*{this.returnDate()}*/}
