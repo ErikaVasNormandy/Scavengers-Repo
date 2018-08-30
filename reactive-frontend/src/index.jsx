@@ -32,8 +32,8 @@ class App extends React.Component{
               <meta property="og:url" content= "http://scavengers-repo.com"/>
               <meta property="og:type" content="blog"/>
 
-              <meta itemprop="thumbnailUrl" content="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/ScavengersWebPreview.png">
-              <meta name="twitter:image" content="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/ScavengersWebPreview.png"> -->
+              <meta itemprop="thumbnailUrl" content="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/ScavengersWebPreview.png"/>
+              <meta name="twitter:image" content="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/ScavengersWebPreview.png"/>
 
 
 
