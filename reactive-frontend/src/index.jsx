@@ -21,6 +21,7 @@ class App extends React.Component{
         return(
           <div>
             <MetaTags>
+              <meta name="description" content = "Bits and Pieces"/>
               <meta property="og:image" content="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/ScavengersWebPreview.png"/>
               <meta property="og:image:secure_url" content="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/ScavengersWebPreview.png"/>
 
