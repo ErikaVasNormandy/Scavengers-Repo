@@ -70,7 +70,7 @@ class DefaultPostComponent extends React.Component {
 
 
   render(){
-    const dataurl = {"http://scavengers-repo.com/#" + `${this.props.postID}`}
+    const dataurl = "http://scavengers-repo.com/#" + `${this.props.postID}`
     return(
       <div className="DefaultPostComponent" id={this.props.postID}>
         <head>
