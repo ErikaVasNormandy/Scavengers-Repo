@@ -2,6 +2,8 @@ import React from 'react';
 import {render} from 'react-dom';
 import DefaultPostComponent from './Posts/DefaultPostComponent.jsx';
 import Posts from '../data/MainPosts/Post.json';
+import MetaTags from 'react-meta-tags';
+
 
 class MainPageComponent extends React.Component {
   constructor(props) {
@@ -31,6 +33,11 @@ class MainPageComponent extends React.Component {
   render(){
     return(
       <div className="mainPageComponent">
+        <MetaTags>
+
+
+
+        </MetaTags>
 
         <h5>{this.returnDate()}</h5>
         {/*load up posts, versus projects*/}
