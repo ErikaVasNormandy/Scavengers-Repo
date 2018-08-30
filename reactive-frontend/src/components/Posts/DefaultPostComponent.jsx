@@ -70,6 +70,7 @@ class DefaultPostComponent extends React.Component {
 
 
   render(){
+    const dataurl = {"http://scavengers-repo.com/#" + `${this.props.postID}`}
     return(
       <div className="DefaultPostComponent" id={this.props.postID}>
         <head>
@@ -79,6 +80,7 @@ class DefaultPostComponent extends React.Component {
             <meta property="og:title" content="MyApp" />
             <meta property="og:image" content="https://6d4be195623157e28848-7697ece4918e0a73861de0eb37d08968.ssl.cf1.rackcdn.com/71481_200w.jpg" />
             <meta property="og:image:secure_url" content="https://6d4be195623157e28848-7697ece4918e0a73861de0eb37d08968.ssl.cf1.rackcdn.com/71481_200w.jpg" />
+            <meta property="og:url" content={dataurl}/>
 
         </head>
         <MetaTags>
