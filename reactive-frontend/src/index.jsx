@@ -6,7 +6,6 @@ import ProjectComponent from './components/ProjectComponent.jsx';
 import UsefulBitsComponent from './components/UsefulBitsComponent.jsx';
 import WorldBuildingComponent from './components/WorldBuildingComponent.jsx';
 import BusinessCardComponent from './components/BusinessCardComponent.jsx';
-import MetaTags from 'react-meta-tags';
 
 
 import {
@@ -20,24 +19,6 @@ class App extends React.Component{
     render() {
         return(
           <div>
-            <MetaTags>
-              <title>Page 1</title>
-
-              <meta name="description" content = "Bits and Pieces"/>
-              <meta property="og:image" content="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/ScavengersWebPreview.png"/>
-              <meta property="og:image:secure_url" content="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/ScavengersWebPreview.png"/>
-
-              <meta property="og:site_name" content = "Scavengers' Repo"/>
-              <meta property="og:description" content="Bits and Pieces"/>
-              <meta property="og:url" content= "http://scavengers-repo.com"/>
-              <meta property="og:type" content="blog"/>
-
-              <meta itemprop="thumbnailUrl" content="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/ScavengersWebPreview.png"/>
-              <meta name="twitter:image" content="https://s3-us-west-1.amazonaws.com/scavengers-repo.com/ScavengersWebPreview.png"/>
-
-
-
-            </MetaTags>
             <BrowserRouter>
               <div>
                 <div className="topMenu">
