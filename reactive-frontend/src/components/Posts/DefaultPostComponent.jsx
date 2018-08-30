@@ -72,6 +72,9 @@ class DefaultPostComponent extends React.Component {
   render(){
     return(
       <div className="DefaultPostComponent" id={this.props.postID}>
+        <meta itemprop="thumbnailUrl" content="https://6d4be195623157e28848-7697ece4918e0a73861de0eb37d08968.ssl.cf1.rackcdn.com/71481_200w.jpg">
+        <meta name="twitter:image" content="https://6d4be195623157e28848-7697ece4918e0a73861de0eb37d08968.ssl.cf1.rackcdn.com/71481_200w.jpg">
+
         <MetaTags>
           <title>Page 1</title>
           <meta name="description" content={this.props.content}/>
