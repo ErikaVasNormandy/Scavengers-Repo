@@ -1,6 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
 import InstagramEmbed from 'react-instagram-embed'
+import MetaTags from 'react-meta-tags';
 
 import {
   FacebookShareButton,
@@ -71,9 +72,15 @@ class DefaultPostComponent extends React.Component {
   render(){
     return(
       <div className="DefaultPostComponent" id={this.props.postID}>
-        <meta property="og:description" content={this.props.content}></meta>
+        <MetaTags>
+          <title>Page 1</title>
+          <meta name="description" content={this.props.content}/>
+          <meta property="og:title" content="MyApp" />
           <meta property="og:image" content="https://6d4be195623157e28848-7697ece4918e0a73861de0eb37d08968.ssl.cf1.rackcdn.com/71481_200w.jpg" />
           <meta property="og:image:secure_url" content="https://6d4be195623157e28848-7697ece4918e0a73861de0eb37d08968.ssl.cf1.rackcdn.com/71481_200w.jpg" />
+
+        </MetaTags>
+
 
         <a href = {"http://scavengers-repo.com/#" + `${this.props.postID}`}>link</a>
         {/*load up posts, versus projects*/}
