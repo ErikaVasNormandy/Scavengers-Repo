@@ -41,6 +41,7 @@ class MainPageComponent extends React.Component {
           return(
 
             <DefaultPostComponent
+              postID = {post.date}
               header = {post.date}
               key = {post.date}
               imageinput = {post.imageinput}

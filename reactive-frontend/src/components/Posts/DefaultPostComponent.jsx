@@ -70,7 +70,8 @@ class DefaultPostComponent extends React.Component {
 
   render(){
     return(
-      <div className="DefaultPostComponent" goTo={this.scrollToContent}>
+      <div className="DefaultPostComponent" goTo={this.scrollToContent} id={this.props.postID}>
+        <a href = {"http://scavengers-repo.com/" + `${this.props.postID}`}>link</a>
         {/*load up posts, versus projects*/}
         { /*{this.returnDate()}*/}
           <h4 className="postHeader">{this.props.header}</h4>
@@ -91,7 +92,7 @@ class DefaultPostComponent extends React.Component {
               {this.props.content}
             </div>
             <div className="socialMedia">
-              <FacebookShareButton role = "button" children = {<FacebookIcon size={32} round={true} />} url = "http://scavengers-repo.com/" />
+              <FacebookShareButton role = "button" children = {<FacebookIcon size={32} round={true} />} url = {"http://scavengers-repo.com/#" + `${this.props.postID}`}/>
             </div>
 
             <div className="socialMedia">
