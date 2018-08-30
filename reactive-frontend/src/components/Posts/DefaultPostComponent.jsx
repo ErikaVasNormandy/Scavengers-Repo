@@ -83,7 +83,7 @@ class DefaultPostComponent extends React.Component {
             <meta property="og:url" content={dataurl}/>
             <meta property="og:site_name" content = "Scavengers' Repo - Posts"/>
             <meta property="og:description" content="Bits and Pieces"/>
-            <meta property="og:type" content="blog"/>
+            <meta property="og:type" content="website"/>
 
             <meta itemprop="thumbnailUrl" content="https://6d4be195623157e28848-7697ece4918e0a73861de0eb37d08968.ssl.cf1.rackcdn.com/71481_200w.jpg"/>
             <meta name="twitter:image" content="https://6d4be195623157e28848-7697ece4918e0a73861de0eb37d08968.ssl.cf1.rackcdn.com/71481_200w.jpg"/>
