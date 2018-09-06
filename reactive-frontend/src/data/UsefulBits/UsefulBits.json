@@ -65,7 +65,45 @@
      "timestamp":"",
      "description":"",
      "tags": ["nodejs","node","npm","pm2","web"]
+   },
+   {
+     "id": 6,
+     "title": "Anchor Tags",
+     "address": "https://stackoverflow.com/questions/12386212/link-to-an-element-within-the-current-page",
+       "imageaddress": "https://i.pinimg.com/736x/95/1b/c8/951bc856d065eeeeef6a80056d443685--wallpaper-gallery-aesthetic-art.jpg",
+     "timestamp":"",
+     "description":"",
+     "tags": ["javascript","node","web"]
+   },
+   {
+     "id": 7,
+     "title": "Append String to React Prop",
+     "address": "https://stackoverflow.com/questions/42184837/append-string-to-jsx",
+       "imageaddress": "https://i.pinimg.com/736x/95/1b/c8/951bc856d065eeeeef6a80056d443685--wallpaper-gallery-aesthetic-art.jpg",
+     "timestamp":"",
+     "description":"",
+     "tags": ["javascript","node","web","react"]
+   },
+   {
+     "id": 8,
+     "title": "Pass Argument into Passwd",
+     "address": "https://stackoverflow.com/questions/714915/using-the-passwd-command-from-within-a-shell-script",
+       "imageaddress": "https://i.pinimg.com/736x/95/1b/c8/951bc856d065eeeeef6a80056d443685--wallpaper-gallery-aesthetic-art.jpg",
+     "timestamp":"",
+     "description":"",
+     "tags": ["linux","scripting","bash","python","unix","shell", "ubuntu"]
+   },
+   {
+     "id": 9,
+     "title": "Send Mail from Terminal",
+     "address": "https://www.binarytides.com/linux-mail-command-examples/",
+       "imageaddress": "https://i.pinimg.com/736x/95/1b/c8/951bc856d065eeeeef6a80056d443685--wallpaper-gallery-aesthetic-art.jpg",
+     "timestamp":"",
+     "description":"",
+     "tags": ["linux","scripting","bash","python","unix","shell", "ubuntu"]
    }
+
+
 
 
 
