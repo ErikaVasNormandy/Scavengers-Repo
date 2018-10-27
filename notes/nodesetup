@@ -1,0 +1,51 @@
+(myapp)apps ~/myapp:. ~/.nvm/nvm.sh
+
+ERROR: npm is known not to run on Node.js v4.4.5
+Node.js 4 is supported but the specific version you're running has
+a bug known to break npm. Please update to at least ${rel.min} to use this
+version of npm. You can find the latest release of Node.js at https://nodejs.org/
+nvm is not compatible with the npm config "prefix" option: currently set to ""
+Run `nvm use --delete-prefix v4.4.5 --silent` to unset it.
+(myapp)apps ~/myapp:
+(myapp)apps ~/myapp:nvm list
+         v4.2.5
+         v4.4.2
+         v4.4.5
+         v8.0.0
+         v8.2.0
+         v8.2.1
+         v8.6.0
+        v8.10.0
+        v8.11.2
+        v8.11.3
+         v9.2.0
+         v9.3.0
+         v9.9.0
+        v10.6.0
+default -> 4.4.5 (-> v4.4.5)
+node -> stable (-> v10.6.0) (default)
+stable -> 10.6 (-> v10.6.0) (default)
+iojs -> N/A (default)
+lts/* -> lts/carbon (-> v8.11.3)
+lts/argon -> v4.9.1 (-> N/A)
+lts/boron -> v6.14.3 (-> N/A)
+lts/carbon -> v8.11.3
+(myapp)apps ~/myapp:nvm use stable
+Now using node v10.6.0 (npm v6.1.0)
+(myapp)apps ~/myapp:npm update
+
+
+   ╭───────────────────────────────────────────────────────────────╮
+   │                                                               │
+   │       New minor version of npm available! 6.1.0 → 6.4.1       │
+   │   Changelog: https://github.com/npm/npm/releases/tag/v6.4.1   │
+   │               Run npm install -g npm to update!               │
+   │                                                               │
+   ╰───────────────────────────────────────────────────────────────╯
+
+(myapp)apps ~/myapp:npm install -g npm 
+/home/apps/.nvm/versions/node/v10.6.0/bin/npm -> /home/apps/.nvm/versions/node/v10.6.0/lib/node_modules/npm/bin/npm-cli.js
+/home/apps/.nvm/versions/node/v10.6.0/bin/npx -> /home/apps/.nvm/versions/node/v10.6.0/lib/node_modules/npm/bin/npx-cli.js
++ npm@6.4.1
+added 8 packages from 4 contributors, removed 35 packages and updated 38 packages in 7.64s
+(myapp)apps ~/myapp:npm audit
